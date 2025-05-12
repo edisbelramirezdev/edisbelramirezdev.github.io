@@ -5,11 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edisbel Ramírez Lovatos - Full Stack Developer</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
 
-    <!-- Sidebar -->
-    <aside class="sidebar">
+    <!-- Barra de navegación en PC -->
+    <nav id="navbar" class="navbar">
+        <ul>
+            <li><a href="#about">Sobre mí</a></li>
+            <li><a href="#skills">Habilidades</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Botón para abrir el sidebar en móviles -->
+    <button id="toggleSidebar" class="sidebar-toggle">☰</button>
+
+    <!-- Sidebar en móviles -->
+    <aside id="sidebar" class="sidebar">
         <nav>
             <ul>
                 <li><a href="#about">Sobre mí</a></li>
@@ -77,6 +91,5 @@
         </footer>
     </main>
 
-    <script src="script.js"></script>
 </body>
 </html>
