@@ -3,7 +3,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #e3f2fd; /* Azul claro */
     color: #333;
 }
 
@@ -16,7 +16,7 @@ body {
 
 /* Encabezado */
 header {
-    background: #3a3f92; /* Azul añil */
+    background: #1565c0; /* Azul vibrante */
     color: white;
     text-align: center;
     padding: 40px 0;
@@ -43,7 +43,7 @@ section {
 .profile img {
     width: 150px;
     border-radius: 50%;
-    border: 3px solid #3a3f92;
+    border: 3px solid #1565c0;
 }
 
 /* Habilidades */
@@ -55,7 +55,7 @@ section {
 }
 
 .skill {
-    background: #3a3f92;
+    background: #1565c0;
     color: white;
     padding: 10px;
     border-radius: 5px;
@@ -93,7 +93,7 @@ form input, form textarea {
 }
 
 button {
-    background: #3a3f92;
+    background: #1565c0;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -104,13 +104,14 @@ button {
 }
 
 button:hover {
-    background: #282c6d;
+    background: #0d47a1;
 }
 
 /* Pie de página */
 footer {
     text-align: center;
     padding: 20px;
-    background: #3a3f92;
+    background: #1565c0;
     color: white;
 }
+
