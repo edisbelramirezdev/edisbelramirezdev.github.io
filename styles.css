@@ -10,4 +10,120 @@ body {
 /* Barra de navegación en PC */
 .navbar {
     background: #1d4ba0;
-   
+    padding: 15px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #f0f4f8;
+}
+
+/* Sidebar en móviles */
+.sidebar {
+    width: 250px;
+    background: #1d4ba0;
+    color: white;
+    position: fixed;
+    height: 100vh;
+    padding-top: 20px;
+    left: 0;
+    transition: transform 0.3s ease-in-out;
+    display: none; /* Oculto en PC */
+}
+
+/* Botón para abrir el sidebar en móviles */
+.sidebar-toggle {
+    display: none;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    background: #1d4ba0;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Cards con animaciones */
+.project-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.project {
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    width: 45%;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1d4ba0;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .navbar {
+        display: none; /* Oculta la barra de navegación en móviles */
+    }
+
+    .sidebar {
+        display: block;
+        transform: translateX(-100%);
+    }
+
+    .sidebar-toggle {
+        display: block;
+    }
+
+    .project-grid {
+        flex-direction: column;
+    }
+
+    .project {
+        width: 100%;
+    }
+}
+
