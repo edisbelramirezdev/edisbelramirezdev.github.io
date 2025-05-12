@@ -3,20 +3,52 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #e3f2fd; /* Azul claro */
+    background-color: #f0f4f8; /* Fondo claro */
     color: #333;
+    display: flex;
 }
 
-/* Contenedor principal */
-.container {
-    width: 80%;
-    margin: auto;
-    padding: 20px;
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background: #1d4ba0;
+    color: white;
+    position: fixed;
+    height: 100vh;
+    padding-top: 20px;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    padding: 15px;
+    text-align: center;
+}
+
+.sidebar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    transition: background 0.3s;
+}
+
+.sidebar nav ul li a:hover {
+    background: #163b7a;
+}
+
+/* Contenido principal */
+main {
+    margin-left: 250px;
+    width: 100%;
 }
 
 /* Encabezado */
 header {
-    background: #1565c0; /* Azul vibrante */
+    background: #1d4ba0;
     color: white;
     text-align: center;
     padding: 40px 0;
@@ -27,12 +59,10 @@ h1, h2 {
 }
 
 /* Secciones */
-section {
-    background: white;
-    padding: 30px;
-    margin: 20px 0;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
 }
 
 /* Perfil */
@@ -43,7 +73,7 @@ section {
 .profile img {
     width: 150px;
     border-radius: 50%;
-    border: 3px solid #1565c0;
+    border: 3px solid #1d4ba0;
 }
 
 /* Habilidades */
@@ -55,11 +85,17 @@ section {
 }
 
 .skill {
-    background: #1565c0;
+    background: #1d4ba0;
     color: white;
     padding: 10px;
     border-radius: 5px;
     font-weight: bold;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 /* Proyectos */
@@ -70,11 +106,18 @@ section {
 }
 
 .project {
-    background: #ddd;
+    background: white;
     padding: 15px;
     border-radius: 5px;
     width: 45%;
     text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 /* Formulario */
@@ -93,7 +136,7 @@ form input, form textarea {
 }
 
 button {
-    background: #1565c0;
+    background: #1d4ba0;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -104,14 +147,32 @@ button {
 }
 
 button:hover {
-    background: #0d47a1;
+    background: #163b7a;
 }
 
 /* Pie de página */
 footer {
     text-align: center;
     padding: 20px;
-    background: #1565c0;
+    background: #1d4ba0;
     color: white;
 }
 
+/* Responsive */
+@media (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+
+    main {
+        margin-left: 0;
+    }
+
+    .project-grid {
+        flex-direction: column;
+    }
+
+    .project {
+        width: 100%;
+    }
+}
