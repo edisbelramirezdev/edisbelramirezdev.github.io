@@ -8,61 +8,75 @@
 </head>
 <body>
 
-    <header>
-        <div class="container">
-            <h1>Edisbel Ramírez Lovatos</h1>
-            <h2>Desarrollador Full Stack</h2>
-        </div>
-    </header>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <nav>
+            <ul>
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </aside>
 
-    <section id="about" class="container">
-        <div class="profile">
-            <img src="images/perfil.jpg" alt="Foto de perfil">
-            <p>¡Hola! Soy un desarrollador Full Stack con experiencia en HTML, CSS, JavaScript y PHP. Me apasiona crear aplicaciones web eficientes y escalables.</p>
-        </div>
-    </section>
-
-    <section id="skills" class="container">
-        <h3>Habilidades</h3>
-        <div class="skills-grid">
-            <div class="skill">HTML5 & CSS3</div>
-            <div class="skill">JavaScript (ES6+)</div>
-            <div class="skill">PHP & MySQL</div>
-            <div class="skill">React & Vue.js</div>
-            <div class="skill">Laravel</div>
-            <div class="skill">Git & Docker</div>
-        </div>
-    </section>
-
-    <section id="projects" class="container">
-        <h3>Proyectos Destacados</h3>
-        <div class="project-grid">
-            <div class="project">
-                <h4>Sistema de Gestión</h4>
-                <p>Aplicación web para administrar inventarios y ventas.</p>
+    <!-- Contenido principal -->
+    <main>
+        <header>
+            <div class="container">
+                <h1>Edisbel Ramírez Lovatos</h1>
+                <h2>Desarrollador Full Stack</h2>
             </div>
-            <div class="project">
-                <h4>Blog Personal</h4>
-                <p>Blog dinámico con PHP y MySQL.</p>
+        </header>
+
+        <section id="about" class="container">
+            <div class="profile">
+                <img src="images/perfil.jpg" alt="Foto de perfil">
+                <p>¡Hola! Soy un desarrollador Full Stack con experiencia en HTML, CSS, JavaScript y PHP. Me apasiona crear aplicaciones web eficientes y escalables.</p>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="contact" class="container">
-        <h3>Contacto</h3>
-        <form action="contact.php" method="POST">
-            <input type="text" name="name" placeholder="Tu Nombre" required>
-            <input type="email" name="email" placeholder="Tu Email" required>
-            <textarea name="message" placeholder="Tu Mensaje" required></textarea>
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
+        <section id="skills" class="container">
+            <h3>Habilidades</h3>
+            <div class="skills-grid">
+                <div class="skill">HTML5 & CSS3</div>
+                <div class="skill">JavaScript (ES6+)</div>
+                <div class="skill">PHP & MySQL</div>
+                <div class="skill">React & Vue.js</div>
+                <div class="skill">Laravel</div>
+                <div class="skill">Git & Docker</div>
+            </div>
+        </section>
 
-    <footer>
-        <p>&copy; 2024 Edisbel Ramírez Lovatos - Todos los derechos reservados</p>
-    </footer>
+        <section id="projects" class="container">
+            <h3>Proyectos Destacados</h3>
+            <div class="project-grid">
+                <div class="project">
+                    <h4>Sistema de Gestión</h4>
+                    <p>Aplicación web para administrar inventarios y ventas.</p>
+                </div>
+                <div class="project">
+                    <h4>Blog Personal</h4>
+                    <p>Blog dinámico con PHP y MySQL.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="container">
+            <h3>Contacto</h3>
+            <form action="contact.php" method="POST">
+                <input type="text" name="name" placeholder="Tu Nombre" required>
+                <input type="email" name="email" placeholder="Tu Email" required>
+                <textarea name="message" placeholder="Tu Mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Edisbel Ramírez Lovatos - Todos los derechos reservados</p>
+        </footer>
+    </main>
 
     <script src="script.js"></script>
 </body>
 </html>
-
