@@ -70,9 +70,37 @@ body {
     border-radius: 5px;
 }
 
-/* Contenido principal */
-main {
-    margin-top: 60px; /* Espacio para la barra de navegación */
+/* Cards con animaciones */
+.project-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.project {
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    width: 45%;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1d4ba0;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
 /* Responsive */
@@ -88,5 +116,13 @@ main {
 
     .sidebar-toggle {
         display: block;
+    }
+
+    .project-grid {
+        flex-direction: column;
+    }
+
+    .project {
+        width: 100%;
     }
 }
