@@ -3,93 +3,347 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edisbel Ramírez Lovatos - Full Stack Developer</title>
+    <meta name="description" content="Portafolio profesional de Edisbel Ramírez Lovatos, Desarrollador Full Stack con experiencia en JavaScript, PHP y frameworks modernos">
+    <meta name="keywords" content="desarrollador full stack, JavaScript, PHP, React, Laravel, portafolio">
+    <meta name="author" content="Edisbel Ramírez Lovatos">
+    
+    <title>Edisbel Ramírez Lovatos | Full Stack Developer</title>
+    
+    <!-- Preconexión para fuentes de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
 </head>
 <body>
+    <!-- Barra de navegación principal -->
+    <header class="main-header">
+        <nav id="navbar" class="navbar" aria-label="Navegación principal">
+            <a href="#" class="logo" aria-label="Inicio">ERL</a>
+            <button id="toggleSidebar" class="sidebar-toggle" aria-expanded="false" aria-controls="sidebar" aria-label="Menú">
+                <span class="hamburger">☰</span>
+            </button>
+            
+            <ul class="nav-list">
+                <li><a href="#about" class="nav-link">Sobre mí</a></li>
+                <li><a href="#skills" class="nav-link">Habilidades</a></li>
+                <li><a href="#projects" class="nav-link">Proyectos</a></li>
+                <li><a href="#contact" class="nav-link">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <!-- Barra de navegación en PC -->
-    <nav id="navbar" class="navbar">
-        <ul>
-            <li><a href="#about">Sobre mí</a></li>
-            <li><a href="#skills">Habilidades</a></li>
-            <li><a href="#projects">Proyectos</a></li>
-            <li><a href="#contact">Contacto</a></li>
-        </ul>
-    </nav>
-
-    <!-- Botón para abrir el sidebar en móviles -->
-    <button id="toggleSidebar" class="sidebar-toggle">☰</button>
-
-    <!-- Sidebar en móviles -->
-    <aside id="sidebar" class="sidebar">
-        <nav>
+    <!-- Sidebar para móviles -->
+    <aside id="sidebar" class="sidebar" aria-hidden="true" aria-label="Menú móvil">
+        <nav aria-label="Navegación móvil">
             <ul>
-                <li><a href="#about">Sobre mí</a></li>
-                <li><a href="#skills">Habilidades</a></li>
-                <li><a href="#projects">Proyectos</a></li>
-                <li><a href="#contact">Contacto</a></li>
+                <li><a href="#about" class="sidebar-link">Sobre mí</a></li>
+                <li><a href="#skills" class="sidebar-link">Habilidades</a></li>
+                <li><a href="#projects" class="sidebar-link">Proyectos</a></li>
+                <li><a href="#contact" class="sidebar-link">Contacto</a></li>
             </ul>
         </nav>
     </aside>
 
     <!-- Contenido principal -->
     <main>
-        <header class="header">
+        <!-- Hero Section -->
+        <section class="hero">
             <div class="container">
                 <h1>Edisbel Ramírez Lovatos</h1>
-                <h2>Desarrollador Full Stack</h2>
-            </div>
-        </header>
-
-        <section id="about" class="container">
-            <div class="profile">
-                <img src="images/perfil.jpg" alt="Foto de perfil">
-                <p>¡Hola! Soy un desarrollador Full Stack con experiencia en HTML, CSS, JavaScript y PHP. Me apasiona crear aplicaciones web eficientes y escalables.</p>
+                <p class="subtitle">Desarrollador Full Stack</p>
+                <p class="hero-text">Creando soluciones digitales eficientes y escalables</p>
+                <a href="#contact" class="cta-button">Contáctame</a>
             </div>
         </section>
 
-        <section id="skills" class="container">
-            <h3>Habilidades</h3>
-            <div class="skills-grid">
-                <div class="skill">HTML5 & CSS3</div>
-                <div class="skill">JavaScript (ES6+)</div>
-                <div class="skill">PHP & MySQL</div>
-                <div class="skill">React & Vue.js</div>
-                <div class="skill">Laravel</div>
-                <div class="skill">Git & Docker</div>
-            </div>
-        </section>
-
-        <section id="projects" class="container">
-            <h3>Proyectos Destacados</h3>
-            <div class="project-grid">
-                <div class="project">
-                    <h4>Sistema de Gestión</h4>
-                    <p>Aplicación web para administrar inventarios y ventas.</p>
-                </div>
-                <div class="project">
-                    <h4>Blog Personal</h4>
-                    <p>Blog dinámico con PHP y MySQL.</p>
+        <!-- Sobre mí -->
+        <section id="about" class="section about-section" aria-labelledby="about-heading">
+            <div class="container">
+                <h2 id="about-heading" class="section-title">Sobre mí</h2>
+                <div class="profile-grid">
+                    <div class="profile-image-container">
+                        <img src="images/perfil.jpg" alt="Foto de perfil de Edisbel Ramírez" class="profile-image" loading="lazy">
+                    </div>
+                    <div class="profile-content">
+                        <p>¡Hola! Soy un desarrollador Full Stack con más de 5 años de experiencia creando aplicaciones web modernas y eficientes.</p>
+                        <p>Especializado en JavaScript (ES6+), PHP y frameworks como React y Laravel, me apasiona resolver problemas complejos mediante código limpio y arquitecturas escalables.</p>
+                        <p>Cuando no estoy programando, disfruto de contribuir a proyectos open source, aprender nuevas tecnologías y compartir conocimientos con la comunidad de desarrolladores.</p>
+                        <div class="social-links">
+                            <a href="https://github.com/tu-usuario" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                                <span class="icon-github"></span>
+                            </a>
+                            <a href="https://linkedin.com/in/tu-usuario" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                                <span class="icon-linkedin"></span>
+                            </a>
+                            <a href="https://twitter.com/tu-usuario" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                                <span class="icon-twitter"></span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="container">
-            <h3>Contacto</h3>
-            <form action="contact.php" method="POST">
-                <input type="text" name="name" placeholder="Tu Nombre" required>
-                <input type="email" name="email" placeholder="Tu Email" required>
-                <textarea name="message" placeholder="Tu Mensaje" required></textarea>
-                <button type="submit">Enviar</button>
-            </form>
+        <!-- Habilidades -->
+        <section id="skills" class="section skills-section" aria-labelledby="skills-heading">
+            <div class="container">
+                <h2 id="skills-heading" class="section-title">Habilidades Técnicas</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Frontend</h3>
+                        <ul class="skill-list">
+                            <li class="skill-item">
+                                <span class="skill-name">HTML5 & CSS3</span>
+                                <div class="skill-level" aria-hidden="true">
+                                    <span style="width: 95%"></span>
+                                </div>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-name">JavaScript (ES6+)</span>
+                                <div class="skill-level" aria-hidden="true">
+                                    <span style="width: 90%"></span>
+                                </div>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-name">React.js</span>
+                                <div class="skill-level" aria-hidden="true">
+                                    <span style="width: 85%"></span>
+                                </div>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-name">Vue.js</span>
+                                <div class="skill-level" aria-hidden="true">
+                                    <span style="width: 80%"></span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>Backend</h3>
+                        <ul class="skill-list">
+                            <li class="skill-item">
+                                <span class="skill-name">PHP</span>
+                                <div class="skill-level" aria-hidden="true">
+                                    <span style="width: 90%"></span>
+                                </div>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-name">Laravel</span>
+                                <div class="skill-level" aria-hidden="true">
+                                    <span style="width: 88%"></span>
+                                </div>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-name">Node.js</span>
+                                <div class="skill-level" aria-hidden="true">
+                                    <span style="width: 75%"></span>
+                                </div>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-name">MySQL</span>
+                                <div class="skill-level" aria-hidden="true">
+                                    <span style="width: 85%"></span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>Herramientas</h3>
+                        <ul class="skill-list">
+                            <li class="skill-item">
+                                <span class="skill-name">Git</span>
+                                <div class="skill-level" aria-hidden="true">
+                                    <span style="width: 92%"></span>
+                                </div>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-name">Docker</span>
+                                <div class="skill-level" aria-hidden="true">
+                                    <span style="width: 80%"></span>
+                                </div>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-name">AWS</span>
+                                <div class="skill-level" aria-hidden="true">
+                                    <span style="width: 70%"></span>
+                                </div>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-name">CI/CD</span>
+                                <div class="skill-level" aria-hidden="true">
+                                    <span style="width: 75%"></span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <footer>
-            <p>&copy; 2024 Edisbel Ramírez Lovatos - Todos los derechos reservados</p>
-        </footer>
+        <!-- Proyectos -->
+        <section id="projects" class="section projects-section" aria-labelledby="projects-heading">
+            <div class="container">
+                <h2 id="projects-heading" class="section-title">Proyectos Destacados</h2>
+                <div class="project-grid">
+                    <article class="project-card">
+                        <div class="project-image-container">
+                            <img src="images/project1.jpg" alt="Captura del Sistema de Gestión" class="project-image" loading="lazy">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Sistema de Gestión Integral</h3>
+                            <p class="project-description">Aplicación web completa para administración de inventarios, ventas y reportes financieros con panel de control en tiempo real.</p>
+                            <ul class="project-tech">
+                                <li>Laravel</li>
+                                <li>Vue.js</li>
+                                <li>MySQL</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">Ver Demo</a>
+                                <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">Código</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="project-card">
+                        <div class="project-image-container">
+                            <img src="images/project2.jpg" alt="Captura del Blog Personal" class="project-image" loading="lazy">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Blog Personal con CMS</h3>
+                            <p class="project-description">Plataforma de blogging con sistema de gestión de contenidos, autenticación de usuarios y comentarios en tiempo real.</p>
+                            <ul class="project-tech">
+                                <li>React</li>
+                                <li>Node.js</li>
+                                <li>MongoDB</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">Ver Sitio</a>
+                                <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">Código</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="project-card">
+                        <div class="project-image-container">
+                            <img src="images/project3.jpg" alt="Captura de la API REST" class="project-image" loading="lazy">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">API REST para E-commerce</h3>
+                            <p class="project-description">API robusta y documentada para plataforma de comercio electrónico con autenticación JWT y sistema de pagos integrado.</p>
+                            <ul class="project-tech">
+                                <li>PHP</li>
+                                <li>Lumen</li>
+                                <li>PostgreSQL</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">Documentación</a>
+                                <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">Código</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacto -->
+        <section id="contact" class="section contact-section" aria-labelledby="contact-heading">
+            <div class="container">
+                <h2 id="contact-heading" class="section-title">Contacto</h2>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <p>¿Interesado en trabajar juntos o tienes alguna pregunta? No dudes en contactarme.</p>
+                        <ul class="contact-methods">
+                            <li>
+                                <span class="contact-icon">✉️</span>
+                                <a href="mailto:contacto@example.com">contacto@example.com</a>
+                            </li>
+                            <li>
+                                <span class="contact-icon">📱</span>
+                                <a href="tel:+123456789">+1 (234) 567-89</a>
+                            </li>
+                            <li>
+                                <span class="contact-icon">📍</span>
+                                <span>Ciudad, País</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <form action="contact.php" method="POST" class="contact-form" netlify>
+                        <div class="form-group">
+                            <label for="name">Nombre</label>
+                            <input type="text" id="name" name="name" placeholder="Tu nombre completo" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Asunto</label>
+                            <input type="text" id="subject" name="subject" placeholder="¿En qué puedo ayudarte?">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tu mensaje..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-button">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
 
+    <!-- Pie de página -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#" aria-label="Volver al inicio">ERL</a>
+                    <p>Desarrollador Full Stack</p>
+                </div>
+                
+                <nav class="footer-nav" aria-label="Navegación footer">
+                    <ul>
+                        <li><a href="#about">Sobre mí</a></li>
+                        <li><a href="#skills">Habilidades</a></li>
+                        <li><a href="#projects">Proyectos</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="footer-social">
+                    <a href="#" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <span class="icon-github"></span>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <span class="icon-linkedin"></span>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                        <span class="icon-twitter"></span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year">2024</span> Edisbel Ramírez Lovatos. Todos los derechos reservados.</p>
+                <p>Diseñado y desarrollado con ❤️ por mí</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Actualizar año en el footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
