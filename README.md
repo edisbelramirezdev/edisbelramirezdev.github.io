@@ -1,28 +1,27 @@
 # Portafolio Profesional - Edisbel Ramírez Lovatos
 
-Portafolio personal de desarrollador Full Stack con diseño moderno y responsive.
+![Preview del portafolio](images/preview.jpg)
+
+Portafolio profesional de Edisbel Ramírez Lovatos, Desarrollador Full Stack.
 
 ## Características
-- Diseño responsive y accesible
-- Efectos modernos y animaciones sutiles
-- Sección de proyectos destacados
+
+- Diseño responsive y moderno
+- Navegación con sidebar para móviles
+- Secciones completas: Sobre mí, Habilidades, Proyectos y Contacto
+- Efectos y animaciones CSS
 - Formulario de contacto funcional
-- Botones flotantes de WhatsApp/Telegram
 
 ## Tecnologías utilizadas
+
 - HTML5 semántico
-- CSS3 con variables y modernas propiedades
+- CSS3 con Flexbox y Grid
 - JavaScript vanilla
+- Font Awesome para iconos
 - PHP para el formulario de contacto
 
-## Instalación
-1. Clonar el repositorio
-2. Configurar el formulario de contacto en `contact.php`
-3. Personalizar la información en `index.html`
-4. Subir a tu hosting preferido
+## Cómo usar
 
-## Personalización
-Reemplazar:
-- Imágenes en la carpeta `images/`
-- Links de redes sociales
-- Información personal y proyectos
+1. Clona el repositorio:
+```bash
+git clone https://github.com/edisbelramirezdev/portfolio.git
