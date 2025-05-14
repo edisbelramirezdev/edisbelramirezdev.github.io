@@ -24,4 +24,4 @@ Portafolio profesional de Edisbel Ramírez Lovatos, Desarrollador Full Stack.
 
 1. Clona el repositorio:
 ```bash
-git clone https://github.com/edisbelramirezdev/portfolio.git
+git clone https://github.com/edisbelramirezdev/edisbelramirezdev.github.io.git
