@@ -48,6 +48,12 @@
 
 ## 📰 En los medios
 
+- [Universidad y ETECSA en Sancti Spíritus: un referente en vínculo empresarial](https://www.radiosanctispiritus.cu/es/universidad-y-etecsa-en-sancti-spiritus-un-referente-en-vinculo-empresarial/) — *Radio Sancti Spíritus*
+- [Desarrollan evento sobre inteligencia artificial en Cuba](https://www.prensa-latina.cu/2026/05/29/desarrollan-evento-sobre-inteligencia-artificial-en-cuba/) — *Prensa Latina*
+- [Sancti Spíritus en el Festival Latinoamericano de Instalación del Software Libre](https://www.escambray.cu/2026/sancti-spiritus-en-el-festival-latinoamericano-de-instalacion-del-software-libre/) — *Escambray*
+- [Sancti Spíritus en Cubanía 2026: espacio para la innovación](https://www.escambray.cu/2026/sancti-spiritus-en-cubania-2026-espacio-para-la-innovacion/) — *Escambray*
+- [Sancti Spíritus se suma al Festival Latinoamericano de Instalación del Software Libre 2026](https://www.escambray.cu/2026/sancti-spiritus-se-suma-al-festival-latinoamericano-de-instalacion-del-software-libre-2026/) — *Escambray*
+- [Cuba debate sobre innovación tecnológica en foro CubanIA 2026](https://www.telesurtv.net/cuba-evento-ia-innovacion-tecnologica/) — *teleSUR*
 - [Universidad de Sancti Spíritus y ETECSA: un vínculo sólido en materia tecnológica](https://www.escambray.cu/2026/universidad-de-sancti-spiritus-y-etecsa-un-vinculo-solido-en-materia-tecnologica/) — *Escambray*
 - [Artículo en Revista Márgenes (UNISS)](https://revistas.uniss.edu.cu/margenes/article/view/2380) — *Universidad de Sancti Spíritus*
 
@@ -57,6 +63,8 @@
 
 - 💼 [LinkedIn](https://www.linkedin.com/in/edisbel-ramirez-lovatos)
 - 🧑‍💻 [GitHub](https://github.com/edisbelramirezdev)
+- 🐦 [X (Twitter)](https://x.com/edisbelramirez)
+- 📸 [Instagram](https://www.instagram.com/edisbel.ramirez/)
 - 🌐 [Sitio Web](https://edisbelramirezdev.github.io)
 - 📧 [edisbel.ramirez95@gmail.com](mailto:edisbel.ramirez95@gmail.com)
 
