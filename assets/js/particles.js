@@ -9,21 +9,19 @@
   let width, height;
 
   const CONFIG = {
-    particleRadius: 1,          // ← antes 1.8 (más pequeñas)
-    linkDistance: 110,          // ← antes 130
-    speed: 0.25,                // ← antes 0.35 (más lentas)
-    maxParticles: 60,           // ← antes 120 (menos)
-    minParticles: 20,           // ← antes 30
-    particleOpacity: 0.6,       // ← opacidad fija más sutil
-    lineOpacity: 0.12           // ← líneas más sutiles
+    particleRadius: 1,
+    linkDistance: 110,
+    speed: 0.25,
+    maxParticles: 60,
+    minParticles: 20,
+    particleOpacity: 0.6,
+    lineOpacity: 0.12
   };
 
   function resize() {
     const rect = canvas.getBoundingClientRect();
     width = rect.width;
     height = rect.height;
-
-    // Usar resolución nativa (sin dpr) para evitar partículas gigantes
     canvas.width = width;
     canvas.height = height;
 
@@ -49,7 +47,6 @@
     update() {
       this.x += this.vx;
       this.y += this.vy;
-
       if (this.x < 0 || this.x > width) this.vx *= -1;
       if (this.y < 0 || this.y > height) this.vy *= -1;
     }
@@ -64,9 +61,7 @@
 
   function createParticles(count) {
     particles = [];
-    for (let i = 0; i < count; i++) {
-      particles.push(new Particle());
-    }
+    for (let i = 0; i < count; i++) particles.push(new Particle());
   }
 
   function connectParticles() {
@@ -75,10 +70,8 @@
         const dx = particles[i].x - particles[j].x;
         const dy = particles[i].y - particles[j].y;
         const dist = Math.hypot(dx, dy);
-
         if (dist < CONFIG.linkDistance) {
           const opacity = (1 - dist / CONFIG.linkDistance) * CONFIG.lineOpacity;
-
           ctx.beginPath();
           ctx.strokeStyle = `rgba(0, 168, 255, ${opacity.toFixed(3)})`;
           ctx.lineWidth = 0.6;
@@ -92,12 +85,7 @@
 
   function animate() {
     ctx.clearRect(0, 0, width, height);
-
-    particles.forEach(p => {
-      p.update();
-      p.draw();
-    });
-
+    particles.forEach(p => { p.update(); p.draw(); });
     connectParticles();
     animationId = requestAnimationFrame(animate);
   }
