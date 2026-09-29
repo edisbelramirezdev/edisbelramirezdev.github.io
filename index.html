@@ -8,6 +8,18 @@
     <meta name="author" content="Edisbel Ramírez Lovatos">
     <meta name="theme-color" content="#0D1117">
 
+    <!-- Open Graph para compartir en redes sociales -->
+    <meta property="og:title" content="Edisbel Ramírez | Full Stack Developer & Lead Cybersecurity Specialist">
+    <meta property="og:description" content="Más de 10 años en desarrollo, redes y seguridad informática. Defensor del software libre y la protección digital. Cuba 🇨🇺">
+    <meta property="og:image" content="https://edisbelramirezdev.github.io/assets/images/logo/edisbel-logo.png">
+    <meta property="og:url" content="https://edisbelramirezdev.github.io">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@edisbelramirez">
+    <meta name="twitter:title" content="Edisbel Ramírez | Full Stack Developer & Lead Cybersecurity Specialist">
+    <meta name="twitter:description" content="Más de 10 años en desarrollo, redes y seguridad informática. Cuba 🇨🇺">
+    <meta name="twitter:image" content="https://edisbelramirezdev.github.io/assets/images/logo/edisbel-logo.png">
+
     <title>Edisbel Ramírez | Full Stack Developer &amp; Lead Cybersecurity Specialist</title>
 
     <link rel="stylesheet" href="./assets/webfonts/css/all.css">
@@ -55,16 +67,52 @@
     <main>
         <!-- Hero Section -->
         <section class="hero" id="hero">
-            <div class="particles" id="particles-js"></div>
+            <canvas id="particles-canvas" aria-hidden="true"></canvas>
+            <div class="hero-glow"></div>
+
             <div class="container">
                 <h1>Edisbel Ramírez Lovatos</h1>
                 <p class="subtitle">Full Stack Developer &amp; Lead Cybersecurity Specialist</p>
                 <p class="hero-text">Más de 10 años de experiencia en desarrollo de software, redes y seguridad informática. Defensor del software libre y la protección digital. Actualmente en <strong>Infotec Studio</strong> · Cuba 🇨🇺</p>
                 <div class="hero-buttons">
                     <a href="#contact" class="cta-button">Contáctame <i class="fas fa-paper-plane"></i></a>
+                    <a href="https://wa.me/5355555555?text=Hola%20Edisbel,%20vi%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20contactarte" target="_blank" rel="noopener" class="cta-button whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
                     <a href="#projects" class="cta-button secondary">Ver Proyectos <i class="fas fa-arrow-right"></i></a>
                 </div>
+
+                <!-- Compartir en redes sociales -->
+                <div class="share-hero" aria-label="Compartir esta página">
+                    <span class="share-label"><i class="fas fa-share-alt"></i> Comparte mi portafolio:</span>
+                    <div class="share-buttons">
+                        <a href="https://twitter.com/intent/tweet?text=Mira%20el%20portafolio%20de%20%40edisbelramirez%20-%20Full%20Stack%20Developer%20%26%20Lead%20Cybersecurity%20Specialist&url=https://edisbelramirezdev.github.io"
+                           target="_blank" rel="noopener" class="share-btn share-x" aria-label="Compartir en X">
+                            <i class="fab fa-x-twitter"></i>
+                        </a>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://edisbelramirezdev.github.io"
+                           target="_blank" rel="noopener" class="share-btn share-facebook" aria-label="Compartir en Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://edisbelramirezdev.github.io"
+                           target="_blank" rel="noopener" class="share-btn share-linkedin" aria-label="Compartir en LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://api.whatsapp.com/send?text=Mira%20el%20portafolio%20de%20Edisbel%20Ram%C3%ADrez%20https://edisbelramirezdev.github.io"
+                           target="_blank" rel="noopener" class="share-btn share-whatsapp" aria-label="Compartir en WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://t.me/share/url?url=https://edisbelramirezdev.github.io&text=Mira%20el%20portafolio%20de%20Edisbel%20Ram%C3%ADrez"
+                           target="_blank" rel="noopener" class="share-btn share-telegram" aria-label="Compartir en Telegram">
+                            <i class="fab fa-telegram-plane"></i>
+                        </a>
+                        <button type="button" class="share-btn share-copy" id="copy-link" aria-label="Copiar enlace">
+                            <i class="fas fa-link"></i>
+                        </button>
+                    </div>
+                </div>
             </div>
+
             <div class="scroll-down">
                 <a href="#about" class="scroll-down-btn" aria-label="Desplazarse hacia abajo">
                     <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -213,7 +261,6 @@
                 <h2 class="section-title">En los medios</h2>
                 <p class="section-subtitle">Artículos, publicaciones y menciones sobre mi trabajo en internet</p>
 
-                <!-- Filtros por categoría -->
                 <div class="press-filters" role="tablist" aria-label="Filtrar por categoría">
                     <button class="press-filter active" data-filter="all" role="tab" aria-selected="true">
                         <i class="fas fa-th"></i> Todos
@@ -235,14 +282,10 @@
                     </button>
                 </div>
 
-                <!-- Grid de menciones -->
                 <div class="press-grid" id="press-grid">
 
-                    <!-- Mención 1: Revista Márgenes (Académico) -->
                     <article class="press-card" data-category="academico">
-                        <div class="press-icon">
-                            <i class="fas fa-book-open"></i>
-                        </div>
+                        <div class="press-icon"><i class="fas fa-book-open"></i></div>
                         <div class="press-body">
                             <div class="press-meta-top">
                                 <span class="press-category cat-academico">Académico</span>
@@ -262,11 +305,8 @@
                         </div>
                     </article>
 
-                    <!-- Mención 2: Escambray (Institucional) -->
                     <article class="press-card" data-category="institucional">
-                        <div class="press-icon">
-                            <i class="fas fa-newspaper"></i>
-                        </div>
+                        <div class="press-icon"><i class="fas fa-newspaper"></i></div>
                         <div class="press-body">
                             <div class="press-meta-top">
                                 <span class="press-category cat-institucional">Institucional</span>
@@ -283,11 +323,8 @@
                         </div>
                     </article>
 
-                    <!-- Mención 3: Radio Sancti Spíritus (Institucional) -->
                     <article class="press-card" data-category="institucional">
-                        <div class="press-icon">
-                            <i class="fas fa-broadcast-tower"></i>
-                        </div>
+                        <div class="press-icon"><i class="fas fa-broadcast-tower"></i></div>
                         <div class="press-body">
                             <div class="press-meta-top">
                                 <span class="press-category cat-institucional">Institucional</span>
@@ -304,11 +341,8 @@
                         </div>
                     </article>
 
-                    <!-- Mención 4: Prensa Latina (Proyectos) -->
                     <article class="press-card" data-category="proyectos">
-                        <div class="press-icon">
-                            <i class="fas fa-flask"></i>
-                        </div>
+                        <div class="press-icon"><i class="fas fa-flask"></i></div>
                         <div class="press-body">
                             <div class="press-meta-top">
                                 <span class="press-category cat-proyectos">Proyectos</span>
@@ -325,11 +359,8 @@
                         </div>
                     </article>
 
-                    <!-- Mención 5: Escambray (Software Libre) -->
                     <article class="press-card" data-category="proyectos">
-                        <div class="press-icon">
-                            <i class="fas fa-laptop-code"></i>
-                        </div>
+                        <div class="press-icon"><i class="fas fa-laptop-code"></i></div>
                         <div class="press-body">
                             <div class="press-meta-top">
                                 <span class="press-category cat-proyectos">Proyectos</span>
@@ -346,11 +377,8 @@
                         </div>
                     </article>
 
-                    <!-- Mención 6: Escambray (Cubanía) -->
                     <article class="press-card" data-category="entrevistas">
-                        <div class="press-icon">
-                            <i class="fas fa-microphone"></i>
-                        </div>
+                        <div class="press-icon"><i class="fas fa-microphone"></i></div>
                         <div class="press-body">
                             <div class="press-meta-top">
                                 <span class="press-category cat-entrevistas">Entrevistas</span>
@@ -367,11 +395,8 @@
                         </div>
                     </article>
 
-                    <!-- Mención 7: Escambray (FLISoL 2026) -->
                     <article class="press-card" data-category="proyectos">
-                        <div class="press-icon">
-                            <i class="fas fa-laptop-code"></i>
-                        </div>
+                        <div class="press-icon"><i class="fas fa-laptop-code"></i></div>
                         <div class="press-body">
                             <div class="press-meta-top">
                                 <span class="press-category cat-proyectos">Proyectos</span>
@@ -388,11 +413,8 @@
                         </div>
                     </article>
 
-                    <!-- Mención 8: teleSUR (IA) -->
                     <article class="press-card" data-category="academico">
-                        <div class="press-icon">
-                            <i class="fas fa-brain"></i>
-                        </div>
+                        <div class="press-icon"><i class="fas fa-brain"></i></div>
                         <div class="press-body">
                             <div class="press-meta-top">
                                 <span class="press-category cat-academico">Académico</span>
@@ -411,7 +433,6 @@
 
                 </div>
 
-                <!-- Paginación -->
                 <div class="press-pagination" id="press-pagination" aria-label="Paginación de menciones">
                     <button class="press-page-btn" id="press-prev" aria-label="Página anterior">
                         <i class="fas fa-chevron-left"></i>
@@ -424,7 +445,6 @@
 
                 <p class="press-page-info" id="press-page-info"></p>
 
-                <!-- Mensaje cuando no hay resultados -->
                 <div class="press-empty" id="press-empty" style="display:none;">
                     <i class="fas fa-search"></i>
                     <p>No hay menciones en esta categoría todavía.</p>
@@ -455,6 +475,15 @@
                                 <h3>LinkedIn</h3>
                                 <p>Conecta conmigo profesionalmente</p>
                                 <a href="https://www.linkedin.com/in/edisbel-ramirez-lovatos" target="_blank" rel="noopener" class="community-link">Visitar perfil <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <i class="fab fa-whatsapp"></i>
+                            <div>
+                                <h3>WhatsApp</h3>
+                                <p>Contacto directo y rápido</p>
+                                <a href="https://wa.me/5355555555?text=Hola%20Edisbel,%20vi%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20contactarte" target="_blank" rel="noopener" class="community-link">Enviar mensaje <i class="fas fa-external-link-alt"></i></a>
                             </div>
                         </div>
 
@@ -567,13 +596,32 @@
 
             </div>
 
+            <!-- Compartir en redes (footer) -->
+            <div class="footer-share">
+                <span class="share-label"><i class="fas fa-share-alt"></i> Comparte esta página:</span>
+                <div class="share-buttons">
+                    <a href="https://twitter.com/intent/tweet?text=Mira%20el%20portafolio%20de%20%40edisbelramirez&url=https://edisbelramirezdev.github.io" target="_blank" rel="noopener" class="share-btn share-x" aria-label="Compartir en X"><i class="fab fa-x-twitter"></i></a>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://edisbelramirezdev.github.io" target="_blank" rel="noopener" class="share-btn share-facebook" aria-label="Compartir en Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://edisbelramirezdev.github.io" target="_blank" rel="noopener" class="share-btn share-linkedin" aria-label="Compartir en LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://api.whatsapp.com/send?text=Mira%20el%20portafolio%20de%20Edisbel%20Ram%C3%ADrez%20https://edisbelramirezdev.github.io" target="_blank" rel="noopener" class="share-btn share-whatsapp" aria-label="Compartir en WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://t.me/share/url?url=https://edisbelramirezdev.github.io&text=Mira%20el%20portafolio%20de%20Edisbel%20Ram%C3%ADrez" target="_blank" rel="noopener" class="share-btn share-telegram" aria-label="Compartir en Telegram"><i class="fab fa-telegram-plane"></i></a>
+                </div>
+            </div>
+
             <div class="footer-bottom">
                 <p>&copy; <span id="current-year">2025</span> Edisbel Ramírez Lovatos. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Botón flotante de Telegram (opcional, cámbialo por tu enlace) -->
+    <!-- Botón flotante de WhatsApp -->
+    <a href="https://wa.me/5355555555?text=Hola%20Edisbel,%20vi%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20contactarte"
+       class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">¿Hablamos?</span>
+    </a>
+
+    <!-- Botón flotante de Telegram -->
     <a href="https://t.me/tu_usuario" class="telegram-float" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
         <i class="fab fa-telegram-plane"></i>
     </a>
@@ -647,7 +695,9 @@
         <button id="accept-cookies" class="accept-button">Aceptar</button>
     </div>
 
-    <!-- Scripts -->
+    <!-- Script de partículas (debe ir antes de main.js) -->
+    <script src="./assets/js/particles.js"></script>
+    <!-- Script principal -->
     <script src="./assets/js/main.js"></script>
 </body>
 </html>

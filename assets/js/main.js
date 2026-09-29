@@ -121,6 +121,36 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
+  // ===== Botón copiar enlace (compartir) =====
+  const copyBtn = document.getElementById('copy-link');
+  copyBtn?.addEventListener('click', async () => {
+    const url = 'https://edisbelramirezdev.github.io';
+    try {
+      await navigator.clipboard.writeText(url);
+      copyBtn.classList.add('copied');
+      copyBtn.innerHTML = '<i class="fas fa-check"></i>';
+      copyBtn.setAttribute('aria-label', 'Enlace copiado');
+      setTimeout(() => {
+        copyBtn.classList.remove('copied');
+        copyBtn.innerHTML = '<i class="fas fa-link"></i>';
+        copyBtn.setAttribute('aria-label', 'Copiar enlace');
+      }, 2000);
+    } catch (err) {
+      const input = document.createElement('input');
+      input.value = url;
+      document.body.appendChild(input);
+      input.select();
+      document.execCommand('copy');
+      document.body.removeChild(input);
+      copyBtn.classList.add('copied');
+      copyBtn.innerHTML = '<i class="fas fa-check"></i>';
+      setTimeout(() => {
+        copyBtn.classList.remove('copied');
+        copyBtn.innerHTML = '<i class="fas fa-link"></i>';
+      }, 2000);
+    }
+  });
+
   // ===== PRENSA: FILTROS Y PAGINACIÓN =====
   (function initPress() {
     const pressGrid = document.getElementById('press-grid');

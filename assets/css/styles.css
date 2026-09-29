@@ -240,6 +240,7 @@ ul { list-style: none; }
   color: white;
   text-align: center;
   padding-top: 80px;
+  overflow: hidden;
 }
 
 .hero .container { position: relative; z-index: 2; }
@@ -292,6 +293,7 @@ ul { list-style: none; }
   left: 50%;
   transform: translateX(-50%);
   animation: bounce 2s infinite;
+  z-index: 2;
 }
 
 .scroll-down-btn {
@@ -934,6 +936,7 @@ ul { list-style: none; }
   margin-top: 1.5rem;
   display: flex;
   gap: 0.5rem;
+  flex-wrap: wrap;
 }
 
 .footer-social a {
@@ -1016,6 +1019,179 @@ ul { list-style: none; }
   100% { box-shadow: 0 0 0 0 rgba(0, 168, 255, 0); }
 }
 
+/* ==================== PARTÍCULAS TECNOLÓGICAS EN EL HERO ==================== */
+#particles-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: auto;
+}
+
+.hero-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 800px;
+  height: 800px;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle, rgba(0, 168, 255, 0.15) 0%, transparent 70%);
+  z-index: 1;
+  pointer-events: none;
+  animation: pulse-glow 6s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.6; transform: translate(-50%, -50%) scale(1); }
+  50% { opacity: 1; transform: translate(-50%, -50%) scale(1.1); }
+}
+
+/* ==================== BOTONES DE COMPARTIR ==================== */
+.share-hero {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  animation: fadeIn 1.2s ease forwards;
+  position: relative;
+  z-index: 2;
+}
+
+.share-label {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.share-label i {
+  color: var(--secondary-color);
+  margin-right: 6px;
+}
+
+.share-buttons {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.share-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: var(--text-color);
+  font-size: 1.05rem;
+  cursor: pointer;
+  transition: var(--transition);
+  backdrop-filter: blur(6px);
+}
+
+.share-btn:hover {
+  transform: translateY(-4px) scale(1.08);
+  color: white;
+}
+
+.share-x:hover       { background: #000; box-shadow: 0 0 18px rgba(255, 255, 255, 0.5); }
+.share-facebook:hover{ background: #1877F2; box-shadow: 0 0 18px rgba(24, 119, 242, 0.6); }
+.share-linkedin:hover{ background: #0A66C2; box-shadow: 0 0 18px rgba(10, 102, 194, 0.6); }
+.share-whatsapp:hover{ background: #25D366; box-shadow: 0 0 18px rgba(37, 211, 102, 0.6); }
+.share-telegram:hover{ background: #0088CC; box-shadow: 0 0 18px rgba(0, 136, 204, 0.6); }
+.share-copy:hover    { background: var(--secondary-color); box-shadow: var(--glow-cyan); }
+
+.share-copy.copied {
+  background: var(--success-color);
+  color: white;
+  border-color: var(--success-color);
+}
+
+/* ==================== BOTÓN FLOTANTE DE WHATSAPP ==================== */
+.whatsapp-float {
+  position: fixed;
+  bottom: 100px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #25D366, #128C7E);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.9rem;
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.5);
+  z-index: 1000;
+  transition: var(--transition);
+  animation: pulse-whatsapp 2s infinite;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 30px rgba(37, 211, 102, 0.8);
+  color: white;
+}
+
+.whatsapp-tooltip {
+  position: absolute;
+  right: 72px;
+  top: 50%;
+  transform: translateY(-50%) translateX(10px);
+  background: #0A0E14;
+  color: white;
+  padding: 0.5rem 0.9rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: var(--transition);
+  border: 1px solid rgba(37, 211, 102, 0.4);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.whatsapp-tooltip::after {
+  content: '';
+  position: absolute;
+  right: -6px;
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  width: 10px;
+  height: 10px;
+  background: #0A0E14;
+  border-right: 1px solid rgba(37, 211, 102, 0.4);
+  border-top: 1px solid rgba(37, 211, 102, 0.4);
+}
+
+.whatsapp-float:hover .whatsapp-tooltip {
+  opacity: 1;
+  transform: translateY(-50%) translateX(0);
+}
+
+@keyframes pulse-whatsapp {
+  0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6); }
+  70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+
+/* ==================== FOOTER SHARE ==================== */
+.footer-share {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem 0;
+  border-top: 1px solid rgba(0, 168, 255, 0.1);
+  margin-top: 1rem;
+}
+
 /* ==================== RESPONSIVE ==================== */
 @media (max-width: 992px) {
   .about-grid, .community-grid { grid-template-columns: 1fr; }
@@ -1045,6 +1221,20 @@ ul { list-style: none; }
   .telegram-float {
     bottom: 20px; right: 20px;
     width: 50px; height: 50px; font-size: 1.5rem;
+  }
+  .whatsapp-float {
+    bottom: 80px;
+    right: 20px;
+    width: 52px;
+    height: 52px;
+    font-size: 1.6rem;
+  }
+  .whatsapp-tooltip { display: none; }
+
+  .share-btn {
+    width: 38px;
+    height: 38px;
+    font-size: 0.95rem;
   }
 }
 
