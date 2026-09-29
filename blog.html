@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Blog de Edisbel Ramírez: artículos sobre ciberseguridad, desarrollo y software libre." />
+  <title>Edisbel Ramírez | Blog</title>
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+  <link rel="stylesheet" href="./assets/webfonts/css/all.css" />
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+  <header class="main-header">
+    <nav class="navbar container">
+      <a href="index.html" class="logo">
+        <img src="./assets/images/logo/edisbel-logo.png" alt="Edisbel Ramírez" class="logo-img"> Edisbel R.
+      </a>
+      <button class="sidebar-toggle" aria-expanded="false" aria-controls="sidebar" aria-label="Abrir menú">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="nav-list">
+        <li><a href="index.html#about" class="nav-link"><i class="fas fa-user"></i> Sobre mí</a></li>
+        <li><a href="index.html#skills" class="nav-link"><i class="fas fa-code"></i> Habilidades</a></li>
+        <li><a href="index.html#projects" class="nav-link"><i class="fas fa-folder-open"></i> Proyectos</a></li>
+        <li><a href="index.html#press" class="nav-link"><i class="fas fa-newspaper"></i> Prensa</a></li>
+        <li><a href="index.html#contact" class="nav-link"><i class="fas fa-envelope"></i> Contacto</a></li>
+        <li><a href="blog.html" class="nav-link active"><i class="fas fa-blog"></i> Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="sidebar-overlay"></div>
+  <aside id="sidebar" class="sidebar" aria-hidden="true">
+    <button class="close-sidebar" aria-label="Cerrar menú"><i class="fas fa-times"></i></button>
+    <nav class="sidebar-nav">
+      <ul class="sidebar-list">
+        <li><a href="index.html#about" class="sidebar-link"><i class="fas fa-user"></i> Sobre mí</a></li>
+        <li><a href="index.html#skills" class="sidebar-link"><i class="fas fa-code"></i> Habilidades</a></li>
+        <li><a href="index.html#projects" class="sidebar-link"><i class="fas fa-folder-open"></i> Proyectos</a></li>
+        <li><a href="index.html#press" class="sidebar-link"><i class="fas fa-newspaper"></i> Prensa</a></li>
+        <li><a href="index.html#contact" class="sidebar-link"><i class="fas fa-envelope"></i> Contacto</a></li>
+        <li><a href="blog.html" class="sidebar-link"><i class="fas fa-blog"></i> Blog</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <main class="section">
+    <div class="container">
+      <h1 class="section-title">Blog de Edisbel Ramírez</h1>
+
+      <div class="search-container">
+        <div class="search-box">
+          <i class="fas fa-search"></i>
+          <input type="text" id="search-input" placeholder="Buscar artículos..." />
+        </div>
+        <div class="search-filters">
+          <label><input type="checkbox" id="filter-title" checked /> Título</label>
+          <label><input type="checkbox" id="filter-description" checked /> Descripción</label>
+          <label><input type="checkbox" id="filter-date" /> Fecha</label>
+          <label><input type="checkbox" id="filter-author" /> Autor</label>
+        </div>
+      </div>
+
+      <div id="blog-cards" class="blog-card-grid"></div>
+      <div id="blog-content" class="article-content" style="display: none;"></div>
+    </div>
+  </main>
+
+  <script>
+    const articlesPath = 'https://raw.githubusercontent.com/edisbelramirezdev/edisbelramirezdev.github.io/main/articles/';
+    const blogCards = document.getElementById('blog-cards');
+    const blogContent = document.getElementById('blog-content');
+    const searchInput = document.getElementById('search-input');
+    const filterTitle = document.getElementById('filter-title');
+    const filterDescription = document.getElementById('filter-description');
+    const filterDate = document.getElementById('filter-date');
+    const filterAuthor = document.getElementById('filter-author');
+
+    let articlesData = [];
+    let currentArticle = null;
+
+    function showLoading() {
+      blogCards.innerHTML = `<div class="loading-spinner"><i class="fas fa-spinner fa-spin"></i> Cargando artículos...</div>`;
+    }
+
+    function showError(message, details = '') {
+      blogCards.innerHTML = `
+        <div class="error-message">
+          <h3>Error al cargar los artículos</h3>
+          <p>${message}</p>
+          ${details ? `<p>${details}</p>` : ''}
+          <button onclick="loadArticles()" class="retry-button">
+            <i class="fas fa-sync-alt"></i> Reintentar
+          </button>
+        </div>
+      `;
+    }
+
+    function parseFrontmatter(content) {
+      const frontmatter = {};
+      const match = content.match(/^---\n([\s\S]+?)\n---/);
+      if (match) {
+        match[1].split('\n').forEach(line => {
+          const separatorIndex = line.indexOf(':');
+          if (separatorIndex > -1) {
+            const key = line.substring(0, separatorIndex).trim();
+            const value = line.substring(separatorIndex + 1).trim().replace(/^['"]|['"]$/g, '');
+            frontmatter[key] = value;
+          }
+        });
+      }
+      return frontmatter;
+    }
+
+    function filterArticles() {
+      const searchTerm = searchInput.value.toLowerCase();
+      if (!searchTerm) return articlesData;
+
+      return articlesData.filter(article => {
+        let matches = false;
+        if (filterTitle.checked && article.title.toLowerCase().includes(searchTerm)) matches = true;
+        if (!matches && filterDescription.checked && article.description.toLowerCase().includes(searchTerm)) matches = true;
+        if (!matches && filterDate.checked && article.date.toLowerCase().includes(searchTerm)) matches = true;
+        if (!matches && filterAuthor.checked && article.author && article.author.toLowerCase().includes(searchTerm)) matches = true;
+        return matches;
+      });
+    }
+
+    function showArticlesList() {
+      const filteredArticles = filterArticles();
+      blogCards.innerHTML = '';
+      blogContent.style.display = 'none';
+      blogCards.style.display = 'grid';
+
+      if (filteredArticles.length === 0) {
+        blogCards.innerHTML = `
+          <div class="no-results">
+            <i class="fas fa-search"></i>
+            <p>No se encontraron artículos que coincidan con tu búsqueda</p>
+          </div>
+        `;
+        return;
+      }
+
+      filteredArticles.forEach(article => {
+        const card = document.createElement('div');
+        card.className = 'blog-card';
+        card.innerHTML = `
+          <h3>${article.title}</h3>
+          <p class="article-excerpt">${article.description}</p>
+          <div class="article-meta">
+            <span class="date"><i class="far fa-calendar-alt"></i> ${article.date}</span>
+            ${article.author ? `<span class="author"><i class="fas fa-user"></i> ${article.author}</span>` : ''}
+          </div>
+          <button class="read-more" onclick="event.stopPropagation(); showArticle('${article.file}')">
+            Leer más <i class="fas fa-arrow-right"></i>
+          </button>
+        `;
+        card.addEventListener('click', () => showArticle(article.file));
+        blogCards.appendChild(card);
+      });
+    }
+
+    async function showArticle(filename) {
+      try {
+        currentArticle = filename;
+        blogCards.innerHTML = '<div class="loading-spinner"><i class="fas fa-spinner fa-spin"></i> Cargando artículo...</div>';
+
+        const response = await fetch(`${articlesPath}${filename}`);
+        if (!response.ok) throw new Error(`Error ${response.status}: ${response.statusText}`);
+
+        const content = await response.text();
+        const htmlContent = marked.parse(content.replace(/^---[\s\S]+?---/, ''));
+
+        blogContent.innerHTML = `
+          <button class="back-button" onclick="showArticlesList()">
+            <i class="fas fa-arrow-left"></i> Volver al blog
+          </button>
+          <div class="article-markdown">${htmlContent}</div>
+        `;
+
+        blogCards.style.display = 'none';
+        blogContent.style.display = 'block';
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } catch (error) {
+        blogContent.innerHTML = `
+          <button class="back-button" onclick="showArticlesList()">
+            <i class="fas fa-arrow-left"></i> Volver al blog
+          </button>
+          <div class="error-message">
+            <h3>Error al cargar el artículo</h3>
+            <p>${error.message}</p>
+            <button onclick="showArticle('${filename}')" class="retry-button">
+              <i class="fas fa-sync-alt"></i> Reintentar
+            </button>
+          </div>
+        `;
+        blogCards.style.display = 'none';
+        blogContent.style.display = 'block';
+      }
+    }
+
+    async function loadArticles() {
+      showLoading();
+      try {
+        let articlesList = [];
+        try {
+          const response = await fetch(`${articlesPath}index.json`);
+          if (response.ok) {
+            const data = await response.json();
+            if (Array.isArray(data)) articlesList = data;
+          }
+        } catch (e) {
+          console.log('index.json no encontrado, usando lista predeterminada');
+        }
+
+        if (articlesList.length === 0) {
+          articlesList = ['articulo1.md'];
+        }
+
+        articlesData = [];
+
+        for (const filename of articlesList) {
+          try {
+            const response = await fetch(`${articlesPath}${filename}`);
+            if (!response.ok) continue;
+            const content = await response.text();
+            const frontmatter = parseFrontmatter(content);
+            articlesData.push({
+              file: filename,
+              title: frontmatter.title || filename.replace('.md', ''),
+              description: frontmatter.description || 'Sin descripción',
+              date: frontmatter.date || 'Sin fecha',
+              author: frontmatter.author || 'Edisbel Ramírez'
+            });
+          } catch (e) {
+            console.error(`Error procesando ${filename}:`, e);
+          }
+        }
+
+        articlesData.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+        if (articlesData.length > 0) {
+          showArticlesList();
+        } else {
+          showError('No se encontraron artículos', 'Verifica que hay archivos .md en el directorio articles');
+        }
+      } catch (error) {
+        showError('Error al cargar los artículos', error.message);
+        console.error('Error loading articles:', error);
+      }
+    }
+
+    searchInput.addEventListener('input', showArticlesList);
+    filterTitle.addEventListener('change', showArticlesList);
+    filterDescription.addEventListener('change', showArticlesList);
+    filterDate.addEventListener('change', showArticlesList);
+    filterAuthor.addEventListener('change', showArticlesList);
+
+    loadArticles();
+  </script>
+
+  <style>
+    .blog-card-grid {
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      margin: 2rem 0;
+    }
+    .blog-card {
+      background: #161B22;
+      border: 1px solid #1F2630;
+      border-radius: 8px;
+      padding: 1.5rem;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+    }
+    .blog-card:hover {
+      border-color: #00A8FF;
+      transform: translateY(-3px);
+      box-shadow: 0 4px 20px rgba(0, 168, 255, 0.25);
+    }
+    .blog-card h3 { color: #00A8FF; margin-top: 0; margin-bottom: 0.8rem; }
+    .article-excerpt { color: #B8C4D0; margin: 0.5rem 0 1.2rem; font-size: 0.95rem; line-height: 1.5; }
+    .article-meta { display: flex; gap: 1rem; margin: 1rem 0; font-size: 0.85rem; color: #6E7B8A; flex-wrap: wrap; }
+    .article-meta i { margin-right: 0.3rem; }
+    .read-more {
+      background: rgba(0, 168, 255, 0.1);
+      color: #00A8FF;
+      border: 1px solid #00A8FF;
+      border-radius: 4px;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      font-size: 0.9rem;
+      transition: all 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .read-more:hover { background: rgba(0, 168, 255, 0.25); transform: translateX(3px); box-shadow: 0 0 12px rgba(0, 168, 255, 0.4); }
+    .article-content { max-width: 800px; margin: 2rem auto; padding: 0 1rem; }
+    .article-markdown { background: #0A0E14; padding: 2rem; border-radius: 8px; line-height: 1.6; color: #D0D8E0; border: 1px solid rgba(0, 168, 255, 0.15); }
+    .article-markdown h1, .article-markdown h2, .article-markdown h3 { color: #00A8FF; margin: 1.5rem 0 0.8rem; }
+    .article-markdown p { margin-bottom: 1rem; }
+    .article-markdown a { color: #00A8FF; text-decoration: underline; }
+    .article-markdown code { background: #161B22; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: monospace; color: #33BBFF; }
+    .article-markdown pre { background: #161B22; padding: 1rem; border-radius: 8px; overflow-x: auto; margin: 1rem 0; border: 1px solid rgba(0, 168, 255, 0.15); }
+    .search-container { margin: 2rem auto; max-width: 800px; }
+    .search-box { display: flex; align-items: center; background: #161B22; border-radius: 4px; padding: 0.5rem 1rem; border: 1px solid #1F2630; }
+    .search-box i { color: #6E7B8A; margin-right: 0.5rem; }
+    .search-box input { flex: 1; background: transparent; border: none; color: white; outline: none; }
+    .search-filters { display: flex; gap: 1rem; margin-top: 0.5rem; font-size: 0.9rem; flex-wrap: wrap; }
+    .search-filters label { display: flex; align-items: center; gap: 0.3rem; cursor: pointer; color: #B8C4D0; }
+    .no-results { text-align: center; padding: 2rem; grid-column: 1 / -1; color: #6E7B8A; }
+    .no-results i { font-size: 2rem; margin-bottom: 1rem; }
+    .back-button {
+      background: linear-gradient(135deg, #00A8FF, #0066CC); color: white; border: none; padding: 0.5rem 1rem;
+      border-radius: 4px; cursor: pointer; margin-bottom: 1.5rem;
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      transition: all 0.2s ease;
+    }
+    .back-button:hover { box-shadow: 0 0 15px rgba(0, 168, 255, 0.5); transform: translateY(-2px); }
+    .retry-button {
+      background: #4CAF50; color: white; border: none; padding: 0.5rem 1rem;
+      border-radius: 4px; cursor: pointer; margin-top: 1rem;
+      display: inline-flex; align-items: center; gap: 0.5rem;
+    }
+    .retry-button:hover { background: #3e8e41; }
+    .loading-spinner { text-align: center; padding: 2rem; color: #00A8FF; font-size: 1.2rem; }
+    .error-message { background: #1a0f0f; border-left: 4px solid #F44336; padding: 1.5rem; border-radius: 0 4px 4px 0; margin: 1rem 0; }
+    .error-message h3 { color: #f77; margin-top: 0; }
+    @media (max-width: 768px) {
+      .blog-card-grid { grid-template-columns: 1fr; }
+      .article-markdown { padding: 1rem; }
+    }
+  </style>
+
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year">2025</span> Edisbel Ramírez Lovatos. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>

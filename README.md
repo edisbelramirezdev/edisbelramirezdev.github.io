@@ -1,27 +1,65 @@
-# Portafolio Profesional - Edisbel Ramírez Lovatos
+# 👋 ¡Hola! Soy Edisbel Ramírez Lovatos 🇨🇺
 
-![Preview del portafolio](images/preview.jpg)
+**he/him** · 💻 **Full Stack Developer** · 🛡️ **Lead Cybersecurity Specialist**
 
-Portafolio profesional de Edisbel Ramírez Lovatos, Desarrollador Full Stack.
+🎯 Actualmente en **ETECSA Cuba** e **Infotec Studio**
+📍 **Cuba** · 📧 **edisbel.ramirez95@gmail.com** · 🌐 **[edisbelramirezdev.github.io](https://edisbelramirezdev.github.io)**
 
-## Características
+🎓 Licenciado en Ciencias Informáticas, defensor del software libre, la protección digital y el rendimiento eficiente en sistemas Linux.
 
-- Diseño responsive y moderno
-- Navegación con sidebar para móviles
-- Secciones completas: Sobre mí, Habilidades, Proyectos y Contacto
-- Efectos y animaciones CSS
-- Formulario de contacto funcional
+---
 
-## Tecnologías utilizadas
+## 🚀 Lo que hago
 
-- HTML5 semántico
-- CSS3 con Flexbox y Grid
-- JavaScript vanilla
-- Font Awesome para iconos
-- PHP para el formulario de contacto
+- 🔐 **Ciberseguridad:** Análisis de vulnerabilidades, respuesta ante incidentes y blindaje de infraestructuras críticas.
+- 🖥️ **Administración de sistemas:** Mantenimiento y optimización de servidores Linux; resolución de errores y automatización de procesos.
+- 🌐 **Desarrollo Full Stack:** Diseño e implementación de aplicaciones web eficientes, seguras y escalables.
 
-## Cómo usar
+---
 
-1. Clona el repositorio:
-```bash
-git clone https://github.com/edisbelramirezdev/edisbelramirezdev.github.io.git
+## 🛠️ Tecnologías y herramientas
+
+### 👨‍💻 Lenguajes
+`HTML5` `CSS3` `XML` `PHP` `Python` `C++` `Java` `JavaScript`
+
+### 🛡️ Herramientas de ciberseguridad
+`Nmap` `OpenVAS` `SIEM (Splunk, OSSIM)` `Pentesting` `Análisis forense`
+
+### 💻 Sistemas Operativos
+`Linux` `Windows`
+
+---
+
+## 🌱 Actualmente aprendiendo
+
+- Pentesting ético
+- Seguridad ofensiva y defensiva con enfoque metodológico
+- Automatización de auditorías y análisis con Python
+
+---
+
+## 📊 Estadísticas de GitHub
+
+![Estadísticas de Edisbel](https://github-readme-stats.vercel.app/api?username=edisbelramirezdev&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00A8FF&icon_color=00A8FF)
+
+![Lenguajes más usados](https://github-readme-stats.vercel.app/api/top-langs/?username=edisbelramirezdev&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00A8FF)
+
+---
+
+## 📰 En los medios
+
+- [Universidad de Sancti Spíritus y ETECSA: un vínculo sólido en materia tecnológica](https://www.escambray.cu/2026/universidad-de-sancti-spiritus-y-etecsa-un-vinculo-solido-en-materia-tecnologica/) — *Escambray*
+- [Artículo en Revista Márgenes (UNISS)](https://revistas.uniss.edu.cu/margenes/article/view/2380) — *Universidad de Sancti Spíritus*
+
+---
+
+## 📫 Contacto
+
+- 💼 [LinkedIn](https://www.linkedin.com/in/edisbel-ramirez-lovatos)
+- 🧑‍💻 [GitHub](https://github.com/edisbelramirezdev)
+- 🌐 [Sitio Web](https://edisbelramirezdev.github.io)
+- 📧 [edisbel.ramirez95@gmail.com](mailto:edisbel.ramirez95@gmail.com)
+
+---
+
+⭐️ Si te gusta mi trabajo, ¡no dudes en seguirme y darle estrella a mis repositorios!

@@ -3,60 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portafolio profesional de Edisbel Ramírez Lovatos, Desarrollador Full Stack con experiencia en JavaScript, PHP y frameworks modernos">
-    <meta name="keywords" content="desarrollador full stack, JavaScript, PHP, React, Laravel, portafolio">
+    <meta name="description" content="Edisbel Ramírez Lovatos (he/him) - Full Stack Developer & Lead Cybersecurity Specialist en Infotec Studio, Cuba. Más de 10 años en desarrollo, redes y seguridad informática.">
+    <meta name="keywords" content="Edisbel Ramirez, Ciberseguridad, Full Stack Developer, Linux, Portafolio, Infotec Studio, Cuba">
     <meta name="author" content="Edisbel Ramírez Lovatos">
-    
-    <title>Edisbel Ramírez Lovatos | Desarrollador Full Stack</title>
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <link rel="stylesheet" href="css/styles.css">
+    <meta name="theme-color" content="#0D1117">
+
+    <title>Edisbel Ramírez | Full Stack Developer &amp; Lead Cybersecurity Specialist</title>
+
+    <link rel="stylesheet" href="./assets/webfonts/css/all.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="icon" type="image/png" href="./assets/images/logo/edisbel-logo.png">
 </head>
 <body>
     <!-- Barra de navegación -->
     <header class="main-header">
-        <nav class="navbar">
-            <a href="#" class="logo">
-                <img src="images/logo.png" alt="Logo">Curriculum Vitae</a>
-            <button class="sidebar-toggle" aria-expanded="false" aria-controls="sidebar">
-                ☰
+        <nav class="navbar container">
+            <a href="#hero" class="logo">
+                <img src="./assets/images/logo/edisbel-logo.png" alt="Edisbel Ramírez" class="logo-img"> Edisbel R.
+            </a>
+            <button class="sidebar-toggle" aria-expanded="false" aria-controls="sidebar" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
             </button>
             <ul class="nav-list">
-                <li><a href="#about" class="nav-link">Sobre mí</a></li>
-                <li><a href="#skills" class="nav-link">Habilidades</a></li>
-                <li><a href="#projects" class="nav-link">Proyectos</a></li>
-                <li><a href="#contact" class="nav-link">Contacto</a></li>
+                <li><a href="#about" class="nav-link"><i class="fas fa-user"></i> Sobre mí</a></li>
+                <li><a href="#skills" class="nav-link"><i class="fas fa-code"></i> Habilidades</a></li>
+                <li><a href="#projects" class="nav-link"><i class="fas fa-folder-open"></i> Proyectos</a></li>
+                <li><a href="#press" class="nav-link"><i class="fas fa-newspaper"></i> Prensa</a></li>
+                <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contacto</a></li>
+                <li><a href="blog.html" class="nav-link"><i class="fas fa-blog"></i> Blog</a></li>
             </ul>
         </nav>
     </header>
-    
 
     <!-- Sidebar -->
     <div class="sidebar-overlay"></div>
     <aside id="sidebar" class="sidebar" aria-hidden="true">
-        <button class="close-sidebar">×</button>
+        <button class="close-sidebar" aria-label="Cerrar menú"><i class="fas fa-times"></i></button>
         <nav class="sidebar-nav">
             <ul class="sidebar-list">
-                <li><a href="#about" class="sidebar-link">Sobre mí</a></li>
-                <li><a href="#skills" class="sidebar-link">Habilidades</a></li>
-                <li><a href="#projects" class="sidebar-link">Proyectos</a></li>
-                <li><a href="#contact" class="sidebar-link">Contacto</a></li>
+                <li><a href="#about" class="sidebar-link"><i class="fas fa-user"></i> Sobre mí</a></li>
+                <li><a href="#skills" class="sidebar-link"><i class="fas fa-code"></i> Habilidades</a></li>
+                <li><a href="#projects" class="sidebar-link"><i class="fas fa-folder-open"></i> Proyectos</a></li>
+                <li><a href="#press" class="sidebar-link"><i class="fas fa-newspaper"></i> Prensa</a></li>
+                <li><a href="#contact" class="sidebar-link"><i class="fas fa-envelope"></i> Contacto</a></li>
+                <li><a href="blog.html" class="sidebar-link"><i class="fas fa-blog"></i> Blog</a></li>
             </ul>
         </nav>
     </aside>
 
     <!-- Contenido principal -->
-    <main style="margin-top: 70px;">
-        
+    <main>
         <!-- Hero Section -->
-        <section class="hero">
+        <section class="hero" id="hero">
+            <div class="particles" id="particles-js"></div>
             <div class="container">
                 <h1>Edisbel Ramírez Lovatos</h1>
-                <p class="subtitle">Desarrollador Full Stack</p>
-                <p class="hero-text">Creando soluciones digitales eficientes y escalables</p>
-                <a href="#contact" class="cta-button">Contáctame</a>
+                <p class="subtitle">Full Stack Developer &amp; Lead Cybersecurity Specialist</p>
+                <p class="hero-text">Más de 10 años de experiencia en desarrollo de software, redes y seguridad informática. Defensor del software libre y la protección digital. Actualmente en <strong>Infotec Studio</strong> · Cuba 🇨🇺</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="cta-button">Contáctame <i class="fas fa-paper-plane"></i></a>
+                    <a href="#projects" class="cta-button secondary">Ver Proyectos <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="scroll-down">
+                <a href="#about" class="scroll-down-btn" aria-label="Desplazarse hacia abajo">
+                    <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
             </div>
         </section>
 
@@ -64,239 +78,336 @@
         <section id="about" class="section">
             <div class="container">
                 <h2 class="section-title">Sobre mí</h2>
-                <div class="profile-grid">
-                    <div class="profile-image-container">
-                        <img src="images/edisbel.png" alt="Foto de perfil de Edisbel Ramírez" class="profile-image">
-                    </div>
-                    <div class="profile-content">
-                        <p>¡Hola! Soy un desarrollador Full Stack con más de 5 años de experiencia creando aplicaciones web modernas y eficientes.</p>
-                        <p>Especializado en JavaScript (ES6+), PHP y frameworks como React y Laravel, me apasiona resolver problemas complejos mediante código limpio y arquitecturas escalables.</p>
-                        <p>Cuando no estoy programando, disfruto de contribuir a proyectos open source, aprender nuevas tecnologías y compartir conocimientos con la comunidad de desarrolladores.</p>
-                        <div class="social-links">
-                            <a href="https://github.com/tu-usuario" target="_blank" aria-label="GitHub">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="https://linkedin.com/in/tu-usuario" target="_blank" aria-label="LinkedIn">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                            <a href="https://twitter.com/tu-usuario" target="_blank" aria-label="Twitter">
-                                <i class="fab fa-twitter"></i>
-                            </a>
+                <div class="about-grid">
+                    <div class="about-content">
+                        <p>👋 ¡Hola! Soy <strong>Edisbel Ramírez Lovatos</strong> <span class="pronouns">(he/him)</span>, cubano 🇨🇺 y apasionado por la tecnología. Actualmente me desempeño como <strong>Lead Cybersecurity Specialist</strong> en <strong>ETECSA Cuba</strong> y colaboro con <strong>Infotec Studio</strong> como <strong>Full Stack Developer</strong>.</p>
+                        <p>🎓 Soy Licenciado en Ciencias Informáticas y un firme defensor del software libre, la protección digital y el rendimiento eficiente en sistemas Linux.</p>
+                        <p>🚀 Mi objetivo es contribuir a un entorno digital más seguro y eficiente, aplicando mis conocimientos en ciberseguridad, administración de sistemas y desarrollo Full Stack.</p>
+
+                        <div class="about-features">
+                            <div class="feature-item">
+                                <i class="fas fa-shield-alt feature-icon"></i>
+                                <h3>Ciberseguridad</h3>
+                                <p>Análisis de vulnerabilidades, respuesta ante incidentes y blindaje de infraestructuras críticas.</p>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-server feature-icon"></i>
+                                <h3>Administración de Sistemas</h3>
+                                <p>Mantenimiento y optimización de servidores Linux; resolución de errores y automatización de procesos.</p>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-code feature-icon"></i>
+                                <h3>Desarrollo Full Stack</h3>
+                                <p>Diseño e implementación de aplicaciones web eficientes, seguras y escalables.</p>
+                            </div>
                         </div>
+                    </div>
+                    <div class="about-image">
+                        <img src="./assets/images/profile/edisbel.jpg" alt="Edisbel Ramírez Lovatos">
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Habilidades -->
-        <section id="skills" class="section">
+        <section id="skills" class="section services-section">
             <div class="container">
-                <h2 class="section-title">Habilidades Técnicas</h2>
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <h3>Frontend</h3>
-                        <ul class="skill-list">
-                            <li class="skill-item">
-                                <span class="skill-name">HTML5 & CSS3</span>
-                                <div class="skill-level" aria-hidden="true">
-                                    <span style="width: 95%"></span>
-                                </div>
-                            </li>
-                            <li class="skill-item">
-                                <span class="skill-name">JavaScript (ES6+)</span>
-                                <div class="skill-level" aria-hidden="true">
-                                    <span style="width: 90%"></span>
-                                </div>
-                            </li>
-                            <li class="skill-item">
-                                <span class="skill-name">React.js</span>
-                                <div class="skill-level" aria-hidden="true">
-                                    <span style="width: 85%"></span>
-                                </div>
-                            </li>
-                            <li class="skill-item">
-                                <span class="skill-name">Vue.js</span>
-                                <div class="skill-level" aria-hidden="true">
-                                    <span style="width: 80%"></span>
-                                </div>
-                            </li>
-                        </ul>
+                <h2 class="section-title">Habilidades y Herramientas</h2>
+                <p class="section-subtitle">Tecnologías que domino y en las que sigo creciendo</p>
+
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-code"></i></div>
+                        <h3>Lenguajes</h3>
+                        <p>HTML5 · CSS3 · XML · PHP · Python · C++ · Java · JavaScript</p>
                     </div>
-                    
-                    <div class="skill-category">
-                        <h3>Backend</h3>
-                        <ul class="skill-list">
-                            <li class="skill-item">
-                                <span class="skill-name">PHP</span>
-                                <div class="skill-level" aria-hidden="true">
-                                    <span style="width: 90%"></span>
-                                </div>
-                            </li>
-                            <li class="skill-item">
-                                <span class="skill-name">Laravel</span>
-                                <div class="skill-level" aria-hidden="true">
-                                    <span style="width: 88%"></span>
-                                </div>
-                            </li>
-                            <li class="skill-item">
-                                <span class="skill-name">Node.js</span>
-                                <div class="skill-level" aria-hidden="true">
-                                    <span style="width: 75%"></span>
-                                </div>
-                            </li>
-                            <li class="skill-item">
-                                <span class="skill-name">MySQL</span>
-                                <div class="skill-level" aria-hidden="true">
-                                    <span style="width: 85%"></span>
-                                </div>
-                            </li>
-                        </ul>
+
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-shield-halved"></i></div>
+                        <h3>Ciberseguridad</h3>
+                        <p>Nmap · OpenVAS · SIEM (Splunk, OSSIM) · Pentesting · Análisis forense</p>
                     </div>
-                    
-                    <div class="skill-category">
-                        <h3>Herramientas</h3>
-                        <ul class="skill-list">
-                            <li class="skill-item">
-                                <span class="skill-name">Git</span>
-                                <div class="skill-level" aria-hidden="true">
-                                    <span style="width: 92%"></span>
-                                </div>
-                            </li>
-                            <li class="skill-item">
-                                <span class="skill-name">Docker</span>
-                                <div class="skill-level" aria-hidden="true">
-                                    <span style="width: 80%"></span>
-                                </div>
-                            </li>
-                            <li class="skill-item">
-                                <span class="skill-name">AWS</span>
-                                <div class="skill-level" aria-hidden="true">
-                                    <span style="width: 70%"></span>
-                                </div>
-                            </li>
-                            <li class="skill-item">
-                                <span class="skill-name">CI/CD</span>
-                                <div class="skill-level" aria-hidden="true">
-                                    <span style="width: 75%"></span>
-                                </div>
-                            </li>
-                        </ul>
+
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+                        <h3>Sistemas Operativos</h3>
+                        <p>Linux (Avanzado) · Windows</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <h3>Actualmente aprendiendo</h3>
+                        <p>Pentesting ético · Seguridad ofensiva y defensiva · Automatización de auditorías con Python</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Proyectos -->
-        <section id="projects" class="section">
+        <section id="projects" class="section projects-section">
             <div class="container">
-                <h2 class="section-title">Proyectos Destacados</h2>
-                <div class="project-grid">
+                <h2 class="section-title">Proyectos</h2>
+                <p class="section-subtitle">Algunos de mis trabajos y contribuciones</p>
+
+                <div class="projects-grid">
                     <article class="project-card">
-                        <div class="project-image-container">
-                            <img src="images/project1.jpg" alt="Captura del Sistema de Gestión" class="project-image">
+                        <div class="project-image">
+                            <img src="./assets/images/projects/project1.jpg" alt="Proyecto de Ciberseguridad">
                         </div>
-                        <div class="project-content">
-                            <h3 class="project-title">Sistema de Gestión Integral</h3>
-                            <p class="project-description">Aplicación web completa para administración de inventarios, ventas y reportes financieros con panel de control en tiempo real.</p>
-                            <ul class="project-tech">
-                                <li>Laravel</li>
-                                <li>Vue.js</li>
-                                <li>MySQL</li>
-                            </ul>
-                            <div class="project-links">
-                                <a href="#" class="project-link">Ver Demo</a>
-                                <a href="#" class="project-link">Código</a>
+                        <div class="project-body">
+                            <h3>Análisis de Vulnerabilidades</h3>
+                            <p>Auditoría de seguridad en infraestructura crítica usando Nmap y OpenVAS.</p>
+                            <div class="project-tags">
+                                <span>Nmap</span><span>OpenVAS</span><span>Linux</span>
+                            </div>
+                            <a href="https://github.com/edisbelramirezdev" target="_blank" rel="noopener" class="community-link">
+                                Ver en GitHub <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="./assets/images/projects/project2.jpg" alt="Aplicación Web Full Stack">
+                        </div>
+                        <div class="project-body">
+                            <h3>Aplicación Web Full Stack</h3>
+                            <p>Desarrollo de una aplicación web segura y escalable con PHP, MySQL y JavaScript.</p>
+                            <div class="project-tags">
+                                <span>PHP</span><span>JavaScript</span><span>MySQL</span>
+                            </div>
+                            <a href="https://github.com/edisbelramirezdev" target="_blank" rel="noopener" class="community-link">
+                                Ver en GitHub <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="./assets/images/projects/project3.jpg" alt="Automatización con Python">
+                        </div>
+                        <div class="project-body">
+                            <h3>Automatización con Python</h3>
+                            <p>Scripts para automatizar tareas de administración de sistemas y auditorías.</p>
+                            <div class="project-tags">
+                                <span>Python</span><span>Bash</span><span>Linux</span>
+                            </div>
+                            <a href="https://github.com/edisbelramirezdev" target="_blank" rel="noopener" class="community-link">
+                                Ver en GitHub <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="text-center" style="margin-top: 2.5rem;">
+                    <a href="https://github.com/edisbelramirezdev" target="_blank" rel="noopener" class="cta-button secondary">
+                        Ver todos los proyectos en GitHub <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- En los medios / Prensa -->
+        <section id="press" class="section press-section">
+            <div class="container">
+                <h2 class="section-title">En los medios</h2>
+                <p class="section-subtitle">Artículos, publicaciones y menciones sobre mi trabajo en internet</p>
+
+                <!-- Filtros por categoría -->
+                <div class="press-filters" role="tablist" aria-label="Filtrar por categoría">
+                    <button class="press-filter active" data-filter="all" role="tab" aria-selected="true">
+                        <i class="fas fa-th"></i> Todos
+                    </button>
+                    <button class="press-filter" data-filter="academico" role="tab" aria-selected="false">
+                        <i class="fas fa-graduation-cap"></i> Académico
+                    </button>
+                    <button class="press-filter" data-filter="institucional" role="tab" aria-selected="false">
+                        <i class="fas fa-building"></i> Institucional
+                    </button>
+                    <button class="press-filter" data-filter="entrevistas" role="tab" aria-selected="false">
+                        <i class="fas fa-microphone"></i> Entrevistas
+                    </button>
+                    <button class="press-filter" data-filter="proyectos" role="tab" aria-selected="false">
+                        <i class="fas fa-project-diagram"></i> Proyectos
+                    </button>
+                    <button class="press-filter" data-filter="reconocimientos" role="tab" aria-selected="false">
+                        <i class="fas fa-award"></i> Reconocimientos
+                    </button>
+                </div>
+
+                <!-- Grid de menciones -->
+                <div class="press-grid" id="press-grid">
+
+                    <!-- Mención 1: Revista Márgenes (Académico) -->
+                    <article class="press-card" data-category="academico">
+                        <div class="press-icon">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <div class="press-body">
+                            <div class="press-meta-top">
+                                <span class="press-category cat-academico">Académico</span>
+                                <span class="press-source">Revista Márgenes · UNISS</span>
+                            </div>
+                            <h3>Artículo académico publicado en la Revista Márgenes de la Universidad de Sancti Spíritus</h3>
+                            <p class="press-date"><i class="far fa-calendar-alt"></i> UNISS · Revista Márgenes</p>
+                            <p class="press-desc">Publicación académica en la revista Márgenes de la Universidad de Sancti Spíritus (UNISS), vinculada a mi labor profesional en el ámbito tecnológico y de ciberseguridad.</p>
+                            <div class="press-actions">
+                                <a href="https://revistas.uniss.edu.cu/margenes/article/view/2380" target="_blank" rel="noopener" class="community-link">
+                                    Ver artículo <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://revistas.uniss.edu.cu/margenes/article/download/2380/6933?inline=1" target="_blank" rel="noopener" class="press-pdf-link">
+                                    <i class="fas fa-file-pdf"></i> Descargar PDF
+                                </a>
                             </div>
                         </div>
                     </article>
-                    
-                    <article class="project-card">
-                        <div class="project-image-container">
-                            <img src="images/project2.jpg" alt="Captura del Blog Personal" class="project-image">
+
+                    <!-- Mención 2: Escambray (Institucional) -->
+                    <article class="press-card" data-category="institucional">
+                        <div class="press-icon">
+                            <i class="fas fa-newspaper"></i>
                         </div>
-                        <div class="project-content">
-                            <h3 class="project-title">Blog Personal con CMS</h3>
-                            <p class="project-description">Plataforma de blogging con sistema de gestión de contenidos, autenticación de usuarios y comentarios en tiempo real.</p>
-                            <ul class="project-tech">
-                                <li>React</li>
-                                <li>Node.js</li>
-                                <li>MongoDB</li>
-                            </ul>
-                            <div class="project-links">
-                                <a href="#" class="project-link">Ver Sitio</a>
-                                <a href="#" class="project-link">Código</a>
+                        <div class="press-body">
+                            <div class="press-meta-top">
+                                <span class="press-category cat-institucional">Institucional</span>
+                                <span class="press-source">Escambray</span>
+                            </div>
+                            <h3>Universidad de Sancti Spíritus y ETECSA: un vínculo sólido en materia tecnológica</h3>
+                            <p class="press-date"><i class="far fa-calendar-alt"></i> 2026</p>
+                            <p class="press-desc">Artículo sobre la colaboración tecnológica entre la Universidad de Sancti Spíritus y ETECSA, donde participé como especialista en ciberseguridad.</p>
+                            <div class="press-actions">
+                                <a href="https://www.escambray.cu/2026/universidad-de-sancti-spiritus-y-etecsa-un-vinculo-solido-en-materia-tecnologica/" target="_blank" rel="noopener" class="community-link">
+                                    Ver artículo <i class="fas fa-external-link-alt"></i>
+                                </a>
                             </div>
                         </div>
                     </article>
-                    
-                    <article class="project-card">
-                        <div class="project-image-container">
-                            <img src="images/project3.jpg" alt="Captura de la API REST" class="project-image">
+
+                    <!-- 👇 AÑADE AQUÍ MÁS MENCIONES copiando el bloque de abajo y cambiando data-category -->
+
+                    <!--
+                    <article class="press-card" data-category="entrevistas">
+                        <div class="press-icon">
+                            <i class="fas fa-microphone"></i>
                         </div>
-                        <div class="project-content">
-                            <h3 class="project-title">API REST para E-commerce</h3>
-                            <p class="project-description">API robusta y documentada para plataforma de comercio electrónico con autenticación JWT y sistema de pagos integrado.</p>
-                            <ul class="project-tech">
-                                <li>PHP</li>
-                                <li>Lumen</li>
-                                <li>PostgreSQL</li>
-                            </ul>
-                            <div class="project-links">
-                                <a href="#" class="project-link">Documentación</a>
-                                <a href="#" class="project-link">Código</a>
+                        <div class="press-body">
+                            <div class="press-meta-top">
+                                <span class="press-category cat-entrevistas">Entrevistas</span>
+                                <span class="press-source">Nombre del medio</span>
+                            </div>
+                            <h3>Título de la entrevista o artículo</h3>
+                            <p class="press-date"><i class="far fa-calendar-alt"></i> Fecha</p>
+                            <p class="press-desc">Breve descripción.</p>
+                            <div class="press-actions">
+                                <a href="URL" target="_blank" rel="noopener" class="community-link">
+                                    Ver artículo <i class="fas fa-external-link-alt"></i>
+                                </a>
                             </div>
                         </div>
                     </article>
+                    -->
+
+                </div>
+
+                <!-- Paginación -->
+                <div class="press-pagination" id="press-pagination" aria-label="Paginación de menciones">
+                    <button class="press-page-btn" id="press-prev" aria-label="Página anterior">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="press-page-numbers" id="press-page-numbers"></div>
+                    <button class="press-page-btn" id="press-next" aria-label="Página siguiente">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+
+                <p class="press-page-info" id="press-page-info"></p>
+
+                <!-- Mensaje cuando no hay resultados -->
+                <div class="press-empty" id="press-empty" style="display:none;">
+                    <i class="fas fa-search"></i>
+                    <p>No hay menciones en esta categoría todavía.</p>
                 </div>
             </div>
         </section>
 
         <!-- Contacto -->
-        <section id="contact" class="section">
+        <section id="contact" class="section contact-section">
             <div class="container">
                 <h2 class="section-title">Contacto</h2>
-                <div class="contact-grid">
-                    <div class="contact-info">
-                        <p>¿Interesado en trabajar juntos o tienes alguna pregunta? No dudes en contactarme.</p>
-                        <ul class="contact-methods">
-                            <li>
-                                <span class="contact-icon">✉️</span>
-                                <a href="mailto:contacto@example.com">edisbel.ramirez95@gmail.com</a>
-                            </li>
-                            <li>
-                                <span class="contact-icon">📱</span>
-                                <a href="tel:+5354850578">+53 54850578</a>
-                            </li>
-                            <li>
-                                <span class="contact-icon">📍</span>
-                                <span>Sancti Spíritus, Cuba</span>
-                            </li>
-                        </ul>
+                <p class="section-subtitle">¿Tienes alguna pregunta o propuesta? ¡Escríbeme!</p>
+
+                <div class="community-grid">
+                    <div class="community-info">
+                        <div class="info-item">
+                            <i class="fab fa-github"></i>
+                            <div>
+                                <h3>GitHub</h3>
+                                <p>edisbelramirezdev · 4 seguidores · 6 siguiendo</p>
+                                <a href="https://github.com/edisbelramirezdev" target="_blank" rel="noopener" class="community-link">Visitar GitHub <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <i class="fab fa-linkedin"></i>
+                            <div>
+                                <h3>LinkedIn</h3>
+                                <p>Conecta conmigo profesionalmente</p>
+                                <a href="https://www.linkedin.com/in/edisbel-ramirez-lovatos" target="_blank" rel="noopener" class="community-link">Visitar perfil <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <i class="fas fa-globe"></i>
+                            <div>
+                                <h3>Sitio Web</h3>
+                                <p>Portafolio personal en GitHub Pages</p>
+                                <a href="https://edisbelramirezdev.github.io" target="_blank" rel="noopener" class="community-link">edisbelramirezdev.github.io <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h3>Email</h3>
+                                <p>Contacto directo</p>
+                                <a href="mailto:edisbel.ramirez95@gmail.com" class="community-link">edisbel.ramirez95@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <i class="fas fa-building"></i>
+                            <div>
+                                <h3>Organización</h3>
+                                <p>Infotec Studio · ETECSA Cuba</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h3>Ubicación</h3>
+                                <p>Cuba 🇨🇺</p>
+                            </div>
+                        </div>
                     </div>
-                    
-                    <form class="contact-form">
-                        <div class="form-group">
-                            <label for="name">Nombre</label>
-                            <input type="text" id="name" name="name" placeholder="Tu nombre completo" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" placeholder="tu@email.com" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="subject">Asunto</label>
-                            <input type="text" id="subject" name="subject" placeholder="¿En qué puedo ayudarte?">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="message">Mensaje</label>
-                            <textarea id="message" name="message" rows="5" placeholder="Tu mensaje..." required></textarea>
-                        </div>
-                        
-                        <button type="submit" class="submit-button">Enviar Mensaje</button>
-                    </form>
+
+                    <div class="newsletter-form">
+                        <h3>Envíame un mensaje</h3>
+                        <p>Responderé lo antes posible.</p>
+                        <form id="contactForm" action="contact.php" method="POST">
+                            <div class="form-group">
+                                <input type="text" id="contact-name" name="name" placeholder="Tu nombre" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="contact-email" name="email" placeholder="Tu correo electrónico" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="contact-message" name="message" placeholder="Tu mensaje" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-button">Enviar mensaje <i class="fas fa-paper-plane"></i></button>
+                            <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
@@ -305,46 +416,134 @@
     <!-- Pie de página -->
     <footer class="main-footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <a href="#" class="logo">Edisbel Ramirez Lovatos</a>
-                     <p>Desarrollador Full Stack</p>
+            <div class="footer-grid">
+
+                <div class="footer-about">
+                    <img src="./assets/images/logo/edisbel-logo.png" alt="Edisbel Ramírez" class="footer-logo">
+                    <p>Full Stack Developer &amp; Lead Cybersecurity Specialist. Defensor del software libre.</p>
+                    <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem;">
+                        <i class="fas fa-envelope"></i> <a href="mailto:edisbel.ramirez95@gmail.com">edisbel.ramirez95@gmail.com</a><br>
+                        <i class="fas fa-map-marker-alt"></i> Cuba 🇨🇺
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://github.com/edisbelramirezdev" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/edisbel-ramirez-lovatos" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://edisbelramirezdev.github.io" target="_blank" rel="noopener" aria-label="Sitio web"><i class="fas fa-globe"></i></a>
+                    </div>
                 </div>
-                
-                <nav class="footer-nav">
+
+                <div class="footer-links">
+                    <h3>Navegación</h3>
                     <ul>
                         <li><a href="#about">Sobre mí</a></li>
                         <li><a href="#skills">Habilidades</a></li>
                         <li><a href="#projects">Proyectos</a></li>
+                        <li><a href="#press">Prensa</a></li>
                         <li><a href="#contact">Contacto</a></li>
                     </ul>
-                </nav>
-                
-                <div class="footer-social">
-                    <a href="https://github.com/tu-usuario" target="_blank" aria-label="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://linkedin.com/in/tu-usuario" target="_blank" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="https://twitter.com/tu-usuario" target="_blank" aria-label="Twitter">
-                        <i class="fab fa-twitter"></i>
-                    </a>
                 </div>
+
+                <div class="footer-resources">
+                    <h3>Recursos</h3>
+                    <ul>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="https://github.com/edisbelramirezdev" target="_blank" rel="noopener">GitHub</a></li>
+                        <li><a href="#">Currículum</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-legal" role="navigation" aria-label="Legal">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#" data-modal="licencia" role="button">Licencia</a></li>
+                        <li><a href="#" data-modal="privacidad" role="button">Política de privacidad</a></li>
+                        <li><a href="#" data-modal="terminos" role="button">Términos de uso</a></li>
+                    </ul>
+                </div>
+
             </div>
-            
+
             <div class="footer-bottom">
-            <p>&copy; <?php echo $current_year; ?> 2025 Infotec Studio. Todos los derechos reservados.</p>
-                <p>Diseñado y desarrollado con ❤️ por Infotec Studio</p>
+                <p>&copy; <span id="current-year">2025</span> Edisbel Ramírez Lovatos. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Botón WhatsApp -->
-    <a href="https://wa.me/5354850578" class="whatsapp-float" target="_blank" aria-label="Contactar por WhatsApp">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    <!-- Botón flotante de Telegram (opcional, cámbialo por tu enlace) -->
+    <a href="https://t.me/tu_usuario" class="telegram-float" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+        <i class="fab fa-telegram-plane"></i>
     </a>
 
-    <script src="js/main.js"></script>
+    <!-- Overlays -->
+    <div class="modal-overlay" id="overlay-licencia"></div>
+    <div class="modal-overlay" id="overlay-privacidad"></div>
+    <div class="modal-overlay" id="overlay-terminos"></div>
+
+    <!-- Modal Licencia -->
+    <div class="modal" id="modal-licencia">
+        <div class="modal-content">
+            <button class="modal-close" data-target="licencia" aria-label="Cerrar">&times;</button>
+            <h2>Licencia</h2>
+            <div class="license-text">
+                <h3>LICENCIA PÚBLICA GENERAL GNU</h3>
+                <p><strong>Versión 3, 29 de junio de 2007</strong></p>
+                <p>Copyright © 2025 Edisbel Ramírez Lovatos</p>
+                <p>Este programa es software libre: puede redistribuirlo y/o modificarlo bajo los términos de la Licencia Pública General GNU publicada por la Free Software Foundation, ya sea la versión 3 de la Licencia, o (a su elección) cualquier versión posterior.</p>
+                <h4>Contacto</h4>
+                <p>Para preguntas sobre esta licencia: <a href="mailto:edisbel.ramirez95@gmail.com">edisbel.ramirez95@gmail.com</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Privacidad -->
+    <div class="modal" id="modal-privacidad">
+        <div class="modal-content">
+            <button class="modal-close" data-target="privacidad" aria-label="Cerrar">&times;</button>
+            <h2>Política de Privacidad</h2>
+            <div class="policy-text">
+                <p><strong>Última actualización:</strong> 2025</p>
+                <h4>1. Información que recopilamos</h4>
+                <p>Recopilamos información cuando te registras, descargas contenido, participas en la comunidad o nos contactas directamente.</p>
+                <h4>2. Uso de la información</h4>
+                <p>La información recopilada se usa para personalizar tu experiencia, mejorar el sitio, responder consultas y enviar actualizaciones importantes.</p>
+                <h4>3. Protección de datos</h4>
+                <p>Implementamos medidas de seguridad para proteger tu información personal.</p>
+                <h4>4. Cookies</h4>
+                <p>Este sitio utiliza cookies para mejorar la experiencia del usuario.</p>
+                <h4>5. Consentimiento</h4>
+                <p>Al usar este sitio, aceptas esta política de privacidad.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Términos -->
+    <div class="modal" id="modal-terminos">
+        <div class="modal-content">
+            <button class="modal-close" data-target="terminos" aria-label="Cerrar">&times;</button>
+            <h2>Términos de Uso</h2>
+            <div class="terms-text">
+                <p><strong>Vigente desde:</strong> 2025</p>
+                <h4>1. Aceptación de términos</h4>
+                <p>Al acceder y usar este sitio, aceptas cumplir con estos términos.</p>
+                <h4>2. Uso del contenido</h4>
+                <p>El contenido es de carácter informativo y personal. Respeta los derechos de autor.</p>
+                <h4>3. Limitaciones</h4>
+                <p>No puedes usar este sitio para actividades ilegales ni redistribuir contenido sin autorización.</p>
+                <h4>4. Responsabilidad</h4>
+                <p>Este sitio se proporciona "tal cual" sin garantías explícitas.</p>
+                <h4>5. Modificaciones</h4>
+                <p>Nos reservamos el derecho de modificar estos términos cuando sea necesario.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Banner de Cookies -->
+    <div id="cookie-banner" class="cookie-banner" aria-hidden="true">
+        <p>Este sitio utiliza cookies para mejorar tu experiencia. <a href="#" data-modal="privacidad">Saber más</a></p>
+        <button id="accept-cookies" class="accept-button">Aceptar</button>
+    </div>
+
+    <!-- Scripts -->
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>
