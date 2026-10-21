@@ -1,6 +1,6 @@
 # Comercia (Demo)
 
-Demo de directorio local para Sancti Spíritus, Cuba: busca un producto o servicio y ve en qué negocio está, a qué precio y quién lo vende.
+Busca un producto o servicio y ve en qué negocio está, a qué precio y quién lo vende.
 
 🔗 **Demo:** https://edisbelramirezdev.github.io/demo/index.html
 
