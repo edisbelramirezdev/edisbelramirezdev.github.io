@@ -1,0 +1,1998 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ✅ NEW: Meta tags SEO -->
+<title>Comercia — Directorio comercial de Sancti Spíritus, Cuba</title>
+<meta name="description" content="Encuentra productos y servicios en Sancti Spíritus. Directorio comercial local con precios, ubicación, horarios y contacto de negocios TCP y Mipyme en todos los municipios de la provincia.">
+<meta name="keywords" content="Sancti Spíritus, Cuba, directorio comercial, TCP, Mipyme, productos, servicios, precios, Trinidad, Yaguajay, Cabaiguán">
+<meta name="author" content="Comercia">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://comercia.cu/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Comercia">
+<meta property="og:title" content="Comercia — Directorio comercial de Sancti Spíritus">
+<meta property="og:description" content="Busca un producto o servicio y descubre en qué negocio de Sancti Spíritus está, a qué precio y quién lo vende.">
+<meta property="og:image" content="https://comercia.cu/assets/logo/logo.png">
+<meta property="og:url" content="https://comercia.cu/">
+<meta property="og:locale" content="es_CU">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Comercia — Directorio comercial de Sancti Spíritus">
+<meta name="twitter:description" content="Busca un producto o servicio y descubre en qué negocio de Sancti Spíritus está, a qué precio y quién lo vende.">
+<meta name="twitter:image" content="https://comercia.cu/assets/logo/logo.png">
+<meta name="theme-color" content="#0a3d91">
+
+<style>
+  :root {
+    --azul: #0a3d91; --azul-oscuro: #072b6b; --azul-claro: #e8eef9; --azul-medio: #1a5cc7;
+    --gris: #f4f6fb; --texto: #1a1f36; --texto-suave: #5a6478; --borde: #e3e7ef;
+    --verde: #16a34a; --verde-claro: #dcfce7; --rojo: #dc2626; --rojo-claro: #fee2e2;
+    --naranja: #f59e0b; --amarillo: #ffd814; --amarillo-hover: #f7ca00; --blanco: #ffffff;
+    --sombra: 0 8px 24px rgba(10,61,145,0.1);
+    --sombra-card: 0 10px 26px rgba(10,61,145,0.12);
+    --sombra-hover: 0 10px 24px rgba(10,61,145,0.15);
+    --emoji-font: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", "Android Emoji", "EmojiSymbols", sans-serif;
+  }
+  body.dark {
+    --azul: #1a3d7c; --azul-oscuro: #0f2547; --azul-claro: #1e2d45; --azul-medio: #2a5ba8;
+    --gris: #0f172a; --texto: #e2e8f0; --texto-suave: #94a3b8; --borde: #2d3a4f;
+    --verde: #22c55e; --verde-claro: #14532d; --rojo: #ef4444; --rojo-claro: #7f1d1d;
+    --naranja: #f59e0b; --amarillo: #ffd814; --amarillo-hover: #f7ca00; --blanco: #1e293b;
+    --sombra: 0 8px 24px rgba(0,0,0,0.4);
+    --sombra-card: 0 10px 26px rgba(0,0,0,0.5);
+    --sombra-hover: 0 10px 24px rgba(0,0,0,0.5);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+  :focus-visible { outline: 3px solid var(--amarillo); outline-offset: 2px; border-radius: 4px; }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
+  }
+  body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: var(--gris); color: var(--texto); transition: background 0.3s, color 0.3s; }
+
+  .ts-emoji, .cat-card .emoji, .result-emoji, .toast, .toggle-chip .chip-icon {
+    font-family: var(--emoji-font);
+  }
+
+  /* ✅ NEW: noscript banner */
+  .noscript-banner {
+    background: var(--rojo); color: #fff; text-align: center;
+    padding: 14px 20px; font-size: 0.95rem; font-weight: 700;
+    position: sticky; top: 0; z-index: 9999;
+  }
+
+  header { background: var(--azul); color: #fff; position: sticky; top: 0; z-index: 100; transition: background 0.3s; }
+  .top-bar { background: var(--azul-oscuro); padding: 5px 24px; display: flex; align-items: center; gap: 18px; font-size: 0.76rem; transition: background 0.3s; }
+  .my-zone { display: flex; align-items: center; gap: 6px; background: rgba(255,255,255,0.12); padding: 3px 6px 3px 10px; border-radius: 6px; font-size: 0.76rem; }
+  .my-zone label { color: #cddcf5; white-space: nowrap; }
+  .my-zone select { background: #fff; border: none; border-radius: 4px; padding: 4px 8px; font-size: 0.76rem; font-weight: 700; color: var(--azul); outline: none; cursor: pointer; max-width: 160px; }
+  .my-zone.highlight { box-shadow: 0 0 0 2px #ffd814; }
+  .theme-toggle { background: rgba(255,255,255,0.15); border: none; color: #fff; cursor: pointer; padding: 6px 10px; border-radius: 8px; font-size: 1rem; display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; transition: background 0.15s, transform 0.2s; flex-shrink: 0; }
+  .theme-toggle:hover { background: rgba(255,255,255,0.25); }
+  .theme-toggle:active { transform: scale(0.9); }
+  .main-header { padding: 12px 24px; display: flex; align-items: center; gap: 16px; max-width: 1400px; margin: 0 auto; }
+  .logo { display: flex; align-items: center; gap: 8px; cursor: pointer; color: #fff; text-decoration: none; line-height: 1; flex-shrink: 0; user-select: none; transition: transform 0.15s; }
+  .logo:hover { transform: translateY(-1px); }
+  .logo:active { transform: scale(0.98); }
+  .logo-icon { width: 44px; height: 44px; flex-shrink: 0; display: block; object-fit: contain; object-position: center; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.25)); }
+  .logo-text { font-size: 1.75rem; font-weight: 900; letter-spacing: -1px; white-space: nowrap; text-shadow: 0 2px 4px rgba(0,0,0,0.15); }
+  body.dark .logo-icon { filter: drop-shadow(0 2px 6px rgba(255,216,20,0.25)); }
+  .search-wrapper { flex: 1; max-width: 820px; display: flex; flex-direction: column; gap: 6px; position: relative; }
+  .search-container { display: flex; height: 50px; border-radius: 10px; overflow: hidden; background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.18); transition: box-shadow 0.2s; }
+  .search-container:focus-within { box-shadow: 0 0 0 3px rgba(126,179,255,0.5), 0 2px 8px rgba(0,0,0,0.18); }
+  .search-category { background: #eef0f7; border: none; border-right: 1px solid #d0d6e2; color: #3a4257; padding: 0 14px; font-size: 0.82rem; font-weight: 600; cursor: pointer; outline: none; flex-shrink: 0; appearance: none; background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 24 24' fill='none' stroke='%233a4257' stroke-width='3'%3e%3cpath d='M6 9l6 6 6-6'/%3e%3c/svg%3e"); background-repeat: no-repeat; background-position: right 10px center; padding-right: 28px; max-width: 180px; }
+  .search-input { flex: 1; border: none; padding: 0 16px; font-size: 1rem; outline: none; background: #fff; color: #1a1f36; min-width: 0; }
+  .search-input::placeholder { color: #9aa2b5; }
+  .search-btn { background: var(--amarillo); border: none; color: #1a1f36; padding: 0 22px; font-weight: 800; font-size: 0.95rem; cursor: pointer; display: flex; align-items: center; gap: 7px; transition: background 0.15s; flex-shrink: 0; }
+  .search-btn:hover { background: var(--amarillo-hover); }
+  .search-suggestions { display: flex; align-items: center; gap: 12px; font-size: 0.72rem; color: #cddcf5; padding-left: 4px; flex-wrap: wrap; }
+  .search-suggestions span.label { opacity: 0.7; }
+  .search-suggestions a { color: #fff; text-decoration: none; opacity: 0.85; padding: 2px 6px; border-radius: 4px; }
+  .search-suggestions a:hover { background: rgba(255,255,255,0.15); opacity: 1; }
+  .header-actions { display: flex; gap: 10px; align-items: center; margin-left: auto; }
+  .currency-toggle, .lang-toggle { display: flex; background: rgba(255,255,255,0.15); border-radius: 8px; overflow: hidden; font-size: 0.78rem; font-weight: 700; }
+  .currency-toggle button, .lang-toggle button { background: transparent; border: none; color: #fff; padding: 7px 11px; cursor: pointer; opacity: 0.6; }
+  .currency-toggle button.active, .lang-toggle button.active { background: #fff; color: var(--azul); opacity: 1; }
+  .auth-btn { background: transparent; border: 1px solid rgba(255,255,255,0.4); color: #fff; cursor: pointer; padding: 9px 14px; border-radius: 8px; font-size: 0.82rem; font-weight: 700; display: flex; align-items: center; gap: 6px; white-space: nowrap; transition: background 0.15s; }
+  .auth-btn:hover { background: rgba(255,255,255,0.12); }
+  .auth-btn.primary { background: var(--amarillo); border-color: var(--amarillo); color: #1a1f36; }
+  .auth-btn.primary:hover { background: var(--amarillo-hover); }
+  .category-bar { background: var(--azul-medio); padding: 0 24px; max-width: 1400px; margin: 0 auto; display: flex; align-items: center; gap: 2px; overflow-x: auto; scrollbar-width: thin; }
+  .category-bar::-webkit-scrollbar { height: 4px; }
+  .category-bar::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.3); border-radius: 2px; }
+  .category-bar a { color: #fff; text-decoration: none; font-size: 0.8rem; font-weight: 500; padding: 9px 12px; white-space: nowrap; border-radius: 4px; transition: background 0.15s; }
+  .category-bar a:hover { background: rgba(255,255,255,0.15); }
+  .category-bar a.active { background: rgba(255,255,255,0.22); font-weight: 800; }
+  .category-bar .all-link { font-weight: 800; display: flex; align-items: center; gap: 6px; flex-shrink: 0; }
+  .hero { background: linear-gradient(135deg, var(--azul) 0%, var(--azul-medio) 100%); color: #fff; padding: 28px 24px 40px; text-align: center; }
+  .hero h1 { font-size: 1.55rem; font-weight: 800; margin-bottom: 6px; letter-spacing: -0.5px; }
+  .hero p { opacity: 0.85; font-size: 0.95rem; max-width: 600px; margin: 0 auto; }
+  .top-search-section { max-width: 1200px; margin: -26px auto 0; background: var(--blanco); border-radius: 14px; padding: 22px 24px; box-shadow: var(--sombra); position: relative; z-index: 10; transition: background 0.3s, box-shadow 0.3s; }
+  .top-search-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px; flex-wrap: wrap; gap: 8px; }
+  .top-search-title { font-size: 1.15rem; font-weight: 800; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+  .top-search-title .sub { font-size: 0.75rem; font-weight: 500; color: var(--texto-suave); }
+  .top-search-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; }
+  .ts-card { background: var(--blanco); border: 1.5px solid var(--borde); border-radius: 12px; padding: 14px 12px; cursor: pointer; transition: all 0.2s; display: flex; flex-direction: column; gap: 8px; position: relative; overflow: hidden; min-height: 150px; }
+  .ts-card:hover { transform: translateY(-3px); box-shadow: var(--sombra-hover); border-color: var(--azul-medio); }
+  .ts-trend { position: absolute; top: 8px; right: 8px; width: 26px; height: 26px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.85rem; font-weight: 900; color: #fff; }
+  .ts-trend.up { background: var(--verde); box-shadow: 0 2px 6px rgba(22,163,74,0.35); }
+  .ts-trend.down { background: var(--rojo); box-shadow: 0 2px 6px rgba(220,38,38,0.35); }
+  .ts-trend.equal { background: #94a3b8; box-shadow: 0 2px 6px rgba(148,163,184,0.35); }
+  .ts-emoji { font-size: 2.2rem; line-height: 1; text-align: center; margin-top: 4px; }
+  .ts-name { font-size: 0.88rem; font-weight: 800; line-height: 1.2; text-align: center; color: var(--texto); display: flex; align-items: center; justify-content: center; }
+  .ts-price { text-align: center; font-size: 1.05rem; font-weight: 800; color: var(--azul); line-height: 1.1; }
+  .ts-price small { font-size: 0.65rem; font-weight: 600; color: var(--texto-suave); display: block; margin-top: 1px; }
+  .ts-count { text-align: center; font-size: 0.7rem; font-weight: 700; padding: 3px 8px; border-radius: 999px; background: var(--azul-claro); color: var(--azul); margin-top: auto; }
+  .ts-count.empty { background: #f1f5f9; color: var(--texto-suave); }
+  body.dark .ts-count.empty { background: #334155; color: #94a3b8; }
+  .filters-panel { max-width: 1200px; margin: 20px auto 0; background: var(--blanco); border-radius: 14px; padding: 18px 22px; box-shadow: var(--sombra); position: relative; z-index: 10; transition: background 0.3s; }
+  .filters-row { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; align-items: end; }
+  .filters-row .filter-group.price-group { grid-column: span 2; }
+  .filter-group { display: flex; flex-direction: column; gap: 5px; min-width: 0; }
+  .filter-group label { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: var(--texto-suave); }
+  .filter-group select, .filter-group input { padding: 9px 12px; border: 1px solid var(--borde); border-radius: 8px; font-size: 0.88rem; outline: none; background: var(--blanco); color: var(--texto); width: 100%; }
+  .filter-group select:focus, .filter-group input:focus { border-color: var(--azul-medio); }
+  .filter-group select:disabled { opacity: 0.55; cursor: not-allowed; background: var(--gris); }
+  .price-range { display: flex; gap: 6px; align-items: center; }
+  .price-range input { flex: 1; min-width: 0; }
+  .price-range span { font-size: 0.8rem; color: var(--texto-suave); font-weight: 600; }
+  .filters-toggles { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--borde); }
+  .toggle-chip { display: flex; align-items: center; gap: 6px; background: var(--blanco); border: 1.5px solid var(--borde); border-radius: 999px; padding: 8px 14px; font-size: 0.82rem; font-weight: 700; color: var(--texto); cursor: pointer; transition: all 0.15s; user-select: none; }
+  .toggle-chip:hover { border-color: var(--azul-medio); }
+  .toggle-chip.active { background: var(--azul); border-color: var(--azul); color: #fff; }
+  .toggle-chip .chip-icon { font-size: 0.95rem; }
+  .filter-btn-row { display: flex; gap: 10px; margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--borde); flex-wrap: wrap; }
+  .filter-btn { background: var(--azul); color: #fff; border: none; padding: 10px 22px; border-radius: 8px; font-weight: 700; font-size: 0.88rem; cursor: pointer; height: 42px; }
+  .filter-btn:hover { background: var(--azul-oscuro); }
+  .filter-btn.secondary { background: transparent; color: var(--texto-suave); border: 1px solid var(--borde); }
+  .filter-btn.secondary:hover { background: var(--gris); color: var(--texto); }
+  .main { max-width: 1200px; margin: 0 auto; padding: 30px 24px 60px; }
+  .filter-notice { background: var(--azul-claro); border: 1px solid rgba(10,61,145,0.2); border-radius: 10px; padding: 12px 16px; margin-bottom: 20px; display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  body.dark .filter-notice { border-color: rgba(126,179,255,0.2); }
+  .filter-notice-text { font-size: 0.88rem; color: var(--azul); font-weight: 600; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+  body.dark .filter-notice-text { color: #7eb3ff; }
+  .filter-notice-text .chip { background: var(--azul); color: #fff; padding: 3px 10px; border-radius: 999px; font-size: 0.78rem; font-weight: 700; }
+  .clear-filters-btn { background: var(--blanco); border: 1px solid var(--azul); color: var(--azul); padding: 7px 14px; border-radius: 8px; font-size: 0.8rem; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 5px; transition: background 0.15s; }
+  .clear-filters-btn:hover { background: var(--azul); color: #fff; }
+  body.dark .clear-filters-btn { color: #7eb3ff; border-color: #7eb3ff; }
+  body.dark .clear-filters-btn:hover { background: #7eb3ff; color: #0f172a; }
+  .section-title { font-size: 1.15rem; font-weight: 800; margin-bottom: 14px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+  .cat-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 12px; margin-bottom: 36px; }
+  .cat-card { background: var(--blanco); border-radius: 12px; padding: 14px 10px; border: 1px solid var(--borde); cursor: pointer; transition: all 0.2s; text-align: center; }
+  .cat-card:hover { transform: translateY(-3px); box-shadow: var(--sombra-card); border-color: var(--azul-medio); }
+  .cat-card .emoji { font-size: 1.9rem; display: block; margin-bottom: 5px; }
+  .cat-card .name { font-size: 0.82rem; font-weight: 800; margin-bottom: 2px; line-height: 1.2; }
+  .cat-card .count { font-size: 0.68rem; color: var(--texto-suave); font-weight: 600; }
+  .results-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px; flex-wrap: wrap; gap: 12px; }
+  .results-header-left { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+  .results-header h2 { font-size: 1.2rem; font-weight: 800; }
+  .results-header .query { color: var(--azul); font-style: italic; }
+  body.dark .results-header .query { color: #7eb3ff; }
+  .results-header .pill { background: var(--azul-claro); color: var(--azul); font-size: 0.72rem; padding: 5px 12px; border-radius: 999px; font-weight: 700; }
+  body.dark .results-header .pill { color: #7eb3ff; }
+  .sort-control { display: flex; align-items: center; gap: 8px; font-size: 0.82rem; color: var(--texto-suave); }
+  .sort-control select { padding: 8px 12px; border: 1px solid var(--borde); border-radius: 8px; font-size: 0.85rem; outline: none; background: var(--blanco); color: var(--texto); cursor: pointer; font-weight: 600; }
+  .sort-control select:focus { border-color: var(--azul-medio); }
+  .result-list { display: flex; flex-direction: column; gap: 14px; }
+  .result-card { background: var(--blanco); border-radius: 14px; border: 1px solid var(--borde); padding: 18px 20px; display: flex; gap: 18px; align-items: center; transition: box-shadow 0.2s, transform 0.2s; cursor: pointer; }
+  .result-card:hover { box-shadow: var(--sombra-card); transform: translateY(-2px); }
+  .result-emoji { font-size: 2.4rem; width: 64px; height: 64px; background: var(--azul-claro); border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .result-info { flex: 1; min-width: 0; }
+  .result-info h3 { font-size: 1.05rem; font-weight: 800; margin-bottom: 4px; }
+  .result-info h3 mark { background: #fff3a8; color: inherit; padding: 0 2px; border-radius: 3px; }
+  body.dark .result-info h3 mark { background: #b45309; color: #fff; }
+  .result-meta { display: flex; flex-wrap: wrap; gap: 10px; font-size: 0.78rem; color: var(--texto-suave); margin-bottom: 6px; align-items: center; }
+  .result-meta .tag { background: var(--azul-claro); color: var(--azul); padding: 2px 8px; border-radius: 999px; font-weight: 700; font-size: 0.7rem; }
+  body.dark .result-meta .tag { color: #7eb3ff; }
+  .result-meta .far-tag { background: #fef3c7; color: #92400e; padding: 2px 8px; border-radius: 999px; font-weight: 700; font-size: 0.7rem; }
+  body.dark .result-meta .far-tag { background: #78350f; color: #fbbf24; }
+  .result-meta .status-tag { padding: 2px 8px; border-radius: 999px; font-weight: 700; font-size: 0.7rem; }
+  .status-tag.available { background: var(--verde-claro); color: #166534; }
+  body.dark .status-tag.available { color: #86efac; }
+  .status-tag.low { background: #fef3c7; color: #92400e; }
+  body.dark .status-tag.low { background: #78350f; color: #fbbf24; }
+  .status-tag.out { background: var(--rojo-claro); color: #991b1b; }
+  body.dark .status-tag.out { color: #fca5a5; }
+  .status-tag.open-now { background: var(--verde-claro); color: #166534; }
+  body.dark .status-tag.open-now { color: #86efac; }
+  .status-tag.closed-now { background: #f1f5f9; color: #64748b; }
+  body.dark .status-tag.closed-now { background: #334155; color: #94a3b8; }
+  .badge-rating { background: #fef3c7; color: #92400e; padding: 2px 8px; border-radius: 999px; font-weight: 800; font-size: 0.72rem; }
+  body.dark .badge-rating { background: #78350f; color: #fbbf24; }
+  .badge-updated { font-size: 0.7rem; color: var(--texto-suave); font-weight: 600; }
+  .badge-updated.recent { color: var(--verde); }
+  .badge-updated.old { color: var(--rojo); }
+  .result-vendor { font-size: 0.85rem; color: var(--texto); display: flex; align-items: center; gap: 6px; }
+  .vendor-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--verde); display: inline-block; }
+  .result-price { text-align: right; flex-shrink: 0; }
+  .result-price .amount { font-size: 1.35rem; font-weight: 800; color: var(--azul); display: block; }
+  body.dark .result-price .amount { color: #7eb3ff; }
+  .result-price .unit { font-size: 0.72rem; color: var(--texto-suave); }
+  .empty { text-align: center; padding: 60px 20px; color: var(--texto-suave); background: var(--blanco); border-radius: 14px; border: 1px dashed var(--borde); }
+  .empty .big { font-size: 2.5rem; margin-bottom: 10px; }
+  .empty .hint { margin-top: 14px; font-size: 0.85rem; }
+  .empty .hint button { background: var(--azul); color: #fff; border: none; padding: 8px 16px; border-radius: 8px; font-weight: 700; font-size: 0.82rem; cursor: pointer; margin-top: 10px; }
+  .how-section { margin-top: 48px; background: var(--blanco); border-radius: 16px; padding: 32px 28px; border: 1px solid var(--borde); }
+  .how-section h2 { font-size: 1.15rem; font-weight: 800; margin-bottom: 6px; text-align: center; }
+  .how-section .subtitle { font-size: 0.88rem; color: var(--texto-suave); text-align: center; margin-bottom: 28px; }
+  .how-steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
+  .how-step { text-align: center; padding: 12px; }
+  .how-step .num { width: 44px; height: 44px; background: var(--azul); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; font-weight: 800; margin: 0 auto 12px; }
+  .how-step h3 { font-size: 1rem; font-weight: 800; margin-bottom: 6px; }
+  .how-step p { font-size: 0.85rem; color: var(--texto-suave); line-height: 1.4; }
+  .biz-banner { margin-top: 32px; background: linear-gradient(135deg, var(--azul) 0%, var(--azul-medio) 100%); border-radius: 16px; padding: 32px 28px; color: #fff; display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
+  .biz-banner h3 { font-size: 1.25rem; font-weight: 800; margin-bottom: 6px; }
+  .biz-banner p { font-size: 0.9rem; opacity: 0.9; max-width: 480px; line-height: 1.45; }
+  .biz-banner button { background: var(--amarillo); color: #1a1f36; border: none; padding: 13px 26px; border-radius: 10px; font-weight: 800; font-size: 0.92rem; cursor: pointer; white-space: nowrap; }
+  .biz-banner button:hover { background: var(--amarillo-hover); }
+
+  .modal { position: fixed; inset: 0; background: rgba(10,30,60,0.5); z-index: 300; display: none; align-items: center; justify-content: center; padding: 20px; }
+  .modal.show { display: flex; }
+  .modal-content { background: var(--blanco); border-radius: 16px; max-width: 520px; width: 100%; max-height: 90vh; overflow-y: auto; position: relative; }
+  .modal-header { background: var(--azul); color: #fff; padding: 22px 24px; border-radius: 16px 16px 0 0; }
+  .modal-header .negocio { font-size: 1.25rem; font-weight: 800; margin-bottom: 4px; }
+  .modal-header .tipo { font-size: 0.78rem; opacity: 0.85; }
+  .modal-body { padding: 22px 24px; }
+  .detail-row { display: flex; justify-content: space-between; padding: 11px 0; border-bottom: 1px solid var(--borde); font-size: 0.9rem; }
+  .detail-row span:first-child { color: var(--texto-suave); }
+  .detail-row span:last-child { font-weight: 700; text-align: right; }
+  .detail-row:last-child { border-bottom: none; }
+  .modal-note { background: var(--azul-claro); border-radius: 10px; padding: 14px 16px; margin-top: 16px; font-size: 0.85rem; color: var(--texto-suave); line-height: 1.45; }
+  .modal-note strong { color: var(--azul); display: block; margin-bottom: 4px; }
+  body.dark .modal-note strong { color: #7eb3ff; }
+  .modal-actions { display: flex; gap: 10px; margin-top: 20px; }
+  .modal-actions button { flex: 1; padding: 12px; border-radius: 10px; font-weight: 700; font-size: 0.9rem; cursor: pointer; border: none; }
+  .btn-primary { background: var(--azul); color: #fff; }
+  .btn-primary:hover { background: var(--azul-oscuro); }
+  .btn-secondary { background: var(--gris); color: var(--texto); }
+  .btn-call { background: var(--verde); color: #fff; }
+  .btn-call:hover { background: #15803d; }
+  .btn-whatsapp { background: #25d366; color: #fff; }
+  .btn-whatsapp:hover { background: #1ebe57; }
+  .btn-share { background: var(--azul-medio); color: #fff; }
+  .btn-share:hover { background: var(--azul); }
+  .btn-map { background: #ea4335; color: #fff; }
+  .btn-map:hover { background: #c5221f; }
+  .modal-close-x { position: absolute; top: 14px; right: 14px; background: rgba(255,255,255,0.2); border: none; color: #fff; width: 32px; height: 32px; border-radius: 50%; font-size: 1.1rem; cursor: pointer; }
+
+  .auth-tabs { display: flex; border-bottom: 1px solid var(--borde); margin-bottom: 20px; }
+  .auth-tab { flex: 1; padding: 12px; background: transparent; border: none; border-bottom: 3px solid transparent; font-size: 0.92rem; font-weight: 700; color: var(--texto-suave); cursor: pointer; }
+  .auth-tab.active { color: var(--azul); border-bottom-color: var(--azul); }
+  body.dark .auth-tab.active { color: #7eb3ff; border-bottom-color: #7eb3ff; }
+  .auth-form { display: none; }
+  .auth-form.active { display: block; }
+
+  .account-type-field { margin-bottom: 18px; }
+  .account-type-field label { display: block; font-size: 0.72rem; font-weight: 700; color: var(--texto-suave); margin-bottom: 5px; text-transform: uppercase; letter-spacing: 0.3px; }
+  .account-type-field select { width: 100%; padding: 12px 14px; border: 1px solid var(--borde); border-radius: 8px; font-size: 0.95rem; font-weight: 700; background: var(--blanco); color: var(--texto); outline: none; cursor: pointer; appearance: none; background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%235a6478' stroke-width='3'%3e%3cpath d='M6 9l6 6 6-6'/%3e%3c/svg%3e"); background-repeat: no-repeat; background-position: right 14px center; padding-right: 38px; }
+  body.dark .account-type-field select { background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%2394a3b8' stroke-width='3'%3e%3cpath d='M6 9l6 6 6-6'/%3e%3c/svg%3e"); }
+  .account-type-field select:focus { border-color: var(--azul-medio); }
+
+  .form-section-title { font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.6px; color: var(--azul); margin: 18px 0 10px; padding-bottom: 6px; border-bottom: 2px solid var(--azul-claro); display: flex; align-items: center; gap: 6px; }
+  body.dark .form-section-title { color: #7eb3ff; border-bottom-color: #2a5ba8; }
+  .form-section-title:first-child { margin-top: 0; }
+  .form-section-title .opt-badge { background: #fef3c7; color: #92400e; font-size: 0.6rem; padding: 1px 6px; border-radius: 999px; margin-left: auto; font-weight: 700; text-transform: none; letter-spacing: 0; }
+  body.dark .form-section-title .opt-badge { background: #78350f; color: #fbbf24; }
+
+  .form-field { margin-bottom: 12px; }
+  .form-field label { display: block; font-size: 0.72rem; font-weight: 700; color: var(--texto-suave); margin-bottom: 4px; text-transform: uppercase; letter-spacing: 0.3px; }
+  .form-field label .req { color: var(--rojo); margin-left: 2px; }
+  .form-field label .opt { color: var(--texto-suave); font-weight: 500; font-size: 0.65rem; text-transform: none; margin-left: 4px; }
+  .form-field input, .form-field select, .form-field textarea { width: 100%; padding: 10px 11px; border: 1px solid var(--borde); border-radius: 8px; font-size: 0.9rem; outline: none; background: var(--blanco); color: var(--texto); font-family: inherit; }
+  .form-field textarea { resize: vertical; min-height: 60px; }
+  .form-field input:focus, .form-field select:focus, .form-field textarea:focus { border-color: var(--azul-medio); }
+  .form-field select:disabled { opacity: 0.55; cursor: not-allowed; background: var(--gris); }
+  .form-row-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .form-submit { width: 100%; background: var(--azul); color: #fff; border: none; padding: 13px; border-radius: 10px; font-weight: 800; font-size: 0.92rem; cursor: pointer; margin-top: 14px; }
+  .form-submit:hover { background: var(--azul-oscuro); }
+  .form-hint { text-align: center; font-size: 0.78rem; color: var(--texto-suave); margin-top: 14px; }
+  .form-hint a { color: var(--azul); font-weight: 700; cursor: pointer; }
+  body.dark .form-hint a { color: #7eb3ff; }
+  .account-fields { display: none; }
+  .account-fields.active { display: block; }
+
+  .toast { position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%) translateY(100px); background: var(--texto); color: var(--blanco); padding: 12px 20px; border-radius: 10px; font-size: 0.88rem; font-weight: 600; box-shadow: 0 8px 24px rgba(0,0,0,0.25); z-index: 400; transition: transform 0.3s; max-width: 90vw; text-align: center; }
+  body.dark .toast { background: #7eb3ff; color: #0f172a; }
+  .toast.show { transform: translateX(-50%) translateY(0); }
+
+  .scroll-fab {
+    position: fixed; right: 22px; z-index: 250; width: 48px; height: 48px;
+    border-radius: 50%; border: none; cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.35rem; font-weight: 900; color: #fff;
+    background: var(--azul); box-shadow: 0 6px 18px rgba(10,61,145,0.35);
+    transition: opacity 0.25s, transform 0.25s, background 0.15s;
+    opacity: 0; pointer-events: none; transform: scale(0.7);
+  }
+  .scroll-fab:hover { background: var(--azul-oscuro); }
+  .scroll-fab.show { opacity: 1; pointer-events: auto; transform: scale(1); }
+  .scroll-fab:active { transform: scale(0.92); }
+  #fabTop { bottom: 86px; }
+  #fabBottom { bottom: 22px; }
+  body.dark #fabTop, body.dark #fabBottom { background: #2a5ba8; }
+  body.dark #fabTop:hover, body.dark #fabBottom:hover { background: #1a3d7c; }
+
+  /* ✅ NEW: Skeleton loading */
+  .skeleton-card {
+    background: var(--blanco); border-radius: 14px; border: 1px solid var(--borde);
+    padding: 18px 20px; display: flex; gap: 18px; align-items: center;
+  }
+  .skeleton-block {
+    background: linear-gradient(90deg, var(--gris) 25%, var(--borde) 50%, var(--gris) 75%);
+    background-size: 200% 100%;
+    animation: skeleton-shimmer 1.4s infinite linear;
+    border-radius: 8px;
+  }
+  .skeleton-emoji { width: 64px; height: 64px; border-radius: 12px; flex-shrink: 0; }
+  .skeleton-lines { flex: 1; display: flex; flex-direction: column; gap: 10px; }
+  .skeleton-line { height: 14px; }
+  .skeleton-line.title { width: 60%; height: 18px; }
+  .skeleton-line.meta { width: 85%; }
+  .skeleton-line.small { width: 40%; }
+  .skeleton-price { width: 90px; height: 28px; flex-shrink: 0; }
+  @keyframes skeleton-shimmer {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .skeleton-block { animation: none; }
+  }
+
+  footer { background: var(--azul-oscuro); color: #cddcf5; margin-top: 40px; border-top: 4px solid var(--amarillo); }
+  .footer-inner { max-width: 1200px; margin: 0 auto; padding: 40px 24px 24px; display: grid; grid-template-columns: 1.6fr repeat(3, 1fr); gap: 32px; }
+  .footer-brand { display: flex; flex-direction: column; gap: 12px; }
+  .footer-brand .footer-logo { display: flex; align-items: center; gap: 8px; }
+  .footer-brand .footer-logo img { width: 38px; height: 38px; object-fit: contain; }
+  .footer-brand .footer-logo span { font-size: 1.35rem; font-weight: 900; color: #fff; letter-spacing: -0.6px; }
+  .footer-brand p { font-size: 0.84rem; line-height: 1.55; max-width: 320px; color: #a9c2e8; }
+  .footer-col h4 { color: #fff; font-size: 0.82rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.6px; margin-bottom: 12px; }
+  .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+  .footer-col a { color: #a9c2e8; text-decoration: none; font-size: 0.84rem; cursor: pointer; transition: color 0.15s; }
+  .footer-col a:hover { color: #fff; }
+  .footer-bottom { border-top: 1px solid rgba(255,255,255,0.12); padding: 16px 24px; max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; font-size: 0.76rem; color: #8aa8d6; }
+  .footer-bottom .legal-links { display: flex; gap: 16px; flex-wrap: wrap; }
+  .footer-bottom .legal-links a { color: #8aa8d6; text-decoration: none; cursor: pointer; }
+  .footer-bottom .legal-links a:hover { color: #fff; }
+
+  @media (max-width: 1200px) { .top-search-cards { grid-template-columns: repeat(4, 1fr); } }
+  @media (max-width: 1100px) { .search-wrapper { max-width: 640px; } .search-suggestions { display: none; } }
+  @media (max-width: 900px) {
+    .main-header { flex-wrap: wrap; gap: 10px; padding: 10px 16px; }
+    .search-wrapper { order: 3; flex-basis: 100%; max-width: 100%; }
+    .header-actions { margin-left: auto; gap: 8px; }
+    .logo-icon { width: 38px; height: 38px; }
+    .logo-text { font-size: 1.5rem; }
+    .search-container { height: 46px; }
+    .search-btn { padding: 0 16px; }
+    .filters-row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .filters-row .filter-group.price-group { grid-column: span 2; }
+    .top-search-cards { grid-template-columns: repeat(3, 1fr); }
+    .top-search-section { margin: 16px 16px 0; padding: 18px 18px; }
+    .filters-panel { margin: 16px 16px 0; padding: 16px 16px; }
+    .main { padding: 26px 16px 50px; }
+    .footer-inner { grid-template-columns: 1fr 1fr; gap: 24px; }
+    .footer-brand { grid-column: 1 / -1; }
+  }
+  @media (max-width: 600px) {
+    .top-bar { display: flex; padding: 6px 12px; gap: 8px; font-size: 0.7rem; overflow-x: auto; scrollbar-width: none; }
+    .top-bar::-webkit-scrollbar { display: none; }
+    .my-zone { flex: 1; min-width: 0; padding: 4px 6px 4px 8px; }
+    .my-zone label { font-size: 0.68rem; }
+    .my-zone select { max-width: none; width: 100%; font-size: 0.72rem; padding: 4px 6px; }
+    .main-header { padding: 8px 12px; gap: 8px; }
+    .logo { gap: 6px; }
+    .logo-icon { width: 32px; height: 32px; }
+    .logo-text { font-size: 1.3rem; letter-spacing: -0.6px; }
+    .header-actions { gap: 6px; }
+    .theme-toggle { width: 32px; height: 32px; font-size: 0.9rem; }
+    .currency-toggle button { padding: 6px 8px; font-size: 0.7rem; }
+    .lang-toggle button { padding: 6px 8px; font-size: 0.7rem; }
+    .auth-btn { padding: 7px 9px; font-size: 0.7rem; }
+    .auth-btn.primary { padding: 7px 10px; }
+    .search-container { height: 44px; border-radius: 8px; }
+    .search-category { max-width: 96px; padding: 0 8px; padding-right: 24px; font-size: 0.72rem; }
+    .search-input { padding: 0 10px; font-size: 0.9rem; }
+    .search-btn { padding: 0 12px; font-size: 0.85rem; gap: 0; }
+    .search-suggestions { display: none; }
+    .hero { padding: 20px 14px 34px; }
+    .hero h1 { font-size: 1.2rem; }
+    .hero p { font-size: 0.85rem; }
+    .top-search-section { margin: 14px 12px 0; padding: 16px 12px; border-radius: 12px; }
+    .top-search-title { font-size: 1rem; }
+    .top-search-cards { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+    .ts-card { min-height: 140px; padding: 10px 6px; gap: 6px; }
+    .ts-emoji { font-size: 1.8rem; }
+    .ts-name { font-size: 0.78rem; line-height: 1.15; }
+    .ts-price { font-size: 0.92rem; }
+    .ts-count { font-size: 0.64rem; padding: 2px 6px; }
+    .ts-trend { width: 22px; height: 22px; font-size: 0.72rem; }
+    .filters-panel { margin: 14px 12px 0; padding: 14px 12px; border-radius: 12px; }
+    .filters-row { grid-template-columns: 1fr; gap: 10px; }
+    .filters-row .filter-group.price-group { grid-column: span 1; }
+    .filters-toggles { gap: 8px; }
+    .toggle-chip { font-size: 0.74rem; padding: 7px 10px; flex: 1 1 auto; justify-content: center; }
+    .filter-btn-row { flex-direction: column; }
+    .filter-btn { width: 100%; }
+    .category-bar { padding: 0 12px; -webkit-overflow-scrolling: touch; scroll-snap-type: x proximity; }
+    .category-bar a { scroll-snap-align: start; }
+    .main { padding: 22px 12px 44px; }
+    .filter-notice { flex-direction: column; align-items: flex-start; }
+    .cat-grid { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+    .cat-card { padding: 12px 8px; }
+    .cat-card .emoji { font-size: 1.6rem; }
+    .cat-card .name { font-size: 0.76rem; }
+    .results-header { flex-direction: column; align-items: stretch; }
+    .results-header-left { justify-content: space-between; }
+    .sort-control { justify-content: space-between; width: 100%; }
+    .sort-control select { flex: 1; }
+    .result-card { flex-wrap: wrap; gap: 12px; padding: 14px; align-items: flex-start; }
+    .result-emoji { width: 52px; height: 52px; font-size: 1.9rem; }
+    .result-info { flex: 1 1 calc(100% - 64px); }
+    .result-info h3 { font-size: 0.95rem; }
+    .result-meta { gap: 6px; font-size: 0.72rem; margin-bottom: 4px; }
+    .result-price { width: 100%; text-align: left; display: flex; align-items: baseline; gap: 8px; padding-top: 8px; border-top: 1px dashed var(--borde); }
+    .result-price .amount { font-size: 1.15rem; }
+    .result-price .unit { font-size: 0.68rem; }
+    .how-section, .biz-banner { padding: 20px 14px; }
+    .how-steps { grid-template-columns: 1fr; gap: 12px; }
+    .biz-banner { flex-direction: column; align-items: flex-start; }
+    .biz-banner button { width: 100%; }
+    .footer-inner { grid-template-columns: 1fr 1fr; padding: 32px 16px 20px; gap: 22px; }
+    .footer-bottom { flex-direction: column; text-align: center; }
+    .form-row-2 { grid-template-columns: 1fr; }
+    .scroll-fab { width: 44px; height: 44px; font-size: 1.2rem; right: 14px; }
+    #fabTop { bottom: 76px; }
+    #fabBottom { bottom: 16px; }
+    .skeleton-emoji { width: 52px; height: 52px; }
+  }
+  @media (max-width: 480px) {
+    .modal { padding: 12px; }
+    .modal-content { max-height: 94vh; }
+    .modal-actions { flex-wrap: wrap; }
+    .modal-actions button { flex: 1 1 calc(50% - 5px); min-width: 0; }
+    .modal-actions button:first-child { flex-basis: 100%; order: 3; }
+    .footer-inner { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 360px) {
+    .logo-icon { width: 28px; height: 28px; }
+    .logo-text { font-size: 1.15rem; letter-spacing: -0.4px; }
+    .auth-btn { padding: 6px 8px; font-size: 0.66rem; }
+    .currency-toggle button { padding: 5px 7px; font-size: 0.66rem; }
+    .lang-toggle button { padding: 5px 7px; font-size: 0.66rem; }
+    .ts-name { font-size: 0.72rem; }
+    .ts-price { font-size: 0.85rem; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ✅ NEW: noscript -->
+<noscript>
+  <div class="noscript-banner">
+    ⚠️ Comercia necesita JavaScript para funcionar. Actívalo en tu navegador para buscar productos y servicios.
+  </div>
+</noscript>
+
+<header>
+  <div class="top-bar">
+    <div class="my-zone" id="myZoneWrapper">
+      <label for="myZone" data-i18n="myZoneLabel">📍 Tu municipio:</label>
+      <select id="myZone" onchange="cambiarMiZona(this.value)">
+        <option value="" data-i18n="allProvince">Toda la provincia</option>
+        <option value="Yaguajay">Yaguajay</option>
+        <option value="Jatibonico">Jatibonico</option>
+        <option value="Taguasco">Taguasco</option>
+        <option value="Cabaiguán">Cabaiguán</option>
+        <option value="Fomento">Fomento</option>
+        <option value="Trinidad">Trinidad</option>
+        <option value="Sancti Spíritus">Sancti Spíritus</option>
+        <option value="La Sierpe">La Sierpe</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="main-header">
+    <div class="logo" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+      <!-- ✅ FIX: loading="lazy" + decoding async -->
+      <img src="assets/logo/logo.png" alt="Logo Comercia" class="logo-icon" loading="lazy" decoding="async" width="44" height="44">
+      <span class="logo-text">COMERCIA</span>
+    </div>
+    <div class="search-wrapper">
+      <div class="search-container">
+        <select class="search-category" id="searchCategory">
+          <option value="" data-i18n="all">Todo</option>
+          <option value="Alimentos" data-i18n="catAlimentos">Alimentos</option>
+          <option value="Bebidas" data-i18n="catBebidas">Bebidas</option>
+          <option value="Cosméticos" data-i18n="catCosmeticos">Cosméticos</option>
+          <option value="Hogar" data-i18n="catHogar">Hogar</option>
+          <option value="Electrodomésticos" data-i18n="catElectro">Electrodomésticos</option>
+          <option value="Ferretería" data-i18n="catFerreteria">Ferretería</option>
+          <option value="Moda" data-i18n="catModa">Moda</option>
+          <option value="Salud" data-i18n="catSalud">Salud</option>
+          <option value="Tecnología" data-i18n="catTecnologia">Tecnología</option>
+          <option value="Servicios" data-i18n="catServicios">Servicios</option>
+          <option value="Mascotas" data-i18n="catMascotas">Mascotas</option>
+          <option value="Juguetes" data-i18n="catJuguetes">Juguetes</option>
+          <option value="Deportes" data-i18n="catDeportes">Deportes</option>
+          <option value="Automotriz" data-i18n="catAutomotriz">Automotriz</option>
+          <option value="Libros" data-i18n="catLibros">Libros</option>
+          <option value="Papelería" data-i18n="catPapeleria">Papelería</option>
+          <option value="Farmacia" data-i18n="catFarmacia">Farmacia</option>
+          <option value="Belleza" data-i18n="catBelleza">Belleza</option>
+          <option value="Jardín" data-i18n="catJardin">Jardín</option>
+          <option value="Bebés" data-i18n="catBebes">Bebés</option>
+          <option value="Muebles" data-i18n="catMuebles">Muebles</option>
+        </select>
+        <input type="text" id="searchInput" class="search-input" placeholder="Buscar…" data-i18n-placeholder="searchPlaceholder" autocomplete="off">
+        <button class="search-btn" onclick="buscar()">🔍 <span class="label" data-i18n="search">Buscar</span></button>
+      </div>
+      <div class="search-suggestions">
+        <span class="label" data-i18n="popular">Populares:</span>
+        <a href="#" onclick="buscarRapido('aceite');return false;" data-i18n="oil">Aceite</a>
+        <a href="#" onclick="buscarRapido('arroz');return false;" data-i18n="rice">Arroz</a>
+        <a href="#" onclick="buscarRapido('detergente');return false;" data-i18n="detergent">Detergente</a>
+        <a href="#" onclick="buscarRapido('taladro');return false;" data-i18n="drill">Taladro</a>
+        <a href="#" onclick="buscarRapido('crema');return false;" data-i18n="cream">Crema</a>
+      </div>
+    </div>
+    <div class="header-actions">
+      <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" title="Cambiar modo claro/oscuro" aria-label="Cambiar modo claro/oscuro">🌙</button>
+      <div class="currency-toggle">
+        <button class="active" id="btnCUP" onclick="setCurrency('CUP')">CUP</button>
+        <button id="btnUSD" onclick="setCurrency('USD')">USD</button>
+      </div>
+      <div class="lang-toggle">
+        <button class="active" id="btnES" onclick="setLang('es')">ES</button>
+        <button id="btnEN" onclick="setLang('en')">EN</button>
+      </div>
+      <button class="auth-btn" onclick="abrirAuth('login')" data-i18n="login">Iniciar sesión</button>
+      <button class="auth-btn primary" onclick="abrirAuth('registro')" data-i18n="createAccount">Crear cuenta</button>
+    </div>
+  </div>
+
+  <nav class="category-bar" id="categoryBar">
+    <a href="#" class="all-link active" data-cat="" onclick="filtrarCat('');return false;">☰ <span data-i18n="all">Todo</span></a>
+    <a href="#" data-cat="Alimentos" onclick="filtrarCat('Alimentos');return false;" data-i18n="catAlimentos">Alimentos</a>
+    <a href="#" data-cat="Bebidas" onclick="filtrarCat('Bebidas');return false;" data-i18n="catBebidas">Bebidas</a>
+    <a href="#" data-cat="Cosméticos" onclick="filtrarCat('Cosméticos');return false;" data-i18n="catCosmeticos">Cosméticos</a>
+    <a href="#" data-cat="Hogar" onclick="filtrarCat('Hogar');return false;" data-i18n="catHogar">Hogar</a>
+    <a href="#" data-cat="Electrodomésticos" onclick="filtrarCat('Electrodomésticos');return false;" data-i18n="catElectro">Electrodomésticos</a>
+    <a href="#" data-cat="Ferretería" onclick="filtrarCat('Ferretería');return false;" data-i18n="catFerreteria">Ferretería</a>
+    <a href="#" data-cat="Moda" onclick="filtrarCat('Moda');return false;" data-i18n="catModa">Moda</a>
+    <a href="#" data-cat="Salud" onclick="filtrarCat('Salud');return false;" data-i18n="catSalud">Salud</a>
+    <a href="#" data-cat="Tecnología" onclick="filtrarCat('Tecnología');return false;" data-i18n="catTecnologia">Tecnología</a>
+    <a href="#" data-cat="Servicios" onclick="filtrarCat('Servicios');return false;" data-i18n="catServicios">Servicios</a>
+    <a href="#" data-cat="Mascotas" onclick="filtrarCat('Mascotas');return false;" data-i18n="catMascotas">Mascotas</a>
+    <a href="#" data-cat="Juguetes" onclick="filtrarCat('Juguetes');return false;" data-i18n="catJuguetes">Juguetes</a>
+    <a href="#" data-cat="Deportes" onclick="filtrarCat('Deportes');return false;" data-i18n="catDeportes">Deportes</a>
+    <a href="#" data-cat="Automotriz" onclick="filtrarCat('Automotriz');return false;" data-i18n="catAutomotriz">Automotriz</a>
+    <a href="#" data-cat="Libros" onclick="filtrarCat('Libros');return false;" data-i18n="catLibros">Libros</a>
+    <a href="#" data-cat="Papelería" onclick="filtrarCat('Papelería');return false;" data-i18n="catPapeleria">Papelería</a>
+    <a href="#" data-cat="Farmacia" onclick="filtrarCat('Farmacia');return false;" data-i18n="catFarmacia">Farmacia</a>
+    <a href="#" data-cat="Belleza" onclick="filtrarCat('Belleza');return false;" data-i18n="catBelleza">Belleza</a>
+    <a href="#" data-cat="Jardín" onclick="filtrarCat('Jardín');return false;" data-i18n="catJardin">Jardín</a>
+    <a href="#" data-cat="Bebés" onclick="filtrarCat('Bebés');return false;" data-i18n="catBebes">Bebés</a>
+    <a href="#" data-cat="Muebles" onclick="filtrarCat('Muebles');return false;" data-i18n="catMuebles">Muebles</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <h1 data-i18n="heroTitle">¿Dónde lo encuentro?</h1>
+  <p data-i18n="heroSub">Busca un producto o servicio y descubre en qué negocio de Sancti Spíritus está, a qué precio y quién lo vende.</p>
+</div>
+
+<div class="top-search-section">
+  <div class="top-search-header">
+    <div class="top-search-title">
+      <span data-i18n="topSearchTitle">🔥 Lo más buscado</span>
+      <span class="sub" data-i18n="topSearchSub">actualizado hace 5 min · precios y tendencia</span>
+    </div>
+  </div>
+  <div class="top-search-cards" id="topSearchCards"></div>
+</div>
+
+<div class="filters-panel">
+  <div class="filters-row">
+    <div class="filter-group">
+      <label for="filterLoc" data-i18n="municipality">Municipio</label>
+      <select id="filterLoc" onchange="aplicarFiltroLoc(this.value)">
+        <option value="" data-i18n="allProvince">Toda la provincia</option>
+        <option value="Yaguajay">Yaguajay</option>
+        <option value="Jatibonico">Jatibonico</option>
+        <option value="Taguasco">Taguasco</option>
+        <option value="Cabaiguán">Cabaiguán</option>
+        <option value="Fomento">Fomento</option>
+        <option value="Trinidad">Trinidad</option>
+        <option value="Sancti Spíritus">Sancti Spíritus</option>
+        <option value="La Sierpe">La Sierpe</option>
+      </select>
+    </div>
+    <div class="filter-group" id="localityGroup">
+      <label for="filterLocality" data-i18n="locality">Localidad</label>
+      <select id="filterLocality" onchange="aplicarFiltroLocalidad(this.value)" disabled>
+        <option value="" data-i18n="selectMunicipalityFirst">Selecciona un municipio primero</option>
+      </select>
+    </div>
+    <div class="filter-group price-group">
+      <label data-i18n="priceRange">Rango de precio (CUP)</label>
+      <div class="price-range">
+        <input type="number" id="priceMin" placeholder="Desde" data-i18n-placeholder="from" min="0">
+        <span>—</span>
+        <input type="number" id="priceMax" placeholder="Sin límite" data-i18n-placeholder="noLimit" min="0">
+      </div>
+    </div>
+    <div class="filter-group">
+      <label for="filterSeller" data-i18n="sellerType">Tipo de vendedor</label>
+      <select id="filterSeller" onchange="buscar()">
+        <option value="" data-i18n="allSeller">Todos</option>
+        <option value="TCP">TCP</option>
+        <option value="Mipyme">Mipyme</option>
+      </select>
+    </div>
+  </div>
+  <div class="filters-toggles">
+    <div class="toggle-chip" id="toggleOpen" onclick="toggleFiltro('open')"><span class="chip-icon">🕐</span> <span data-i18n="openNow">Abierto ahora</span></div>
+    <div class="toggle-chip" id="toggleNear" onclick="toggleFiltro('near')"><span class="chip-icon">📍</span> <span data-i18n="nearMe">Cerca de mí</span></div>
+    <div class="toggle-chip" id="toggleToday" onclick="toggleFiltro('today')"><span class="chip-icon">✅</span> <span data-i18n="availableToday">Disponible hoy</span></div>
+    <div class="toggle-chip" id="toggleDelivery" onclick="toggleFiltro('delivery')"><span class="chip-icon">🚚</span> <span data-i18n="withDelivery">Con entrega</span></div>
+    <div class="toggle-chip" id="toggleRating" onclick="toggleFiltro('rating')"><span class="chip-icon">⭐</span> <span data-i18n="bestRated">Mejor valorados</span></div>
+  </div>
+  <div class="filter-btn-row">
+    <button class="filter-btn" onclick="buscar()" data-i18n="applyFilters">Aplicar filtros</button>
+    <button class="filter-btn secondary" onclick="limpiarFiltros()" data-i18n="clearAll">Limpiar todo</button>
+  </div>
+</div>
+
+<div class="main">
+  <div class="filter-notice" id="filterNotice" style="display:none;">
+    <div class="filter-notice-text" id="filterNoticeText"></div>
+    <button class="clear-filters-btn" onclick="limpiarFiltros()">✕ <span data-i18n="removeFilters">Quitar filtros</span></button>
+  </div>
+  <div class="section-title" data-i18n="exploreCategory">Explora por categoría</div>
+  <div class="cat-grid" id="catGrid"></div>
+  <div class="results-header">
+    <div class="results-header-left">
+      <h2 id="resultsTitle">Todos los productos y servicios</h2>
+      <span class="pill" id="resultCount">0 resultados</span>
+    </div>
+    <div class="sort-control">
+      <label for="sortSelect" data-i18n="sortBy">Ordenar por:</label>
+      <select id="sortSelect">
+        <option value="relevancia" data-i18n="relevance">Relevancia</option>
+        <option value="precio-asc" data-i18n="priceAsc">Precio: menor a mayor</option>
+        <option value="precio-desc" data-i18n="priceDesc">Precio: mayor a menor</option>
+        <option value="rating" data-i18n="bestRatedOpt">Mejor valorados</option>
+        <option value="nombre" data-i18n="nameAZ">Nombre A–Z</option>
+      </select>
+    </div>
+  </div>
+  <div class="result-list" id="resultList"></div>
+  <div class="how-section">
+    <h2 data-i18n="howTitle">¿Cómo funciona Comercia?</h2>
+    <p class="subtitle" data-i18n="howSub">Encuentra lo que necesitas en 3 pasos</p>
+    <div class="how-steps">
+      <div class="how-step"><div class="num">1</div><h3 data-i18n="step1Title">Busca lo que necesitas</h3><p data-i18n="step1Desc">Escribe el producto o servicio que buscas.</p></div>
+      <div class="how-step"><div class="num">2</div><h3 data-i18n="step2Title">Mira dónde está</h3><p data-i18n="step2Desc">Consulta el negocio, el precio y la dirección exacta.</p></div>
+      <div class="how-step"><div class="num">3</div><h3 data-i18n="step3Title">Ve o contacta</h3><p data-i18n="step3Desc">Dirígete al negocio o contáctalo por teléfono.</p></div>
+    </div>
+  </div>
+  <div class="biz-banner">
+    <div><h3 data-i18n="bizTitle">¿Tienes un negocio?</h3><p data-i18n="bizDesc">Publica tus productos gratis y aparece en las búsquedas de tu municipio. Sin comisiones, sin contratos.</p></div>
+    <button onclick="abrirAuth('registro')" data-i18n="registerBizBtn">Registrar mi negocio</button>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="footer-logo">
+        <!-- ✅ FIX: loading="lazy" -->
+        <img src="assets/logo/logo.png" alt="Logo Comercia" loading="lazy" decoding="async" width="38" height="38">
+        <span>COMERCIA</span>
+      </div>
+      <p data-i18n="footerTagline">El directorio comercial de Sancti Spíritus. Encuentra productos y servicios en tu municipio de forma rápida y sencilla.</p>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footerAbout">Acerca de</h4>
+      <ul>
+        <li><a onclick="abrirInfo('about')" data-i18n="aboutUs">Quiénes somos</a></li>
+        <li><a onclick="abrirInfo('mission')" data-i18n="ourMission">Nuestra misión</a></li>
+        <li><a onclick="abrirInfo('contact')" data-i18n="contact">Contacto</a></li>
+        <li><a onclick="abrirAuth('registro')" data-i18n="publishBusiness">Publica tu negocio</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footerLegal">Legal</h4>
+      <ul>
+        <li><a onclick="abrirInfo('terms')" data-i18n="terms">Términos y condiciones</a></li>
+        <li><a onclick="abrirInfo('privacy')" data-i18n="privacy">Política de privacidad</a></li>
+        <li><a onclick="abrirInfo('cookies')" data-i18n="cookies">Política de cookies</a></li>
+        <li><a onclick="abrirInfo('notice')" data-i18n="legalNotice">Aviso legal</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footerHelp">Ayuda</h4>
+      <ul>
+        <li><a onclick="abrirInfo('faq')" data-i18n="faq">Preguntas frecuentes</a></li>
+        <li><a onclick="abrirInfo('how')" data-i18n="howItWorks">Cómo funciona</a></li>
+        <li><a onclick="abrirInfo('support')" data-i18n="support">Soporte</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© <span id="footerYear"></span> Comercia · <span data-i18n="madeIn">Hecho en Sancti Spíritus, Cuba</span></span>
+    <div class="legal-links">
+      <a onclick="abrirInfo('terms')" data-i18n="terms">Términos y condiciones</a>
+      <a onclick="abrirInfo('privacy')" data-i18n="privacy">Política de privacidad</a>
+      <a onclick="abrirInfo('cookies')" data-i18n="cookies">Política de cookies</a>
+    </div>
+  </div>
+</footer>
+
+<div class="modal" id="modalNegocio">
+  <div class="modal-content">
+    <button class="modal-close-x" onclick="cerrarModal()">×</button>
+    <div class="modal-header">
+      <div class="negocio" id="mNegocio">Negocio</div>
+      <div class="tipo" id="mTipo">TCP / Mipyme</div>
+    </div>
+    <div class="modal-body">
+      <div class="detail-row"><span data-i18n="productService">Producto / servicio</span><span id="mProducto">—</span></div>
+      <div class="detail-row"><span data-i18n="price">Precio</span><span id="mPrecio">—</span></div>
+      <div class="detail-row"><span data-i18n="municipality">Municipio</span><span id="mLoc">—</span></div>
+      <div class="detail-row"><span data-i18n="locality">Localidad</span><span id="mLocalidad">—</span></div>
+      <div class="detail-row"><span data-i18n="availability">Disponibilidad</span><span id="mStock">—</span></div>
+      <div class="detail-row"><span data-i18n="schedule">Horario</span><span id="mHorario">—</span></div>
+      <div class="detail-row"><span data-i18n="address">Dirección</span><span id="mDireccion">—</span></div>
+      <div class="detail-row"><span data-i18n="contactLabel">Contacto</span><span id="mContacto">—</span></div>
+      <div class="detail-row"><span data-i18n="homeDelivery">Entrega a domicilio</span><span id="mDelivery">—</span></div>
+      <div class="detail-row"><span data-i18n="rating">Valoración</span><span id="mRating">—</span></div>
+      <div class="detail-row"><span data-i18n="lastUpdate">Última actualización</span><span id="mUpdated">—</span></div>
+      <div class="modal-note"><strong data-i18n="howToGet">📍 Cómo llegar</strong><span data-i18n="howToGetDesc">Consulta la dirección del negocio y dirígete directamente.</span></div>
+      <!-- ✅ NEW: Botones Llamar / WhatsApp / Compartir / Mapa -->
+      <div class="modal-actions">
+        <button class="btn-secondary" onclick="cerrarModal()" data-i18n="close">Cerrar</button>
+        <button class="btn-call" id="btnLlamar">📞 <span data-i18n="call">Llamar</span></button>
+        <button class="btn-whatsapp" id="btnWhatsapp">💬 WhatsApp</button>
+      </div>
+      <div class="modal-actions">
+        <button class="btn-share" id="btnShare">🔗 <span data-i18n="share">Compartir</span></button>
+        <button class="btn-map" id="btnMap">🗺️ <span data-i18n="viewMap">Ver mapa</span></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="modalAuth">
+  <div class="modal-content" style="max-width: 560px;">
+    <button class="modal-close-x" style="color:var(--texto);background:var(--gris);" onclick="cerrarAuth()">×</button>
+    <div class="modal-body" style="padding-top: 24px;">
+      <div style="text-align:center;margin-bottom:18px;">
+        <img src="assets/logo/logo2.png" alt="Logo Comercia" style="width:44px;height:44px;object-fit:contain;display:block;margin:0 auto 6px;" loading="lazy" decoding="async">
+        <div style="font-size:1.5rem;font-weight:900;color:var(--azul);letter-spacing:-0.8px;">COMERCIA</div>
+        <div style="font-size:0.82rem;color:var(--texto-suave);margin-top:4px;">Sancti Spíritus</div>
+      </div>
+
+      <div class="auth-tabs">
+        <button class="auth-tab active" id="tabLogin" onclick="cambiarAuthTab('login')" data-i18n="login">Iniciar sesión</button>
+        <button class="auth-tab" id="tabRegistro" onclick="cambiarAuthTab('registro')" data-i18n="createAccount">Crear cuenta</button>
+      </div>
+
+      <form class="auth-form active" id="formLogin" onsubmit="event.preventDefault(); alert(t('comingSoonBackend'));">
+        <div class="form-field"><label for="loginEmail" data-i18n="emailOrPhone">Correo o teléfono</label><input type="text" id="loginEmail" name="loginEmail" placeholder="ejemplo@correo.cu o 5555-1234" autocomplete="username"></div>
+        <div class="form-field"><label for="loginPassword" data-i18n="password">Contraseña</label><input type="password" id="loginPassword" name="loginPassword" placeholder="Tu contraseña" autocomplete="current-password"></div>
+        <button class="form-submit" type="submit" data-i18n="enter">Entrar</button>
+        <div class="form-hint"><span data-i18n="noAccount">¿No tienes cuenta?</span> <a onclick="cambiarAuthTab('registro')" data-i18n="registerFree">Regístrate gratis</a></div>
+      </form>
+
+      <form class="auth-form" id="formRegistro" onsubmit="event.preventDefault(); alert(t('comingSoonBackend'));">
+
+        <div class="account-type-field">
+          <label for="tipoCuenta" data-i18n="accountType">Tipo de cuenta</label>
+          <select id="tipoCuenta" name="tipoCuenta" onchange="cambiarTipoCuenta(this.value)">
+            <option value="usuario" data-i18n="atUserOption">Usuario</option>
+            <option value="tcp" data-i18n="atTcpOption">Trabajador por cuenta propia (TCP)</option>
+            <option value="mipyme" data-i18n="atMipymeOption">MIPYME</option>
+          </select>
+        </div>
+
+        <!-- ✅ FIX: name en TODOS los inputs/selects -->
+        <div class="account-fields active" id="fieldsUsuario">
+          <div class="form-section-title">📋 <span data-i18n="personalData">Datos personales</span></div>
+          <div class="form-row-2">
+            <div class="form-field"><label for="userFullName"><span data-i18n="fullName">Nombre completo</span><span class="req">*</span></label><input type="text" id="userFullName" name="user_full_name" placeholder="Tu nombre" autocomplete="name" required></div>
+            <div class="form-field"><label for="userCI"><span data-i18n="ci">Carnet de Identidad</span><span class="req">*</span></label><input type="text" id="userCI" name="user_ci" placeholder="00000000000" required></div>
+          </div>
+          <div class="form-row-2">
+            <div class="form-field"><label for="userEmail"><span data-i18n="email">Correo</span><span class="req">*</span></label><input type="email" id="userEmail" name="user_email" placeholder="ejemplo@correo.cu" autocomplete="email" required></div>
+            <div class="form-field"><label for="userPhone"><span data-i18n="phone">Teléfono</span><span class="req">*</span></label><input type="tel" id="userPhone" name="user_phone" placeholder="5555-1234" autocomplete="tel" required></div>
+          </div>
+          <div class="form-row-2">
+            <div class="form-field">
+              <label for="regMunicipioUser"><span data-i18n="municipality">Municipio</span><span class="req">*</span></label>
+              <select id="regMunicipioUser" name="user_municipio" onchange="actualizarLocalidadesRegistro('user', this.value)" required>
+                <option value="" data-i18n="selectMunicipality">Selecciona tu municipio</option>
+                <option value="Yaguajay">Yaguajay</option><option value="Jatibonico">Jatibonico</option><option value="Taguasco">Taguasco</option>
+                <option value="Cabaiguán">Cabaiguán</option><option value="Fomento">Fomento</option><option value="Trinidad">Trinidad</option>
+                <option value="Sancti Spíritus">Sancti Spíritus</option><option value="La Sierpe">La Sierpe</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="regLocalidadUser"><span data-i18n="locality">Localidad</span></label>
+              <select id="regLocalidadUser" name="user_localidad" disabled><option value="" data-i18n="selectMunicipalityFirst">Selecciona un municipio primero</option></select>
+            </div>
+          </div>
+          <div class="form-field"><label for="userPassword"><span data-i18n="password">Contraseña</span><span class="req">*</span></label><input type="password" id="userPassword" name="user_password" placeholder="Mínimo 8 caracteres" autocomplete="new-password" minlength="8" required></div>
+        </div>
+
+        <div class="account-fields" id="fieldsTcp">
+          <div class="form-section-title">👤 <span data-i18n="tcpPersonalData">Datos personales del titular</span></div>
+          <div class="form-row-2">
+            <div class="form-field"><label for="tcpFullName"><span data-i18n="fullName">Nombre y apellidos</span><span class="req">*</span></label><input type="text" id="tcpFullName" name="tcp_full_name" placeholder="Tu nombre completo" autocomplete="name" required></div>
+            <div class="form-field"><label for="tcpCI"><span data-i18n="ci">Carnet de Identidad</span><span class="req">*</span></label><input type="text" id="tcpCI" name="tcp_ci" placeholder="00000000000" required></div>
+          </div>
+          <div class="form-row-2">
+            <div class="form-field"><label for="tcpSex"><span data-i18n="sex">Sexo</span><span class="req">*</span></label>
+              <select id="tcpSex" name="tcp_sex" required><option value="" data-i18n="select">Selecciona</option><option value="M" data-i18n="sexM">Masculino</option><option value="F" data-i18n="sexF">Femenino</option></select>
+            </div>
+            <div class="form-field"><label for="tcpBirth"><span data-i18n="birthDate">Fecha de nacimiento</span><span class="req">*</span></label><input type="date" id="tcpBirth" name="tcp_birth" required></div>
+          </div>
+          <div class="form-row-2">
+            <div class="form-field"><label for="tcpSchool"><span data-i18n="schooling">Escolaridad</span><span class="req">*</span></label>
+              <select id="tcpSchool" name="tcp_school" required><option value="" data-i18n="select">Selecciona</option><option value="primaria" data-i18n="schoolPrimary">Primaria</option><option value="secundaria" data-i18n="schoolSecondary">Secundaria</option><option value="preuniversitario" data-i18n="schoolPre">Preuniversitario</option><option value="tecnico" data-i18n="schoolTech">Técnico Medio</option><option value="universitario" data-i18n="schoolUniv">Universitario</option></select>
+            </div>
+            <div class="form-field"><label for="tcpLabor"><span data-i18n="laborSource">Fuente de procedencia</span><span class="req">*</span></label>
+              <select id="tcpLabor" name="tcp_labor" required><option value="" data-i18n="select">Selecciona</option><option value="trabajador" data-i18n="laborWorker">Trabajador</option><option value="jubilado" data-i18n="laborRetired">Jubilado</option><option value="desvinculado" data-i18n="laborUnemployed">Desvinculado</option><option value="ama_casa" data-i18n="laborHousewife">Ama de casa</option><option value="otro" data-i18n="laborOther">Otro</option></select>
+            </div>
+          </div>
+          <div class="form-field"><label for="tcpHomeAddress"><span data-i18n="homeAddress">Dirección particular</span><span class="req">*</span></label><input type="text" id="tcpHomeAddress" name="tcp_home_address" placeholder="Calle, número, municipio" autocomplete="street-address" required></div>
+
+          <div class="form-section-title">🏪 <span data-i18n="activityData">Datos de la actividad</span></div>
+          <div class="form-row-2">
+            <div class="form-field"><label for="tcpActivityName"><span data-i18n="activityName">Denominación de la actividad</span><span class="req">*</span></label><input type="text" id="tcpActivityName" name="tcp_activity_name" placeholder="Ej: Venta de alimentos" required></div>
+            <div class="form-field"><label for="tcpActivityCode"><span data-i18n="activityCode">Código de actividad</span><span class="req">*</span></label><input type="text" id="tcpActivityCode" name="tcp_activity_code" placeholder="Según MFP" required></div>
+          </div>
+          <div class="form-field"><label for="tcpEstablishmentAddress"><span data-i18n="establishmentAddress">Dirección del establecimiento</span><span class="req">*</span></label><input type="text" id="tcpEstablishmentAddress" name="tcp_establishment_address" placeholder="Calle, número, municipio" required></div>
+
+          <div class="form-section-title">🏛️ <span data-i18n="fiscalData">Datos fiscales</span> <span class="opt-badge" data-i18n="optional">Opcional</span></div>
+          <div class="form-row-2">
+            <div class="form-field"><label for="tcpCarnet"><span data-i18n="carnetContribuyente">Carnet de Contribuyente</span><span class="opt">(opcional)</span></label><input type="text" id="tcpCarnet" name="tcp_carnet_contribuyente" placeholder="Número (si lo tiene)"></div>
+            <div class="form-field"><label for="tcpVector"><span data-i18n="vectorFiscal">Vector Fiscal</span><span class="opt">(opcional)</span></label><input type="text" id="tcpVector" name="tcp_vector_fiscal" placeholder="Número (si lo tiene)"></div>
+          </div>
+
+          <div class="form-section-title">🏦 <span data-i18n="bankData">Datos bancarios</span> <span class="opt-badge" data-i18n="optional">Opcional</span></div>
+          <div class="form-row-2">
+            <div class="form-field"><label for="tcpBankAccount"><span data-i18n="bankAccount">Cuenta bancaria (CUP)</span><span class="opt">(opcional)</span></label><input type="text" id="tcpBankAccount" name="tcp_bank_account" placeholder="Número de cuenta"></div>
+            <div class="form-field"><label for="tcpTransfer"><span data-i18n="transfermovil">Transfermóvil / QR</span><span class="opt">(opcional)</span></label><input type="tel" id="tcpTransfer" name="tcp_transfermovil" placeholder="Número de teléfono"></div>
+          </div>
+
+          <div class="form-section-title">🔐 <span data-i18n="accessData">Datos de acceso</span></div>
+          <div class="form-row-2">
+            <div class="form-field"><label for="tcpEmail"><span data-i18n="email">Correo</span><span class="req">*</span></label><input type="email" id="tcpEmail" name="tcp_email" placeholder="ejemplo@correo.cu" autocomplete="email" required></div>
+            <div class="form-field"><label for="tcpPhone"><span data-i18n="phone">Teléfono</span><span class="req">*</span></label><input type="tel" id="tcpPhone" name="tcp_phone" placeholder="5555-1234" autocomplete="tel" required></div>
+          </div>
+          <div class="form-row-2">
+            <div class="form-field">
+              <label for="regMunicipioTcp"><span data-i18n="municipality">Municipio</span><span class="req">*</span></label>
+              <select id="regMunicipioTcp" name="tcp_municipio" onchange="actualizarLocalidadesRegistro('tcp', this.value)" required>
+                <option value="" data-i18n="selectMunicipality">Selecciona tu municipio</option>
+                <option value="Yaguajay">Yaguajay</option><option value="Jatibonico">Jatibonico</option><option value="Taguasco">Taguasco</option>
+                <option value="Cabaiguán">Cabaiguán</option><option value="Fomento">Fomento</option><option value="Trinidad">Trinidad</option>
+                <option value="Sancti Spíritus">Sancti Spíritus</option><option value="La Sierpe">La Sierpe</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="regLocalidadTcp"><span data-i18n="locality">Localidad</span></label>
+              <select id="regLocalidadTcp" name="tcp_localidad" disabled><option value="" data-i18n="selectMunicipalityFirst">Selecciona un municipio primero</option></select>
+            </div>
+          </div>
+          <div class="form-field"><label for="tcpPassword"><span data-i18n="password">Contraseña</span><span class="req">*</span></label><input type="password" id="tcpPassword" name="tcp_password" placeholder="Mínimo 8 caracteres" autocomplete="new-password" minlength="8" required></div>
+        </div>
+
+        <div class="account-fields" id="fieldsMipyme">
+          <div class="form-section-title">🏢 <span data-i18n="entityData">Identificación de la entidad</span></div>
+          <div class="form-row-2">
+            <div class="form-field"><label for="mipymeCompanyName"><span data-i18n="companyName">Denominación social</span><span class="req">*</span></label><input type="text" id="mipymeCompanyName" name="mipyme_company_name" placeholder="Nombre legal de la MIPYME" required></div>
+            <div class="form-field"><label for="mipymeCompanyPhone"><span data-i18n="companyPhone">Teléfono de la empresa</span><span class="req">*</span></label><input type="tel" id="mipymeCompanyPhone" name="mipyme_company_phone" placeholder="5555-1234" autocomplete="tel" required></div>
+          </div>
+          <div class="form-row-2">
+            <div class="form-field"><label for="mipymeNIT"><span data-i18n="nit">NIT</span><span class="opt">(opcional, si ya lo tiene)</span></label><input type="text" id="mipymeNIT" name="mipyme_nit" placeholder="Número de Identificación Tributaria"></div>
+            <div class="form-field"><label for="mipymeMercReg"><span data-i18n="mercRegNumber">Nº Inscripción Registro Mercantil</span><span class="opt">(opcional, si ya lo tiene)</span></label><input type="text" id="mipymeMercReg" name="mipyme_merc_reg" placeholder="Código de personalidad jurídica"></div>
+          </div>
+
+          <div class="form-section-title">📜 <span data-i18n="constitutionData">Datos de constitución</span></div>
+          <div class="form-field"><label for="mipymeSocialObject"><span data-i18n="socialObject">Objeto social</span><span class="req">*</span></label><textarea id="mipymeSocialObject" name="mipyme_social_object" placeholder="Actividad económica principal" required></textarea></div>
+          <div class="form-field"><label for="mipymeSocialDomicile"><span data-i18n="socialDomicile">Domicilio social</span><span class="req">*</span></label><input type="text" id="mipymeSocialDomicile" name="mipyme_social_domicile" placeholder="Dirección legal de la empresa" required></div>
+          <div class="form-row-2">
+            <div class="form-field"><label for="mipymeCapital"><span data-i18n="capitalStock">Capital social (CUP)</span><span class="req">*</span></label><input type="number" id="mipymeCapital" name="mipyme_capital" placeholder="Monto declarado" min="0" required></div>
+            <div class="form-field"><label for="mipymePartners"><span data-i18n="partners">Número de socios</span><span class="req">*</span></label><input type="number" id="mipymePartners" name="mipyme_partners" placeholder="Ej: 3" min="1" value="1" required></div>
+          </div>
+
+          <div class="form-section-title">👥 <span data-i18n="partnersData">Socios y representante legal</span></div>
+          <div class="form-row-2">
+            <div class="form-field"><label for="mipymeLegalRepName"><span data-i18n="legalRepName">Nombre del representante legal</span><span class="req">*</span></label><input type="text" id="mipymeLegalRepName" name="mipyme_legal_rep_name" placeholder="Nombre completo" required></div>
+            <div class="form-field"><label for="mipymeLegalRepCI"><span data-i18n="legalRepCI">Carnet de Identidad del representante</span><span class="req">*</span></label><input type="text" id="mipymeLegalRepCI" name="mipyme_legal_rep_ci" placeholder="00000000000" required></div>
+          </div>
+          <div class="form-row-2">
+            <div class="form-field"><label for="mipymeLegalRepNat"><span data-i18n="legalRepNationality">Nacionalidad</span><span class="req">*</span></label><input type="text" id="mipymeLegalRepNat" name="mipyme_legal_rep_nationality" placeholder="Cubana" value="Cubana" required></div>
+            <div class="form-field"><label for="mipymeLegalRepPhone"><span data-i18n="legalRepPhone">Teléfono del representante</span><span class="req">*</span></label><input type="tel" id="mipymeLegalRepPhone" name="mipyme_legal_rep_phone" placeholder="5555-1234" autocomplete="tel" required></div>
+          </div>
+
+          <div class="form-section-title">🏦 <span data-i18n="bankData">Datos bancarios</span> <span class="opt-badge" data-i18n="optional">Opcional</span></div>
+          <div class="form-row-2">
+            <div class="form-field"><label for="mipymeBankAccount"><span data-i18n="bankAccount">Cuenta bancaria fiscal</span><span class="opt">(opcional)</span></label><input type="text" id="mipymeBankAccount" name="mipyme_bank_account" placeholder="Número de cuenta"></div>
+            <div class="form-field"><label for="mipymeTransfer"><span data-i18n="transfermovil">Transfermóvil / QR</span><span class="opt">(opcional)</span></label><input type="tel" id="mipymeTransfer" name="mipyme_transfermovil" placeholder="Número de teléfono"></div>
+          </div>
+
+          <div class="form-section-title">🔐 <span data-i18n="accessData">Datos de acceso</span></div>
+          <div class="form-row-2">
+            <div class="form-field"><label for="mipymeEmail"><span data-i18n="email">Correo</span><span class="req">*</span></label><input type="email" id="mipymeEmail" name="mipyme_email" placeholder="ejemplo@correo.cu" autocomplete="email" required></div>
+            <div class="form-field"><label for="mipymePassword"><span data-i18n="password">Contraseña</span><span class="req">*</span></label><input type="password" id="mipymePassword" name="mipyme_password" placeholder="Mínimo 8 caracteres" autocomplete="new-password" minlength="8" required></div>
+          </div>
+          <div class="form-row-2">
+            <div class="form-field">
+              <label for="regMunicipioMipyme"><span data-i18n="municipality">Municipio</span><span class="req">*</span></label>
+              <select id="regMunicipioMipyme" name="mipyme_municipio" onchange="actualizarLocalidadesRegistro('mipyme', this.value)" required>
+                <option value="" data-i18n="selectMunicipality">Selecciona tu municipio</option>
+                <option value="Yaguajay">Yaguajay</option><option value="Jatibonico">Jatibonico</option><option value="Taguasco">Taguasco</option>
+                <option value="Cabaiguán">Cabaiguán</option><option value="Fomento">Fomento</option><option value="Trinidad">Trinidad</option>
+                <option value="Sancti Spíritus">Sancti Spíritus</option><option value="La Sierpe">La Sierpe</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="regLocalidadMipyme"><span data-i18n="locality">Localidad</span></label>
+              <select id="regLocalidadMipyme" name="mipyme_localidad" disabled><option value="" data-i18n="selectMunicipalityFirst">Selecciona un municipio primero</option></select>
+            </div>
+          </div>
+        </div>
+
+        <button class="form-submit" type="submit" data-i18n="createAccountBtn">Crear cuenta</button>
+        <div class="form-hint"><span data-i18n="haveAccount">¿Ya tienes cuenta?</span> <a onclick="cambiarAuthTab('login')" data-i18n="loginLink">Inicia sesión</a></div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="modalInfo">
+  <div class="modal-content" style="max-width: 620px;">
+    <button class="modal-close-x" style="color:var(--texto);background:var(--gris);" onclick="cerrarInfo()">×</button>
+    <div class="modal-body" style="padding-top: 28px;">
+      <h2 id="infoTitle" style="font-size:1.3rem;font-weight:800;color:var(--azul);margin-bottom:14px;"></h2>
+      <div id="infoContent" style="font-size:0.9rem;line-height:1.6;color:var(--texto);"></div>
+      <div class="modal-actions" style="margin-top:22px;">
+        <button class="btn-primary" onclick="cerrarInfo()" data-i18n="close">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<button class="scroll-fab" id="fabTop" onclick="subirArriba()" title="Subir arriba" aria-label="Subir arriba">↑</button>
+<button class="scroll-fab" id="fabBottom" onclick="bajarAbajo()" title="Ir al final" aria-label="Ir al final">↓</button>
+
+<script>
+/* ====== ✅ FIX: LOCALIDADES con topónimos corregidos ====== */
+const LOCALIDADES_POR_MUNICIPIO = {
+  "Cabaiguán": ["Cabaiguán (cabecera)","Guayos","Jíquima","Jíquima de Peláez","Santa Lucía","Hatico","La Aurora","La Bija","Camilo Cienfuegos","El Colorado","Cruz de Neiva","Cuatro Esquinas de Neiva","Las Damas 1","Las Damas 2","La Esperanza","La Fragua","La Macuca","Manaquitas","Noel Sancho","La Pimienta","La Prueba","Saltadero","San Luis","Vega del Paso","La Victoria","Carboney"],
+  "Fomento": ["Fomento (cabecera)","Agabama","El Cacique"],
+  "Jatibonico": ["Jatibonico (cabecera)","Arroyo Blanco"],
+  "La Sierpe": ["La Sierpe (cabecera)","Jíbaro","Mapos","Siete de Noviembre"],
+  "Sancti Spíritus": ["Sancti Spíritus (cabecera)","Banao","Guasimal","Tunas de Zaza","Paredes","Las Tozas","Managuaco","Pojabo","Las Yayas","Aguadita","El Bejuco","Cagüeira","El Caney","Guayacanes","La Herradura","Jarao","Jobo Dulce","El Maizal","Petronila","Pinto","Pozo Colorado","Tayabacoa","Vallejo"],
+  "Taguasco": ["Taguasco (cabecera)","Siguaney","Tuinucú","Zaza del Medio"],
+  "Trinidad": ["Trinidad (cabecera)","Casilda","Condado","Alberto Delgado","Caracusey","Manacas-Iznaga","Meyer","San Pedro","Topes de Collantes"],
+  "Yaguajay": ["Yaguajay (cabecera)","Iguará","Jarahueca","Mayajigua","Meneses","Obdulio Morales","El Río","Simón Bolívar","Venegas","Bellamota","Itabo","Perea","Seibabo","Agua Santa","Aguada","Alunao","Aridanes","Augusto César Sandino","Bamburanao","Batey Colorado","Batey del Medio","Calienes","Camaján","Cambao","Caragui","Centeno","El Baño de los Brujos","El Pastoreo","El Purial","El Tranque","El Yigre","Felicito Rodríguez","Jicotea","Jobo Rosado","Juan Francisco","Júcaro"]
+};
+
+/* ====== DATOS ====== */
+const ahora = new Date();
+const haceHoras = (h) => new Date(ahora.getTime() - h * 60 * 60 * 1000).toISOString();
+const haceDias = (d) => new Date(ahora.getTime() - d * 24 * 60 * 60 * 1000).toISOString();
+
+const ofertas = [
+  { id:1, emoji:"🍚", producto:"Arroz grano largo 1kg", categoria:"Alimentos", precioCUP:850, precioUSD:3.5, localidad:"Sancti Spíritus", localidadNombre:"Sancti Spíritus (cabecera)", negocio:"Bodega La Esquina", tipo:"TCP", stock:"Disponible", horario:"Lun–Sáb 8:00–18:00", direccion:"Calle 12 #456, Sancti Spíritus", contacto:"5555-1234", delivery:true, rating:4.5, actualizado: haceHoras(2) },
+  { id:2, emoji:"🛢️", producto:"Aceite de girasol 1L", categoria:"Alimentos", precioCUP:1200, precioUSD:5.0, localidad:"Trinidad", localidadNombre:"Trinidad (cabecera)", negocio:"Mipyme El Sol", tipo:"Mipyme", stock:"Disponible", horario:"Lun–Vie 9:00–17:00", direccion:"Calle Martí #89, Trinidad", contacto:"5555-5678", delivery:true, rating:4.8, actualizado: haceHoras(5) },
+  { id:3, emoji:"☕", producto:"Café molido 250g", categoria:"Alimentos", precioCUP:950, precioUSD:4.0, localidad:"Sancti Spíritus", localidadNombre:"Sancti Spíritus (cabecera)", negocio:"Cafetería Central", tipo:"Mipyme", stock:"Pocas unidades", horario:"Lun–Dom 7:00–20:00", direccion:"Calle 5 #120, Sancti Spíritus", contacto:"5555-9012", delivery:false, rating:4.3, actualizado: haceDias(3) },
+  { id:4, emoji:"💄", producto:"Crema facial hidratante", categoria:"Cosméticos", precioCUP:1800, precioUSD:7.2, localidad:"Cabaiguán", localidadNombre:"Cabaiguán (cabecera)", negocio:"Mipyme Bella Piel", tipo:"Mipyme", stock:"Disponible", horario:"Lun–Sáb 10:00–19:00", direccion:"Calle Carretera Central #210, Cabaiguán", contacto:"5555-3456", delivery:true, rating:4.9, actualizado: haceHoras(1) },
+  { id:5, emoji:"🧴", producto:"Detergente líquido 1L", categoria:"Hogar", precioCUP:900, precioUSD:3.8, localidad:"Trinidad", localidadNombre:"Trinidad (cabecera)", negocio:"Mipyme El Sol", tipo:"Mipyme", stock:"Disponible", horario:"Lun–Vie 9:00–17:00", direccion:"Calle Martí #89, Trinidad", contacto:"5555-5678", delivery:true, rating:4.8, actualizado: haceHoras(6) },
+  { id:6, emoji:"🔌", producto:"Ventilador de mesa", categoria:"Electrodomésticos", precioCUP:4500, precioUSD:18.0, localidad:"Sancti Spíritus", localidadNombre:"Sancti Spíritus (cabecera)", negocio:"Mipyme TecnoHogar", tipo:"Mipyme", stock:"Disponible", horario:"Lun–Sáb 9:00–18:00", direccion:"Calle 10 #78, Sancti Spíritus", contacto:"5555-7890", delivery:true, rating:4.6, actualizado: haceDias(2) },
+  { id:7, emoji:"🔧", producto:"Taladro percutor 600W", categoria:"Ferretería", precioCUP:6200, precioUSD:24.8, localidad:"Jatibonico", localidadNombre:"Jatibonico (cabecera)", negocio:"Ferretería El Tornillo", tipo:"TCP", stock:"Disponible", horario:"Lun–Sáb 8:00–17:00", direccion:"Ave. 26 #132, Jatibonico", contacto:"5555-2345", delivery:false, rating:4.4, actualizado: haceDias(10) },
+  { id:8, emoji:"🧼", producto:"Jabón de tocador (3 uds)", categoria:"Hogar", precioCUP:450, precioUSD:1.8, localidad:"Sancti Spíritus", localidadNombre:"Sancti Spíritus (cabecera)", negocio:"Bodega La Esquina", tipo:"TCP", stock:"Disponible", horario:"Lun–Sáb 8:00–18:00", direccion:"Calle 12 #456, Sancti Spíritus", contacto:"5555-1234", delivery:true, rating:4.5, actualizado: haceHoras(3) },
+  { id:9, emoji:"💅", producto:"Esmalte de uñas", categoria:"Cosméticos", precioCUP:350, precioUSD:1.4, localidad:"Sancti Spíritus", localidadNombre:"Sancti Spíritus (cabecera)", negocio:"Mipyme Bella Piel", tipo:"Mipyme", stock:"Disponible", horario:"Lun–Sáb 10:00–19:00", direccion:"Calle Colón #210, Sancti Spíritus", contacto:"5555-3456", delivery:true, rating:4.9, actualizado: haceHoras(4) },
+  { id:10, emoji:"🪛", producto:"Juego de destornilladores", categoria:"Ferretería", precioCUP:2200, precioUSD:8.8, localidad:"Yaguajay", localidadNombre:"Yaguajay (cabecera)", negocio:"Ferretería El Tornillo", tipo:"TCP", stock:"Disponible", horario:"Lun–Sáb 8:00–17:00", direccion:"Calle 4 #132, Yaguajay", contacto:"5555-2345", delivery:false, rating:4.4, actualizado: haceDias(8) },
+  { id:11, emoji:"🥤", producto:"Refresco de cola 1.5L", categoria:"Bebidas", precioCUP:600, precioUSD:2.5, localidad:"Sancti Spíritus", localidadNombre:"Sancti Spíritus (cabecera)", negocio:"Mipyme El Sol", tipo:"Mipyme", stock:"Disponible", horario:"Lun–Vie 9:00–17:00", direccion:"Calle Martí #89, Trinidad", contacto:"5555-5678", delivery:true, rating:4.8, actualizado: haceHoras(7) },
+  { id:12, emoji:"📱", producto:"Cargador de celular USB-C", categoria:"Tecnología", precioCUP:1500, precioUSD:6.0, localidad:"Sancti Spíritus", localidadNombre:"Sancti Spíritus (cabecera)", negocio:"Mipyme TecnoHogar", tipo:"Mipyme", stock:"Disponible", horario:"Lun–Sáb 9:00–18:00", direccion:"Calle 10 #78, Sancti Spíritus", contacto:"5555-7890", delivery:true, rating:4.6, actualizado: haceDias(1) },
+  { id:13, emoji:"👗", producto:"Camiseta de algodón", categoria:"Moda", precioCUP:1200, precioUSD:4.8, localidad:"Trinidad", localidadNombre:"Trinidad (cabecera)", negocio:"Mipyme La Costura", tipo:"TCP", stock:"Disponible", horario:"Lun–Sáb 10:00–18:00", direccion:"Calle 3 #22, Trinidad", contacto:"5555-1111", delivery:false, rating:4.2, actualizado: haceDias(5) },
+  { id:14, emoji:"💊", producto:"Paracetamol 500mg (10 uds)", categoria:"Salud", precioCUP:500, precioUSD:2.0, localidad:"Sancti Spíritus", localidadNombre:"Sancti Spíritus (cabecera)", negocio:"Farmacia Central", tipo:"TCP", stock:"Disponible", horario:"Lun–Dom 8:00–20:00", direccion:"Calle 7 #33, Sancti Spíritus", contacto:"5555-2222", delivery:false, rating:4.7, actualizado: haceHoras(2) },
+  { id:15, emoji:"🛠️", producto:"Reparación de aire acondicionado", categoria:"Servicios", precioCUP:2500, precioUSD:10.0, localidad:"Sancti Spíritus", localidadNombre:"Sancti Spíritus (cabecera)", negocio:"Mipyme Clima Total", tipo:"Mipyme", stock:"Agenda disponible", horario:"Lun–Vie 8:00–17:00", direccion:"Calle 15 #88, Sancti Spíritus", contacto:"5555-3333", delivery:false, rating:4.9, actualizado: haceHoras(8) },
+  { id:16, emoji:"🐕", producto:"Alimento para perros 2kg", categoria:"Mascotas", precioCUP:2000, precioUSD:8.0, localidad:"Cabaiguán", localidadNombre:"Guayos", negocio:"Mipyme El Amigo Fiel", tipo:"Mipyme", stock:"Disponible", horario:"Lun–Sáb 9:00–18:00", direccion:"Calle 1 #45, Guayos", contacto:"5555-4444", delivery:true, rating:4.7, actualizado: haceDias(2) },
+  { id:17, emoji:"🧸", producto:"Peluche mediano", categoria:"Juguetes", precioCUP:1100, precioUSD:4.4, localidad:"Trinidad", localidadNombre:"Casilda", negocio:"Mipyme Juguetes Feliz", tipo:"TCP", stock:"Disponible", horario:"Lun–Sáb 10:00–19:00", direccion:"Calle 2 #14, Casilda", contacto:"5555-5555", delivery:false, rating:4.1, actualizado: haceDias(6) },
+  { id:18, emoji:"⚽", producto:"Balón de fútbol #5", categoria:"Deportes", precioCUP:2500, precioUSD:10.0, localidad:"Sancti Spíritus", localidadNombre:"Tunas de Zaza", negocio:"Mipyme Deporte Total", tipo:"Mipyme", stock:"Disponible", horario:"Lun–Sáb 9:00–18:00", direccion:"Calle 11 #55, Tunas de Zaza", contacto:"5555-6666", delivery:true, rating:4.6, actualizado: haceHoras(9) },
+  { id:19, emoji:"🚗", producto:"Aceite de motor 4L", categoria:"Automotriz", precioCUP:3800, precioUSD:15.2, localidad:"Jatibonico", localidadNombre:"Arroyo Blanco", negocio:"Mipyme Auto Repuestos", tipo:"Mipyme", stock:"Disponible", horario:"Lun–Sáb 8:00–17:00", direccion:"Ave. 26 #88, Arroyo Blanco", contacto:"5555-7777", delivery:true, rating:4.5, actualizado: haceDias(4) },
+  { id:20, emoji:"📚", producto:"Novela de aventura", categoria:"Libros", precioCUP:800, precioUSD:3.2, localidad:"Sancti Spíritus", localidadNombre:"Banao", negocio:"Librería Central", tipo:"TCP", stock:"Disponible", horario:"Lun–Sáb 9:00–18:00", direccion:"Calle 6 #20, Banao", contacto:"5555-8888", delivery:false, rating:4.3, actualizado: haceDias(12) },
+  { id:21, emoji:"✏️", producto:"Cuaderno 100 hojas", categoria:"Papelería", precioCUP:250, precioUSD:1.0, localidad:"Trinidad", localidadNombre:"Condado", negocio:"Papelería Central", tipo:"TCP", stock:"Disponible", horario:"Lun–Sáb 8:00–18:00", direccion:"Calle 4 #11, Condado", contacto:"5555-9999", delivery:false, rating:4.0, actualizado: haceDias(3) },
+  { id:22, emoji:"🏥", producto:"Alcohol 70% 250ml", categoria:"Farmacia", precioCUP:400, precioUSD:1.6, localidad:"Sancti Spíritus", localidadNombre:"Sancti Spíritus (cabecera)", negocio:"Farmacia Central", tipo:"TCP", stock:"Disponible", horario:"Lun–Dom 8:00–20:00", direccion:"Calle 7 #33, Sancti Spíritus", contacto:"5555-2222", delivery:false, rating:4.7, actualizado: haceHoras(2) },
+  { id:23, emoji:"💅", producto:"Tinte para cabello", categoria:"Belleza", precioCUP:950, precioUSD:3.8, localidad:"Cabaiguán", localidadNombre:"Santa Lucía", negocio:"Mipyme Bella Piel", tipo:"Mipyme", stock:"Disponible", horario:"Lun–Sáb 10:00–19:00", direccion:"Calle Principal, Santa Lucía", contacto:"5555-3456", delivery:true, rating:4.9, actualizado: haceHoras(5) },
+  { id:24, emoji:"🌱", producto:"Maceta de barro", categoria:"Jardín", precioCUP:700, precioUSD:2.8, localidad:"Trinidad", localidadNombre:"Topes de Collantes", negocio:"Mipyme Jardín Verde", tipo:"TCP", stock:"Disponible", horario:"Lun–Sáb 8:00–17:00", direccion:"Carretera a Topes de Collantes", contacto:"5555-1010", delivery:false, rating:4.4, actualizado: haceDias(7) },
+  { id:25, emoji:"🍼", producto:"Pañales (paquete x10)", categoria:"Bebés", precioCUP:1800, precioUSD:7.2, localidad:"Sancti Spíritus", localidadNombre:"Guasimal", negocio:"Mipyme Bebé Feliz", tipo:"Mipyme", stock:"Disponible", horario:"Lun–Sáb 9:00–18:00", direccion:"Calle 8 #99, Guasimal", contacto:"5555-2020", delivery:true, rating:4.8, actualizado: haceHoras(3) },
+  { id:26, emoji:"🛋️", producto:"Sillón de una plaza", categoria:"Muebles", precioCUP:8500, precioUSD:34.0, localidad:"Jatibonico", localidadNombre:"Jatibonico (cabecera)", negocio:"Mipyme Muebles del Sur", tipo:"Mipyme", stock:"Disponible", horario:"Lun–Sáb 9:00–17:00", direccion:"Ave. 30 #200, Jatibonico", contacto:"5555-3030", delivery:true, rating:4.7, actualizado: haceDias(2) },
+  { id:27, emoji:"🍗", producto:"Picadillo de pollo 1kg", categoria:"Alimentos", precioCUP:1500, precioUSD:6.0, localidad:"Sancti Spíritus", localidadNombre:"Sancti Spíritus (cabecera)", negocio:"Mipyme El Sabor", tipo:"Mipyme", stock:"Disponible", horario:"Lun–Sáb 8:00–17:00", direccion:"Calle 9 #45, Sancti Spíritus", contacto:"5555-4040", delivery:true, rating:4.6, actualizado: haceHoras(4) },
+  { id:28, emoji:"🥚", producto:"Huevos (30 unidades)", categoria:"Alimentos", precioCUP:1100, precioUSD:4.5, localidad:"Trinidad", localidadNombre:"Trinidad (cabecera)", negocio:"Bodega La Esquina", tipo:"TCP", stock:"Disponible", horario:"Lun–Sáb 8:00–18:00", direccion:"Calle 12 #456, Trinidad", contacto:"5555-5050", delivery:true, rating:4.5, actualizado: haceHoras(2) },
+  { id:29, emoji:"🫘", producto:"Frijoles negros 1kg", categoria:"Alimentos", precioCUP:700, precioUSD:2.8, localidad:"Sancti Spíritus", localidadNombre:"Sancti Spíritus (cabecera)", negocio:"Bodega La Esquina", tipo:"TCP", stock:"Disponible", horario:"Lun–Sáb 8:00–18:00", direccion:"Calle 12 #456, Sancti Spíritus", contacto:"5555-1234", delivery:true, rating:4.5, actualizado: haceHoras(3) },
+  { id:30, emoji:"🥛", producto:"Leche en polvo 500g", categoria:"Alimentos", precioCUP:1600, precioUSD:6.4, localidad:"Cabaiguán", localidadNombre:"Cabaiguán (cabecera)", negocio:"Mipyme La Vaquita", tipo:"Mipyme", stock:"Pocas unidades", horario:"Lun–Sáb 9:00–17:00", direccion:"Calle 3 #22, Cabaiguán", contacto:"5555-6060", delivery:true, rating:4.7, actualizado: haceHoras(6) },
+  { id:31, emoji:"🍬", producto:"Azúcar refinada 1kg", categoria:"Alimentos", precioCUP:600, precioUSD:2.4, localidad:"Sancti Spíritus", localidadNombre:"Sancti Spíritus (cabecera)", negocio:"Bodega La Esquina", tipo:"TCP", stock:"Disponible", horario:"Lun–Sáb 8:00–18:00", direccion:"Calle 12 #456, Sancti Spíritus", contacto:"5555-1234", delivery:true, rating:4.5, actualizado: haceHoras(4) },
+  { id:32, emoji:"🧂", producto:"Sal de mesa 500g", categoria:"Alimentos", precioCUP:300, precioUSD:1.2, localidad:"Trinidad", localidadNombre:"Trinidad (cabecera)", negocio:"Mipyme El Sol", tipo:"Mipyme", stock:"Disponible", horario:"Lun–Vie 9:00–17:00", direccion:"Calle Martí #89, Trinidad", contacto:"5555-5678", delivery:true, rating:4.8, actualizado: haceHoras(5) },
+  { id:33, emoji:"🍞", producto:"Pan de molde", categoria:"Alimentos", precioCUP:450, precioUSD:1.8, localidad:"Sancti Spíritus", localidadNombre:"Sancti Spíritus (cabecera)", negocio:"Cafetería Central", tipo:"Mipyme", stock:"Disponible", horario:"Lun–Dom 7:00–20:00", direccion:"Calle 5 #120, Sancti Spíritus", contacto:"5555-9012", delivery:false, rating:4.3, actualizado: haceHoras(1) },
+  { id:34, emoji:"🧻", producto:"Papel higiénico (4 rollos)", categoria:"Hogar", precioCUP:800, precioUSD:3.2, localidad:"Cabaiguán", localidadNombre:"Jíquima", negocio:"Mipyme Bella Piel", tipo:"Mipyme", stock:"Disponible", horario:"Lun–Sáb 10:00–19:00", direccion:"Calle Principal, Jíquima", contacto:"5555-3456", delivery:true, rating:4.9, actualizado: haceHoras(7) },
+  { id:35, emoji:"🧴", producto:"Shampoo 400ml", categoria:"Hogar", precioCUP:1100, precioUSD:4.4, localidad:"Trinidad", localidadNombre:"Trinidad (cabecera)", negocio:"Mipyme El Sol", tipo:"Mipyme", stock:"Disponible", horario:"Lun–Vie 9:00–17:00", direccion:"Calle Martí #89, Trinidad", contacto:"5555-5678", delivery:true, rating:4.8, actualizado: haceHoras(3) },
+  { id:36, emoji:"🪥", producto:"Crema dental 100ml", categoria:"Hogar", precioCUP:700, precioUSD:2.8, localidad:"Sancti Spíritus", localidadNombre:"Sancti Spíritus (cabecera)", negocio:"Farmacia Central", tipo:"TCP", stock:"Disponible", horario:"Lun–Dom 8:00–20:00", direccion:"Calle 7 #33, Sancti Spíritus", contacto:"5555-2222", delivery:false, rating:4.7, actualizado: haceHoras(2) },
+  { id:37, emoji:"🍝", producto:"Pasta larga 500g", categoria:"Alimentos", precioCUP:550, precioUSD:2.2, localidad:"Sancti Spíritus", localidadNombre:"Sancti Spíritus (cabecera)", negocio:"Bodega La Esquina", tipo:"TCP", stock:"Disponible", horario:"Lun–Sáb 8:00–18:00", direccion:"Calle 12 #456, Sancti Spíritus", contacto:"5555-1234", delivery:true, rating:4.5, actualizado: haceHoras(3) }
+];
+
+const productosBuscados = [
+  { nombre: "Aceite", nombreEN: "Oil", emoji: "🛢️", termino: "aceite", tendencia: "up" },
+  { nombre: "Jabón", nombreEN: "Soap", emoji: "🧼", termino: "jabón", tendencia: "down" },
+  { nombre: "Detergente", nombreEN: "Detergent", emoji: "🧴", termino: "detergente", tendencia: "up" },
+  { nombre: "Picadillo de pollo", nombreEN: "Chicken mince", emoji: "🍗", termino: "picadillo", tendencia: "up" },
+  { nombre: "Arroz", nombreEN: "Rice", emoji: "🍚", termino: "arroz", tendencia: "down" },
+  { nombre: "Frijoles", nombreEN: "Beans", emoji: "🫘", termino: "frijoles", tendencia: "equal" },
+  { nombre: "Huevos", nombreEN: "Eggs", emoji: "🥚", termino: "huevos", tendencia: "up" },
+  { nombre: "Leche en polvo", nombreEN: "Powdered milk", emoji: "🥛", termino: "leche", tendencia: "up" },
+  { nombre: "Café", nombreEN: "Coffee", emoji: "☕", termino: "café", tendencia: "down" },
+  { nombre: "Azúcar", nombreEN: "Sugar", emoji: "🍬", termino: "azúcar", tendencia: "equal" },
+  { nombre: "Sal", nombreEN: "Salt", emoji: "🧂", termino: "sal", tendencia: "equal" },
+  { nombre: "Pan", nombreEN: "Bread", emoji: "🍞", termino: "pan", tendencia: "down" },
+  { nombre: "Papel higiénico", nombreEN: "Toilet paper", emoji: "🧻", termino: "papel", tendencia: "up" },
+  { nombre: "Shampoo", nombreEN: "Shampoo", emoji: "🧴", termino: "shampoo", tendencia: "equal" },
+  { nombre: "Crema dental", nombreEN: "Toothpaste", emoji: "🪥", termino: "crema dental", tendencia: "down" },
+  { nombre: "Pasta", nombreEN: "Pasta", emoji: "🍝", termino: "pasta", tendencia: "equal" }
+];
+
+const categoriasInfo = [
+  { nombre: "Alimentos", emoji: "🍚" },{ nombre: "Bebidas", emoji: "🥤" },{ nombre: "Cosméticos", emoji: "💄" },
+  { nombre: "Hogar", emoji: "🧴" },{ nombre: "Electrodomésticos", emoji: "🔌" },{ nombre: "Ferretería", emoji: "🔧" },
+  { nombre: "Moda", emoji: "👗" },{ nombre: "Salud", emoji: "💊" },{ nombre: "Tecnología", emoji: "📱" },
+  { nombre: "Servicios", emoji: "🛠️" },{ nombre: "Mascotas", emoji: "🐕" },{ nombre: "Juguetes", emoji: "🧸" },
+  { nombre: "Deportes", emoji: "⚽" },{ nombre: "Automotriz", emoji: "🚗" },{ nombre: "Libros", emoji: "📚" },
+  { nombre: "Papelería", emoji: "✏️" },{ nombre: "Farmacia", emoji: "🏥" },{ nombre: "Belleza", emoji: "💅" },
+  { nombre: "Jardín", emoji: "🌱" },{ nombre: "Bebés", emoji: "🍼" },{ nombre: "Muebles", emoji: "🛋️" }
+];
+
+const translations = {
+  es: {
+    myZoneLabel: "📍 Tu municipio:", allProvince: "Toda la provincia",
+    all: "Todo", searchPlaceholder: "Buscar…", search: "Buscar", popular: "Populares:",
+    oil: "Aceite", rice: "Arroz", detergent: "Detergente", drill: "Taladro", cream: "Crema",
+    login: "Iniciar sesión", createAccount: "Crear cuenta",
+    heroTitle: "¿Dónde lo encuentro?", heroSub: "Busca un producto o servicio y descubre en qué negocio de Sancti Spíritus está, a qué precio y quién lo vende.",
+    topSearchTitle: "🔥 Lo más buscado", topSearchSub: "actualizado hace 5 min · precios y tendencia",
+    municipality: "Municipio", locality: "Localidad", allLocalities: "Todas las localidades", selectMunicipalityFirst: "Selecciona un municipio primero",
+    priceRange: "Rango de precio (CUP)", from: "Desde", noLimit: "Sin límite",
+    sellerType: "Tipo de vendedor", allSeller: "Todos",
+    openNow: "Abierto ahora", nearMe: "Cerca de mí", availableToday: "Disponible hoy", withDelivery: "Con entrega", bestRated: "Mejor valorados",
+    applyFilters: "Aplicar filtros", clearAll: "Limpiar todo", removeFilters: "Quitar filtros",
+    exploreCategory: "Explora por categoría", allProducts: "Todos los productos y servicios", results: "resultados",
+    sortBy: "Ordenar por:", relevance: "Relevancia", priceAsc: "Precio: menor a mayor", priceDesc: "Precio: mayor a menor", bestRatedOpt: "Mejor valorados", nameAZ: "Nombre A–Z",
+    howTitle: "¿Cómo funciona Comercia?", howSub: "Encuentra lo que necesitas en 3 pasos",
+    step1Title: "Busca lo que necesitas", step1Desc: "Escribe el producto o servicio que buscas.",
+    step2Title: "Mira dónde está", step2Desc: "Consulta el negocio, el precio y la dirección exacta.",
+    step3Title: "Ve o contacta", step3Desc: "Dirígete al negocio o contáctalo por teléfono.",
+    bizTitle: "¿Tienes un negocio?", bizDesc: "Publica tus productos gratis y aparece en las búsquedas de tu municipio. Sin comisiones, sin contratos.", registerBizBtn: "Registrar mi negocio",
+    productService: "Producto / servicio", price: "Precio", availability: "Disponibilidad", schedule: "Horario", address: "Dirección",
+    contactLabel: "Contacto", homeDelivery: "Entrega a domicilio", rating: "Valoración", lastUpdate: "Última actualización",
+    howToGet: "📍 Cómo llegar", howToGetDesc: "Consulta la dirección del negocio y dirígete directamente.",
+    close: "Cerrar", call: "Llamar", share: "Compartir", viewMap: "Ver mapa",
+    emailOrPhone: "Correo o teléfono", email: "Correo", phone: "Teléfono", password: "Contraseña", enter: "Entrar",
+    noAccount: "¿No tienes cuenta?", registerFree: "Regístrate gratis",
+    fullName: "Nombre completo", ci: "Carnet de Identidad",
+    selectMunicipality: "Selecciona tu municipio", createAccountBtn: "Crear cuenta",
+    haveAccount: "¿Ya tienes cuenta?", loginLink: "Inicia sesión",
+    accountType: "Tipo de cuenta",
+    atUserOption: "Usuario",
+    atTcpOption: "Trabajador por cuenta propia (TCP)",
+    atMipymeOption: "MIPYME",
+    personalData: "Datos personales",
+    tcpPersonalData: "Datos personales del titular",
+    entityData: "Identificación de la entidad",
+    constitutionData: "Datos de constitución",
+    activityData: "Datos de la actividad",
+    fiscalData: "Datos fiscales",
+    bankData: "Datos bancarios",
+    accessData: "Datos de acceso",
+    partnersData: "Socios y representante legal",
+    optional: "Opcional",
+    sex: "Sexo", sexM: "Masculino", sexF: "Femenino",
+    birthDate: "Fecha de nacimiento", schooling: "Escolaridad",
+    schoolPrimary: "Primaria", schoolSecondary: "Secundaria", schoolPre: "Preuniversitario", schoolTech: "Técnico Medio", schoolUniv: "Universitario",
+    laborSource: "Fuente de procedencia", laborWorker: "Trabajador", laborRetired: "Jubilado", laborUnemployed: "Desvinculado", laborHousewife: "Ama de casa", laborOther: "Otro",
+    homeAddress: "Dirección particular",
+    activityName: "Denominación de la actividad", activityCode: "Código de actividad",
+    establishmentAddress: "Dirección del establecimiento",
+    carnetContribuyente: "Carnet de Contribuyente", vectorFiscal: "Vector Fiscal",
+    bankAccount: "Cuenta bancaria", transfermovil: "Transfermóvil / QR",
+    nit: "NIT", companyName: "Denominación social", mercRegNumber: "Nº Inscripción Registro Mercantil", companyPhone: "Teléfono de la empresa",
+    socialObject: "Objeto social", socialDomicile: "Domicilio social", capitalStock: "Capital social (CUP)", partners: "Número de socios",
+    legalRepName: "Nombre del representante legal", legalRepCI: "Carnet de Identidad del representante", legalRepNationality: "Nacionalidad", legalRepPhone: "Teléfono del representante",
+    select: "Selecciona", comingSoonBackend: "Próximamente: conexión con el backend",
+    footerTagline: "El directorio comercial de Sancti Spíritus. Encuentra productos y servicios en tu municipio de forma rápida y sencilla.",
+    footerAbout: "Acerca de", aboutUs: "Quiénes somos", ourMission: "Nuestra misión", contact: "Contacto", publishBusiness: "Publica tu negocio",
+    footerLegal: "Legal", terms: "Términos y condiciones", privacy: "Política de privacidad", cookies: "Política de cookies", legalNotice: "Aviso legal",
+    footerHelp: "Ayuda", faq: "Preguntas frecuentes", howItWorks: "Cómo funciona", support: "Soporte",
+    madeIn: "Hecho en Sancti Spíritus, Cuba",
+    noResults: "No encontramos resultados con esos filtros.",
+    noResultsHint: "Prueba con otra palabra, otro municipio u otra localidad, o quita algún filtro.",
+    seeAllProducts: "Ver todos los productos", activeFilters: "Filtros activos:",
+    searching: "Buscando:", resultsFor: "Resultados para", offersIn: "Ofertas en",
+    noOffers: "Sin ofertas", fromPrice: "desde", offer: "oferta", offers: "ofertas",
+    shareCopied: "Enlace copiado al portapapeles",
+    shareText: "Mira este negocio en Comercia:",
+    catAlimentos: "Alimentos", catBebidas: "Bebidas", catCosmeticos: "Cosméticos", catHogar: "Hogar",
+    catElectro: "Electrodomésticos", catFerreteria: "Ferretería", catModa: "Moda", catSalud: "Salud",
+    catTecnologia: "Tecnología", catServicios: "Servicios", catMascotas: "Mascotas", catJuguetes: "Juguetes",
+    catDeportes: "Deportes", catAutomotriz: "Automotriz", catLibros: "Libros", catPapeleria: "Papelería",
+    catFarmacia: "Farmacia", catBelleza: "Belleza", catJardin: "Jardín", catBebes: "Bebés", catMuebles: "Muebles"
+  },
+  en: {
+    myZoneLabel: "📍 Your municipality:", allProvince: "Whole province",
+    all: "All", searchPlaceholder: "Search…", search: "Search", popular: "Popular:",
+    oil: "Oil", rice: "Rice", detergent: "Detergent", drill: "Drill", cream: "Cream",
+    login: "Log in", createAccount: "Create account",
+    heroTitle: "Where can I find it?", heroSub: "Search for a product or service and discover which business in Sancti Spíritus has it, at what price, and who sells it.",
+    topSearchTitle: "🔥 Most searched", topSearchSub: "updated 5 min ago · prices and trends",
+    municipality: "Municipality", locality: "Locality", allLocalities: "All localities", selectMunicipalityFirst: "Select a municipality first",
+    priceRange: "Price range (CUP)", from: "From", noLimit: "No limit",
+    sellerType: "Seller type", allSeller: "All",
+    openNow: "Open now", nearMe: "Near me", availableToday: "Available today", withDelivery: "With delivery", bestRated: "Best rated",
+    applyFilters: "Apply filters", clearAll: "Clear all", removeFilters: "Remove filters",
+    exploreCategory: "Explore by category", allProducts: "All products and services", results: "results",
+    sortBy: "Sort by:", relevance: "Relevance", priceAsc: "Price: low to high", priceDesc: "Price: high to low", bestRatedOpt: "Best rated", nameAZ: "Name A–Z",
+    howTitle: "How does Comercia work?", howSub: "Find what you need in 3 steps",
+    step1Title: "Search what you need", step1Desc: "Type the product or service you are looking for.",
+    step2Title: "See where it is", step2Desc: "Check the business, price, and exact address.",
+    step3Title: "Go or contact", step3Desc: "Go to the business or contact it by phone.",
+    bizTitle: "Do you have a business?", bizDesc: "Publish your products for free and appear in searches in your municipality. No commissions, no contracts.", registerBizBtn: "Register my business",
+    productService: "Product / service", price: "Price", availability: "Availability", schedule: "Schedule", address: "Address",
+    contactLabel: "Contact", homeDelivery: "Home delivery", rating: "Rating", lastUpdate: "Last update",
+    howToGet: "📍 How to get there", howToGetDesc: "Check the business address and go directly.",
+    close: "Close", call: "Call", share: "Share", viewMap: "View map",
+    emailOrPhone: "Email or phone", email: "Email", phone: "Phone", password: "Password", enter: "Enter",
+    noAccount: "Don't have an account?", registerFree: "Sign up free",
+    fullName: "Full name", ci: "ID card",
+    selectMunicipality: "Select your municipality", createAccountBtn: "Create account",
+    haveAccount: "Already have an account?", loginLink: "Log in",
+    accountType: "Account type",
+    atUserOption: "User",
+    atTcpOption: "Self-employed (TCP)",
+    atMipymeOption: "MIPYME",
+    personalData: "Personal data",
+    tcpPersonalData: "Holder's personal data",
+    entityData: "Entity identification",
+    constitutionData: "Constitution data",
+    activityData: "Activity data",
+    fiscalData: "Fiscal data",
+    bankData: "Bank data",
+    accessData: "Access data",
+    partnersData: "Partners and legal representative",
+    optional: "Optional",
+    sex: "Sex", sexM: "Male", sexF: "Female",
+    birthDate: "Date of birth", schooling: "Education",
+    schoolPrimary: "Primary", schoolSecondary: "Secondary", schoolPre: "Pre-university", schoolTech: "Technical", schoolUniv: "University",
+    laborSource: "Employment source", laborWorker: "Worker", laborRetired: "Retired", laborUnemployed: "Unemployed", laborHousewife: "Housewife", laborOther: "Other",
+    homeAddress: "Home address",
+    activityName: "Activity name", activityCode: "Activity code",
+    establishmentAddress: "Establishment address",
+    carnetContribuyente: "Taxpayer card", vectorFiscal: "Fiscal vector",
+    bankAccount: "Bank account", transfermovil: "Transfermóvil / QR",
+    nit: "NIT", companyName: "Company name", mercRegNumber: "Commercial Registry No.", companyPhone: "Company phone",
+    socialObject: "Corporate purpose", socialDomicile: "Registered office", capitalStock: "Share capital (CUP)", partners: "Number of partners",
+    legalRepName: "Legal representative name", legalRepCI: "Legal representative ID", legalRepNationality: "Nationality", legalRepPhone: "Legal representative phone",
+    select: "Select", comingSoonBackend: "Coming soon: backend connection",
+    footerTagline: "The business directory of Sancti Spíritus. Find products and services in your municipality quickly and easily.",
+    footerAbout: "About", aboutUs: "Who we are", ourMission: "Our mission", contact: "Contact", publishBusiness: "Publish your business",
+    footerLegal: "Legal", terms: "Terms and conditions", privacy: "Privacy policy", cookies: "Cookie policy", legalNotice: "Legal notice",
+    footerHelp: "Help", faq: "FAQ", howItWorks: "How it works", support: "Support",
+    madeIn: "Made in Sancti Spíritus, Cuba",
+    noResults: "No results found with those filters.",
+    noResultsHint: "Try another word, another municipality or locality, or remove a filter.",
+    seeAllProducts: "See all products", activeFilters: "Active filters:",
+    searching: "Searching:", resultsFor: "Results for", offersIn: "Offers in",
+    noOffers: "No offers", fromPrice: "from", offer: "offer", offers: "offers",
+    shareCopied: "Link copied to clipboard",
+    shareText: "Check out this business on Comercia:",
+    catAlimentos: "Food", catBebidas: "Drinks", catCosmeticos: "Cosmetics", catHogar: "Home",
+    catElectro: "Appliances", catFerreteria: "Hardware", catModa: "Fashion", catSalud: "Health",
+    catTecnologia: "Technology", catServicios: "Services", catMascotas: "Pets", catJuguetes: "Toys",
+    catDeportes: "Sports", catAutomotriz: "Automotive", catLibros: "Books", catPapeleria: "Stationery",
+    catFarmacia: "Pharmacy", catBelleza: "Beauty", catJardin: "Garden", catBebes: "Babies", catMuebles: "Furniture"
+  }
+};
+
+const infoContent = {
+  es: {
+    about: { title: "Quiénes somos", body: "Comercia es un directorio comercial local creado para conectar a los vecinos de Sancti Spíritus con los negocios de su municipio. Nuestro objetivo es que cualquier persona pueda encontrar un producto o servicio de forma rápida, sabiendo dónde está, a qué precio y quién lo vende." },
+    mission: { title: "Nuestra misión", body: "Facilitar el acceso a la información comercial de la provincia, impulsar a los pequeños emprendedores y trabajadores por cuenta propia, y fortalecer la economía local mediante una plataforma transparente y accesible para todos." },
+    contact: { title: "Contacto", body: "¿Tienes sugerencias, problemas o quieres publicar tu negocio? Escríbenos a contacto@comercia.cu o visítanos en nuestra oficina en Sancti Spíritus. Respondemos en un plazo de 24 a 48 horas hábiles." },
+    terms: { title: "Términos y condiciones", body: "El uso de Comercia implica la aceptación de estos términos. La plataforma actúa como intermediario informativo entre compradores y vendedores; no participa en las transacciones ni garantiza la calidad de los productos o servicios ofrecidos. Los precios y la disponibilidad son responsabilidad de cada negocio y pueden cambiar sin previo aviso." },
+    privacy: { title: "Política de privacidad", body: "Comercia respeta tu privacidad. Recopilamos únicamente los datos necesarios para el funcionamiento del servicio (nombre, contacto y municipio). No compartimos tu información con terceros sin tu consentimiento. Puedes solicitar la eliminación de tus datos en cualquier momento escribiendo a contacto@comercia.cu." },
+    cookies: { title: "Política de cookies", body: "Utilizamos cookies técnicas para recordar tus preferencias (idioma, tema claro/oscuro, municipio seleccionado) y mejorar tu experiencia. No utilizamos cookies de seguimiento publicitario. Puedes borrar las cookies desde la configuración de tu navegador en cualquier momento." },
+    notice: { title: "Aviso legal", body: "Comercia es un proyecto independiente sin afiliación a organismos estatales. La información publicada es aportada por los propios negocios y verificada de forma periódica. Si detectas un error o contenido inapropiado, repórtalo a contacto@comercia.cu para su revisión." },
+    faq: { title: "Preguntas frecuentes", body: "¿Cómo publico mi negocio? Regístrate gratis y completa el perfil de tu negocio. ¿Tiene algún costo? No, publicar es totalmente gratuito. ¿Cómo actualizo mis precios? Inicia sesión y edita tus productos desde tu panel. ¿Comercia vende los productos? No, solo mostramos información de los negocios." },
+    how: { title: "Cómo funciona", body: "1. Busca el producto o servicio que necesitas. 2. Consulta los negocios que lo ofrecen, sus precios, ubicación y horario. 3. Dirígete al negocio o contáctalo por teléfono o WhatsApp para concretar la compra." },
+    support: { title: "Soporte", body: "Si tienes problemas técnicos, dudas sobre el uso de la plataforma o necesitas ayuda con tu cuenta, contáctanos en soporte@comercia.cu o llámanos al 5555-0000 de lunes a viernes de 8:00 a 17:00." }
+  },
+  en: {
+    about: { title: "Who we are", body: "Comercia is a local business directory created to connect the residents of Sancti Spíritus with the businesses of their municipality. Our goal is for anyone to quickly find a product or service, knowing where it is, at what price, and who sells it." },
+    mission: { title: "Our mission", body: "To facilitate access to commercial information in the province, support small entrepreneurs and self-employed workers, and strengthen the local economy through a transparent and accessible platform for everyone." },
+    contact: { title: "Contact", body: "Have suggestions, problems, or want to publish your business? Write to us at contacto@comercia.cu or visit our office in Sancti Spíritus. We respond within 24 to 48 business hours." },
+    terms: { title: "Terms and conditions", body: "Using Comercia implies acceptance of these terms. The platform acts as an informational intermediary between buyers and sellers; it does not participate in transactions or guarantee the quality of the products or services offered. Prices and availability are the responsibility of each business and may change without notice." },
+    privacy: { title: "Privacy policy", body: "Comercia respects your privacy. We only collect the data necessary for the service (name, contact, and municipality). We do not share your information with third parties without your consent. You can request the deletion of your data at any time by writing to contacto@comercia.cu." },
+    cookies: { title: "Cookie policy", body: "We use technical cookies to remember your preferences (language, light/dark theme, selected municipality) and improve your experience. We do not use advertising tracking cookies. You can delete cookies from your browser settings at any time." },
+    notice: { title: "Legal notice", body: "Comercia is an independent project with no affiliation to state organizations. The information published is provided by the businesses themselves and verified periodically. If you detect an error or inappropriate content, report it to contacto@comercia.cu for review." },
+    faq: { title: "Frequently asked questions", body: "How do I publish my business? Sign up for free and complete your business profile. Is there any cost? No, publishing is completely free. How do I update my prices? Log in and edit your products from your panel. Does Comercia sell the products? No, we only show information from the businesses." },
+    how: { title: "How it works", body: "1. Search for the product or service you need. 2. Check the businesses that offer it, their prices, location, and schedule. 3. Go to the business or contact it by phone or WhatsApp to complete the purchase." },
+    support: { title: "Support", body: "If you have technical problems, questions about using the platform, or need help with your account, contact us at soporte@comercia.cu or call us at 5555-0000 Monday through Friday from 8:00 to 17:00." }
+  }
+};
+
+let lang = 'es';
+let currency = 'CUP';
+let categoriaActiva = '';
+let filtroLocalidad = '';
+let filtroLocalidadNombre = '';
+let miZona = '';
+let debounceTimer = null;
+let toastTimer = null;
+let ultimaBusqueda = '';
+let filtros = { open: false, near: false, today: false, delivery: false, rating: false };
+let negocioActual = null; // ✅ NEW: para compartir
+
+function t(key) {
+  return (translations[lang] && translations[lang][key]) || (translations.es[key]) || key;
+}
+
+/* ====== ✅ NEW: Persistencia de filtros ====== */
+function guardarFiltros() {
+  try {
+    localStorage.setItem('comercia_filtros', JSON.stringify({
+      categoria: categoriaActiva,
+      filtroLocalidad,
+      filtroLocalidadNombre,
+      filtros,
+      q: document.getElementById('searchInput').value,
+      priceMin: document.getElementById('priceMin').value,
+      priceMax: document.getElementById('priceMax').value,
+      seller: document.getElementById('filterSeller').value,
+      sort: document.getElementById('sortSelect').value
+    }));
+  } catch (e) {}
+}
+
+function cargarFiltros() {
+  try {
+    const raw = localStorage.getItem('comercia_filtros');
+    if (!raw) return false;
+    const data = JSON.parse(raw);
+    categoriaActiva = data.categoria || '';
+    filtroLocalidad = data.filtroLocalidad || '';
+    filtroLocalidadNombre = data.filtroLocalidadNombre || '';
+    filtros = data.filtros || { open: false, near: false, today: false, delivery: false, rating: false };
+    document.getElementById('searchInput').value = data.q || '';
+    document.getElementById('priceMin').value = data.priceMin || '';
+    document.getElementById('priceMax').value = data.priceMax || '';
+    document.getElementById('filterSeller').value = data.seller || '';
+    document.getElementById('sortSelect').value = data.sort || 'relevancia';
+    if (filtroLocalidad) {
+      document.getElementById('filterLoc').value = filtroLocalidad;
+      rellenarSelectLocalidad(filtroLocalidad, true);
+    }
+    document.getElementById('searchCategory').value = categoriaActiva;
+    document.querySelectorAll('#categoryBar a').forEach(a => a.classList.toggle('active', a.dataset.cat === categoriaActiva));
+    const ids = { open: 'toggleOpen', near: 'toggleNear', today: 'toggleToday', delivery: 'toggleDelivery', rating: 'toggleRating' };
+    Object.entries(filtros).forEach(([k, v]) => {
+      if (ids[k]) document.getElementById(ids[k]).classList.toggle('active', !!v);
+    });
+    return true;
+  } catch (e) { return false; }
+}
+
+/* ====== ✅ NEW: Sincronizar URL con filtros ====== */
+function actualizarURL() {
+  try {
+    const params = new URLSearchParams();
+    const q = document.getElementById('searchInput').value.trim();
+    if (q) params.set('q', q);
+    if (categoriaActiva) params.set('cat', categoriaActiva);
+    if (filtroLocalidad) params.set('loc', filtroLocalidad);
+    if (filtroLocalidadNombre) params.set('locn', filtroLocalidadNombre);
+    if (filtros.open) params.set('open', '1');
+    if (filtros.delivery) params.set('delivery', '1');
+    if (filtros.rating) params.set('rating', '1');
+    if (filtros.today) params.set('today', '1');
+    const nueva = params.toString() ? '?' + params.toString() : location.pathname;
+    history.replaceState(null, '', nueva);
+  } catch (e) {}
+}
+
+function leerURL() {
+  try {
+    const params = new URLSearchParams(location.search);
+    const q = params.get('q') || '';
+    const cat = params.get('cat') || '';
+    const loc = params.get('loc') || '';
+    const locn = params.get('locn') || '';
+    if (!q && !cat && !loc && !locn && !params.has('open') && !params.has('delivery') && !params.has('rating') && !params.has('today')) return false;
+    if (q) document.getElementById('searchInput').value = q;
+    if (cat) {
+      categoriaActiva = cat;
+      document.getElementById('searchCategory').value = cat;
+      document.querySelectorAll('#categoryBar a').forEach(a => a.classList.toggle('active', a.dataset.cat === cat));
+    }
+    if (loc) {
+      filtroLocalidad = loc;
+      document.getElementById('filterLoc').value = loc;
+      rellenarSelectLocalidad(loc, false);
+    }
+    if (locn) {
+      filtroLocalidadNombre = locn;
+      document.getElementById('filterLocality').value = locn;
+    }
+    if (params.has('open')) { filtros.open = true; document.getElementById('toggleOpen').classList.add('active'); }
+    if (params.has('delivery')) { filtros.delivery = true; document.getElementById('toggleDelivery').classList.add('active'); }
+    if (params.has('rating')) { filtros.rating = true; document.getElementById('toggleRating').classList.add('active'); }
+    if (params.has('today')) { filtros.today = true; document.getElementById('toggleToday').classList.add('active'); }
+    return true;
+  } catch (e) { return false; }
+}
+
+function aplicarIdioma() {
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    el.textContent = t(el.getAttribute('data-i18n'));
+  });
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+    el.setAttribute('placeholder', t(el.getAttribute('data-i18n-placeholder')));
+  });
+  document.documentElement.lang = lang;
+  document.getElementById('btnES').classList.toggle('active', lang === 'es');
+  document.getElementById('btnEN').classList.toggle('active', lang === 'en');
+  actualizarTextoSelectLocalidad();
+  renderTopSearchCards();
+  renderCatGrid();
+  // ✅ FIX: aplicarIdioma NO llama buscar() para evitar doble ejecución
+}
+
+function setLang(l) {
+  lang = l;
+  try { localStorage.setItem('comercia_lang', l); } catch (e) {}
+  aplicarIdioma();
+  buscar(); // ✅ FIX: buscar solo aquí, una vez
+}
+
+let langGuardado = 'es';
+try { langGuardado = localStorage.getItem('comercia_lang') || 'es'; } catch (e) { langGuardado = 'es'; }
+lang = langGuardado;
+
+function aplicarTema(tema) {
+  const body = document.body;
+  const toggle = document.getElementById('themeToggle');
+  if (tema === 'dark') {
+    body.classList.add('dark');
+    toggle.textContent = '☀️';
+    toggle.title = lang === 'es' ? 'Cambiar a modo claro' : 'Switch to light mode';
+  } else {
+    body.classList.remove('dark');
+    toggle.textContent = '🌙';
+    toggle.title = lang === 'es' ? 'Cambiar a modo oscuro' : 'Switch to dark mode';
+  }
+}
+
+function toggleTheme() {
+  const esOscuro = document.body.classList.contains('dark');
+  aplicarTema(esOscuro ? 'light' : 'dark');
+  try { localStorage.setItem('comercia_theme', esOscuro ? 'light' : 'dark'); } catch (e) {}
+}
+
+let temaGuardado = 'light';
+try { temaGuardado = localStorage.getItem('comercia_theme') || 'light'; } catch (e) { temaGuardado = 'light'; }
+aplicarTema(temaGuardado);
+
+try { miZona = localStorage.getItem('comercia_myZone') || ''; } catch (e) { miZona = ''; }
+
+function mostrarToast(msg) {
+  const tEl = document.getElementById('toast');
+  tEl.textContent = msg;
+  tEl.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => tEl.classList.remove('show'), 3500);
+}
+
+function cambiarMiZona(zona) {
+  miZona = zona;
+  try { localStorage.setItem('comercia_myZone', zona); } catch (e) {}
+  document.getElementById('myZoneWrapper').classList.remove('highlight');
+  document.getElementById('filterLoc').value = zona;
+  filtroLocalidad = zona;
+  rellenarSelectLocalidad(zona, false);
+  buscar();
+}
+
+function setCurrency(c) {
+  currency = c;
+  document.getElementById('btnCUP').classList.toggle('active', c === 'CUP');
+  document.getElementById('btnUSD').classList.toggle('active', c === 'USD');
+  buscar(); renderCatGrid(); renderTopSearchCards();
+}
+
+function fmt(precioCUP, precioUSD) {
+  if (currency === 'CUP') return precioCUP.toLocaleString('es-CU') + ' CUP';
+  return precioUSD.toFixed(2) + ' USD';
+}
+
+function debounceBuscar() {
+  clearTimeout(debounceTimer);
+  debounceTimer = setTimeout(buscar, 250);
+}
+
+function resaltar(texto, query) {
+  if (!query) return texto;
+  const safe = query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  return texto.replace(new RegExp('(' + safe + ')', 'gi'), '<mark>$1</mark>');
+}
+
+function rellenarSelectLocalidad(municipio, preservarValor) {
+  const select = document.getElementById('filterLocality');
+  const valorPrevio = preservarValor ? select.value : '';
+  select.innerHTML = '';
+
+  if (!municipio || !LOCALIDADES_POR_MUNICIPIO[municipio]) {
+    select.disabled = true;
+    const opt = document.createElement('option');
+    opt.value = '';
+    opt.textContent = t('selectMunicipalityFirst');
+    select.appendChild(opt);
+    filtroLocalidadNombre = '';
+    return;
+  }
+
+  select.disabled = false;
+  const optTodas = document.createElement('option');
+  optTodas.value = '';
+  optTodas.textContent = t('allLocalities');
+  select.appendChild(optTodas);
+
+  LOCALIDADES_POR_MUNICIPIO[municipio].forEach(loc => {
+    const opt = document.createElement('option');
+    opt.value = loc;
+    opt.textContent = loc;
+    select.appendChild(opt);
+  });
+
+  if (valorPrevio && LOCALIDADES_POR_MUNICIPIO[municipio].includes(valorPrevio)) {
+    select.value = valorPrevio;
+    filtroLocalidadNombre = valorPrevio;
+  } else {
+    select.value = '';
+    filtroLocalidadNombre = '';
+  }
+}
+
+function actualizarTextoSelectLocalidad() {
+  const select = document.getElementById('filterLocality');
+  if (select && select.options.length > 0) {
+    select.options[0].textContent = select.disabled ? t('selectMunicipalityFirst') : t('allLocalities');
+  }
+  ['User','Tcp','Mipyme'].forEach(suf => {
+    const s = document.getElementById('regLocalidad' + suf);
+    if (s && s.options.length > 0) {
+      s.options[0].textContent = s.disabled ? t('selectMunicipalityFirst') : t('allLocalities');
+    }
+  });
+}
+
+function aplicarFiltroLoc(loc) {
+  filtroLocalidad = loc;
+  rellenarSelectLocalidad(loc, false);
+  buscar();
+}
+
+function aplicarFiltroLocalidad(loc) {
+  filtroLocalidadNombre = loc;
+  buscar();
+}
+
+function actualizarLocalidadesRegistro(tipo, municipio) {
+  const sufijos = { 'user': 'User', 'tcp': 'Tcp', 'mipyme': 'Mipyme' };
+  const suf = sufijos[tipo];
+  if (!suf) return;
+  const select = document.getElementById('regLocalidad' + suf);
+  select.innerHTML = '';
+
+  if (!municipio || !LOCALIDADES_POR_MUNICIPIO[municipio]) {
+    select.disabled = true;
+    const opt = document.createElement('option');
+    opt.value = '';
+    opt.textContent = t('selectMunicipalityFirst');
+    select.appendChild(opt);
+    return;
+  }
+
+  select.disabled = false;
+  const optTodas = document.createElement('option');
+  optTodas.value = '';
+  optTodas.textContent = t('allLocalities');
+  select.appendChild(optTodas);
+
+  LOCALIDADES_POR_MUNICIPIO[municipio].forEach(loc => {
+    const opt = document.createElement('option');
+    opt.value = loc;
+    opt.textContent = loc;
+    select.appendChild(opt);
+  });
+}
+
+function cambiarTipoCuenta(tipo) {
+  document.getElementById('fieldsUsuario').classList.toggle('active', tipo === 'usuario');
+  document.getElementById('fieldsTcp').classList.toggle('active', tipo === 'tcp');
+  document.getElementById('fieldsMipyme').classList.toggle('active', tipo === 'mipyme');
+}
+
+function toggleFiltro(nombre) {
+  if (nombre === 'near' && !miZona && !filtros.near) {
+    mostrarToast(lang === 'es' ? 'Primero elige tu municipio arriba a la izquierda 📍' : 'First select your municipality at the top left 📍');
+    const wrapper = document.getElementById('myZoneWrapper');
+    wrapper.classList.add('highlight');
+    document.getElementById('myZone').focus();
+    setTimeout(() => wrapper.classList.remove('highlight'), 3000);
+    return;
+  }
+  filtros[nombre] = !filtros[nombre];
+  const ids = { open: 'toggleOpen', near: 'toggleNear', today: 'toggleToday', delivery: 'toggleDelivery', rating: 'toggleRating' };
+  document.getElementById(ids[nombre]).classList.toggle('active', filtros[nombre]);
+  buscar();
+}
+
+function obtenerHoraCuba() {
+  try {
+    const partes = new Intl.DateTimeFormat('en-US', { timeZone: 'America/Havana', hour12: false, weekday: 'short', hour: '2-digit', minute: '2-digit' }).formatToParts(new Date());
+    const get = (t) => partes.find(p => p.type === t)?.value;
+    const diasMapa = { Sun:0, Mon:1, Tue:2, Wed:3, Thu:4, Fri:5, Sat:6 };
+    return { dia: diasMapa[get('weekday')] ?? new Date().getDay(), hora: parseInt(get('hour')) * 60 + parseInt(get('minute')) };
+  } catch (e) {
+    const d = new Date();
+    return { dia: d.getDay(), hora: d.getHours() * 60 + d.getMinutes() };
+  }
+}
+
+/* ====== ✅ FIX: estaAbiertoAhora ampliado ====== */
+/* Soporta:
+   - "Lun–Sáb 8:00–18:00"  (rango de días)
+   - "Lun–Vie 9:00–17:00 y Sáb 9:00–13:00"  (múltiples tramos separados por "y" o ",")
+   - "Lun–Dom 7:00–20:00"  (rango completo)
+   - "Lun–Vie 8:00–12:00 y 14:00–18:00"  (horario partido: mismo día, dos tramos)
+*/
+function estaAbiertoAhora(horario) {
+  if (!horario || typeof horario !== 'string') return null;
+  const diasMapa = { 'Lun':1, 'Mar':2, 'Mié':3, 'Mie':3, 'Jue':4, 'Vie':5, 'Sáb':6, 'Sab':6, 'Dom':0 };
+  const normalizarDia = (s) => {
+    const k = s.charAt(0).toUpperCase() + s.slice(1, 3).toLowerCase();
+    return diasMapa[k];
+  };
+  const { dia: diaActual, hora: minutoActual } = obtenerHoraCuba();
+
+  // Dividir por " y " o por "," conservando el contexto de días cuando solo hay horas
+  const tramos = horario.split(/\s+y\s+|,\s*/i);
+  let ultimoRangoDias = null;
+  let abierto = false;
+
+  for (const tramo of tramos) {
+    // Caso 1: contiene días y horas "Lun–Sáb 8:00–18:00"
+    const m1 = tramo.match(/([A-Za-zÁÉÍÓÚáéíóú]{3})[–-]([A-Za-zÁÉÍÓÚáéíóú]{3})\s+(\d{1,2}):(\d{2})\s*[–-]\s*(\d{1,2}):(\d{2})/);
+    if (m1) {
+      const dI = normalizarDia(m1[1]);
+      const dF = normalizarDia(m1[2]);
+      if (dI === undefined || dF === undefined) continue;
+      const hI = parseInt(m1[3]) * 60 + parseInt(m1[4]);
+      const hF = parseInt(m1[5]) * 60 + parseInt(m1[6]);
+      const dentroDia = dI <= dF ? (diaActual >= dI && diaActual <= dF) : (diaActual >= dI || diaActual <= dF);
+      if (dentroDia && minutoActual >= hI && minutoActual < hF) { abierto = true; break; }
+      ultimoRangoDias = { dI, dF };
+      continue;
+    }
+    // Caso 2: solo horas "8:00–18:00" (usa últimoRangoDias si existe)
+    const m2 = tramo.match(/^(\d{1,2}):(\d{2})\s*[–-]\s*(\d{1,2}):(\d{2})$/);
+    if (m2 && ultimoRangoDias) {
+      const { dI, dF } = ultimoRangoDias;
+      const hI = parseInt(m2[1]) * 60 + parseInt(m2[2]);
+      const hF = parseInt(m2[3]) * 60 + parseInt(m2[4]);
+      const dentroDia = dI <= dF ? (diaActual >= dI && diaActual <= dF) : (diaActual >= dI || diaActual <= dF);
+      if (dentroDia && minutoActual >= hI && minutoActual < hF) { abierto = true; break; }
+      continue;
+    }
+  }
+  return abierto;
+}
+
+function tiempoRelativo(iso) {
+  const diffMs = Date.now() - new Date(iso).getTime();
+  const min = Math.floor(diffMs / 60000);
+  if (lang === 'en') {
+    if (min < 60) return `${min} min ago`;
+    const hours = Math.floor(min / 60);
+    if (hours < 24) return `${hours} h ago`;
+    const days = Math.floor(hours / 24);
+    return `${days} day${days === 1 ? '' : 's'} ago`;
+  }
+  if (min < 60) return `hace ${min} min`;
+  const horas = Math.floor(min / 60);
+  if (horas < 24) return `hace ${horas} h`;
+  const dias = Math.floor(horas / 24);
+  return `hace ${dias} día${dias === 1 ? '' : 's'}`;
+}
+
+function claseActualizado(iso) {
+  const diffDias = (Date.now() - new Date(iso).getTime()) / (1000 * 60 * 60 * 24);
+  if (diffDias < 1) return 'recent';
+  if (diffDias > 7) return 'old';
+  return '';
+}
+
+function renderTopSearchCards() {
+  const cont = document.getElementById('topSearchCards');
+  cont.innerHTML = productosBuscados.map(p => {
+    const coincidencias = ofertas.filter(o => o.producto.toLowerCase().includes(p.termino.toLowerCase()));
+    const count = coincidencias.length;
+    let precioTexto = '—', precioSub = t('noOffers');
+    if (count > 0) {
+      const masBarato = coincidencias.reduce((min, o) => o.precioCUP < min.precioCUP ? o : min, coincidencias[0]);
+      precioTexto = fmt(masBarato.precioCUP, masBarato.precioUSD);
+      precioSub = t('fromPrice');
+    }
+    let trendClass = 'equal', trendIcon = '•';
+    if (p.tendencia === 'up') { trendClass = 'up'; trendIcon = '↑'; }
+    else if (p.tendencia === 'down') { trendClass = 'down'; trendIcon = '↓'; }
+    const countClass = count === 0 ? 'empty' : '';
+    const countText = count === 0 ? t('noOffers') : `${count} ${count === 1 ? t('offer') : t('offers')}`;
+    const nombre = lang === 'en' ? (p.nombreEN || p.nombre) : p.nombre;
+    return `<div class="ts-card" onclick="buscarRapido('${p.termino}')">
+      <div class="ts-trend ${trendClass}">${trendIcon}</div>
+      <span class="ts-emoji">${p.emoji}</span>
+      <div class="ts-name">${nombre}</div>
+      <div class="ts-price">${precioTexto}<small>${precioSub}</small></div>
+      <div class="ts-count ${countClass}">${countText}</div>
+    </div>`;
+  }).join('');
+}
+
+function renderCatGrid() {
+  const conOfertas = categoriasInfo.filter(c => ofertas.some(o => o.categoria === c.nombre));
+  document.getElementById('catGrid').innerHTML = conOfertas.map(c => {
+    const count = ofertas.filter(o => o.categoria === c.nombre).length;
+    const key = 'cat' + c.nombre.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^A-Za-z]/g, '');
+    const nombre = t(key) !== key ? t(key) : c.nombre;
+    return `<div class="cat-card" onclick="filtrarCat('${c.nombre}')"><span class="emoji">${c.emoji}</span><div class="name">${nombre}</div><div class="count">${count} ${count === 1 ? t('offer') : t('offers')}</div></div>`;
+  }).join('');
+}
+
+function actualizarAvisoFiltro(q) {
+  const notice = document.getElementById('filterNotice');
+  const partes = [];
+  if (q) partes.push(`<span>${t('searching')} <strong>"${q}"</strong></span>`);
+  if (categoriaActiva) {
+    const key = 'cat' + categoriaActiva.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^A-Za-z]/g, '');
+    partes.push(`<span class="chip">📦 ${t(key) !== key ? t(key) : categoriaActiva}</span>`);
+  }
+  if (filtroLocalidad) partes.push(`<span class="chip">📍 ${filtroLocalidad}</span>`);
+  if (filtroLocalidadNombre) partes.push(`<span class="chip">🏘️ ${filtroLocalidadNombre}</span>`);
+  if (filtros.open) partes.push(`<span class="chip">🕐 ${t('openNow')}</span>`);
+  if (filtros.near && miZona) partes.push(`<span class="chip">📍 ${t('nearMe')} (${miZona})</span>`);
+  if (filtros.today) partes.push(`<span class="chip">✅ ${t('availableToday')}</span>`);
+  if (filtros.delivery) partes.push(`<span class="chip">🚚 ${t('withDelivery')}</span>`);
+  if (filtros.rating) partes.push(`<span class="chip">⭐ ${t('bestRated')}</span>`);
+  if (partes.length === 0) { notice.style.display = 'none'; return; }
+  notice.style.display = 'flex';
+  document.getElementById('filterNoticeText').innerHTML = `<span>${t('activeFilters')}</span> ${partes.join(' ')}`;
+}
+
+function limpiarFiltros() {
+  document.getElementById('searchInput').value = '';
+  document.getElementById('filterLoc').value = '';
+  document.getElementById('priceMin').value = '';
+  document.getElementById('priceMax').value = '';
+  document.getElementById('filterSeller').value = '';
+  document.getElementById('searchCategory').value = '';
+  document.getElementById('sortSelect').value = 'relevancia';
+  categoriaActiva = '';
+  filtroLocalidad = '';
+  filtroLocalidadNombre = '';
+  filtros = { open: false, near: false, today: false, delivery: false, rating: false };
+  document.querySelectorAll('.toggle-chip').forEach(el => el.classList.remove('active'));
+  document.querySelectorAll('#categoryBar a').forEach(a => {
+    a.classList.toggle('active', a.dataset.cat === '');
+  });
+  rellenarSelectLocalidad('', false);
+  try { localStorage.removeItem('comercia_filtros'); } catch (e) {}
+  buscar();
+}
+
+function actualizarTitulo(q) {
+  const titleEl = document.getElementById('resultsTitle');
+  const extras = [];
+  if (filtros.open) extras.push(t('openNow'));
+  if (filtros.today) extras.push(t('availableToday'));
+  if (filtros.delivery) extras.push(t('withDelivery'));
+  if (filtros.rating) extras.push(t('bestRated'));
+
+  let base = '';
+  if (q) base = `${t('resultsFor')} "<span class="query">${q}</span>"`;
+  else if (categoriaActiva) {
+    const key = 'cat' + categoriaActiva.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^A-Za-z]/g, '');
+    base = t(key) !== key ? t(key) : categoriaActiva;
+  }
+  else if (filtroLocalidadNombre) base = `${t('offersIn')} ${filtroLocalidadNombre}, ${filtroLocalidad}`;
+  else if (filtroLocalidad) base = `${t('offersIn')} ${filtroLocalidad}`;
+  else base = t('allProducts');
+  if (extras.length > 0) base += ` · ${extras.join(', ')}`;
+  titleEl.innerHTML = base;
+}
+
+/* ✅ NEW: Skeleton loading */
+function mostrarSkeleton() {
+  const list = document.getElementById('resultList');
+  list.innerHTML = Array(3).fill(0).map(() => `
+    <div class="skeleton-card">
+      <div class="skeleton-block skeleton-emoji"></div>
+      <div class="skeleton-lines">
+        <div class="skeleton-block skeleton-line title"></div>
+        <div class="skeleton-block skeleton-line meta"></div>
+        <div class="skeleton-block skeleton-line small"></div>
+      </div>
+      <div class="skeleton-block skeleton-price"></div>
+    </div>
+  `).join('');
+}
+
+function buscar(qParam) {
+  // ✅ NEW: skeleton si es búsqueda con debounce
+  if (qParam === undefined && document.getElementById('searchInput').value.trim() !== ultimaBusqueda) {
+    mostrarSkeleton();
+  }
+  const q = (qParam !== undefined ? qParam : document.getElementById('searchInput').value).trim().toLowerCase();
+  ultimaBusqueda = q;
+  const minPrecio = parseFloat(document.getElementById('priceMin').value) || 0;
+  const maxPrecio = parseFloat(document.getElementById('priceMax').value) || Infinity;
+  const seller = document.getElementById('filterSeller').value;
+  const orden = document.getElementById('sortSelect').value;
+
+  let filtrados = ofertas.filter(o => {
+    const coincideTexto = !q || o.producto.toLowerCase().includes(q) || o.negocio.toLowerCase().includes(q) || o.categoria.toLowerCase().includes(q) || (o.localidadNombre && o.localidadNombre.toLowerCase().includes(q));
+    const coincideCat = !categoriaActiva || o.categoria === categoriaActiva;
+    const coincideLoc = !filtroLocalidad || o.localidad === filtroLocalidad;
+    const coincideLocNombre = !filtroLocalidadNombre || o.localidadNombre === filtroLocalidadNombre;
+    const coincidePrecio = o.precioCUP >= minPrecio && o.precioCUP <= maxPrecio;
+    const coincideSeller = !seller || o.tipo === seller;
+    let coincideOpen = true;
+    if (filtros.open) { const a = estaAbiertoAhora(o.horario); coincideOpen = a === true; }
+    let coincideNear = true;
+    if (filtros.near && miZona) coincideNear = o.localidad === miZona;
+    let coincideToday = true;
+    if (filtros.today) coincideToday = o.stock === 'Disponible';
+    let coincideDelivery = true;
+    if (filtros.delivery) coincideDelivery = o.delivery === true;
+    let coincideRating = true;
+    if (filtros.rating) coincideRating = o.rating >= 4.5;
+    return coincideTexto && coincideCat && coincideLoc && coincideLocNombre && coincidePrecio && coincideSeller && coincideOpen && coincideNear && coincideToday && coincideDelivery && coincideRating;
+  });
+
+  switch (orden) {
+    case 'precio-asc': filtrados.sort((a, b) => a.precioCUP - b.precioCUP); break;
+    case 'precio-desc': filtrados.sort((a, b) => b.precioCUP - a.precioCUP); break;
+    case 'rating': filtrados.sort((a, b) => b.rating - a.rating); break;
+    case 'nombre': filtrados.sort((a, b) => a.producto.localeCompare(b.producto)); break;
+    default:
+      if (q) filtrados.sort((a, b) => (a.producto.toLowerCase().startsWith(q) ? 0 : 1) - (b.producto.toLowerCase().startsWith(q) ? 0 : 1));
+      if (miZona) filtrados.sort((a, b) => (a.localidad === miZona ? 0 : 1) - (b.localidad === miZona ? 0 : 1));
+  }
+
+  actualizarTitulo(q);
+  actualizarAvisoFiltro(q);
+  document.getElementById('resultCount').textContent = filtrados.length + ' ' + t('results');
+
+  const list = document.getElementById('resultList');
+  if (filtrados.length === 0) {
+    list.innerHTML = `<div class="empty"><div class="big">🔍</div>${t('noResults')}<div class="hint">${t('noResultsHint')}<br><button onclick="limpiarFiltros()">${t('seeAllProducts')}</button></div></div>`;
+    guardarFiltros(); actualizarURL();
+    return;
+  }
+
+  list.innerHTML = filtrados.map(o => {
+    const esLejano = miZona && o.localidad !== miZona;
+    const abierto = estaAbiertoAhora(o.horario);
+    const statusClass = o.stock === 'Disponible' ? 'available' : o.stock === 'Pocas unidades' ? 'low' : 'out';
+    const updClase = claseActualizado(o.actualizado);
+    const updTexto = tiempoRelativo(o.actualizado);
+    const catKey = 'cat' + o.categoria.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^A-Za-z]/g, '');
+    const nombreCat = t(catKey) !== catKey ? t(catKey) : o.categoria;
+    const stockText = lang === 'en'
+      ? (o.stock === 'Disponible' ? 'Available' : o.stock === 'Pocas unidades' ? 'Few units' : o.stock === 'Agenda disponible' ? 'Schedule available' : o.stock)
+      : o.stock;
+    const ubicacion = o.localidadNombre ? `${o.localidadNombre}, ${o.localidad}` : o.localidad;
+
+    return `<div class="result-card" onclick="abrirNegocio(${o.id})">
+      <div class="result-emoji">${o.emoji}</div>
+      <div class="result-info">
+        <h3>${resaltar(o.producto, q)}</h3>
+        <div class="result-meta">
+          <span class="tag">${nombreCat}</span>
+          <span>📍 ${ubicacion}</span>
+          ${esLejano ? `<span class="far-tag">${lang === 'en' ? 'Far from your municipality' : 'Lejos de tu municipio'}</span>` : ''}
+          <span class="status-tag ${statusClass}">${stockText}</span>
+          ${abierto === true ? `<span class="status-tag open-now">🕐 ${lang === 'en' ? 'Open' : 'Abierto'}</span>` : ''}
+          ${abierto === false ? `<span class="status-tag closed-now">🕐 ${lang === 'en' ? 'Closed' : 'Cerrado'}</span>` : ''}
+          ${o.delivery ? `<span class="tag">🚚 ${lang === 'en' ? 'Delivery' : 'Entrega'}</span>` : ''}
+          ${o.rating >= 4.5 ? `<span class="badge-rating">⭐ ${o.rating.toFixed(1)}</span>` : ''}
+          <span class="badge-updated ${updClase}">${lang === 'en' ? 'Updated' : 'Actualizado'} ${updTexto}</span>
+        </div>
+        <div class="result-vendor"><span class="vendor-dot"></span>${resaltar(o.negocio, q)} · ${o.tipo}</div>
+      </div>
+      <div class="result-price"><span class="amount">${fmt(o.precioCUP, o.precioUSD)}</span><span class="unit">/ ${lang === 'en' ? 'unit' : 'unidad'}</span></div>
+    </div>`;
+  }).join('');
+
+  guardarFiltros();
+  actualizarURL();
+}
+
+function buscarRapido(texto) {
+  document.getElementById('searchInput').value = texto;
+  buscar();
+  document.getElementById('searchInput').focus();
+  window.scrollTo({ top: 600, behavior: 'smooth' });
+}
+
+function filtrarCat(cat) {
+  categoriaActiva = cat;
+  document.getElementById('searchCategory').value = cat;
+  document.querySelectorAll('#categoryBar a').forEach(a => {
+    a.classList.toggle('active', a.dataset.cat === cat);
+  });
+  buscar();
+}
+
+function abrirNegocio(id) {
+  const o = ofertas.find(x => x.id === id);
+  if (!o) return;
+  negocioActual = o; // ✅ NEW
+  document.getElementById('mNegocio').textContent = o.negocio;
+  document.getElementById('mTipo').textContent = o.tipo === 'TCP'
+    ? (lang === 'en' ? 'TCP — Self-employed' : 'TCP — Trabajador por Cuenta Propia')
+    : 'Mipyme';
+  document.getElementById('mProducto').textContent = o.producto;
+  document.getElementById('mPrecio').textContent = fmt(o.precioCUP, o.precioUSD);
+  document.getElementById('mLoc').textContent = o.localidad;
+  document.getElementById('mLocalidad').textContent = o.localidadNombre || '—';
+  const stockText = lang === 'en'
+    ? (o.stock === 'Disponible' ? 'Available' : o.stock === 'Pocas unidades' ? 'Few units' : o.stock === 'Agenda disponible' ? 'Schedule available' : o.stock)
+    : o.stock;
+  document.getElementById('mStock').textContent = stockText;
+  document.getElementById('mHorario').textContent = o.horario;
+  document.getElementById('mDireccion').textContent = o.direccion;
+  document.getElementById('mContacto').textContent = o.contacto;
+  document.getElementById('mDelivery').textContent = o.delivery ? (lang === 'en' ? 'Yes' : 'Sí') : 'No';
+  document.getElementById('mRating').textContent = '⭐ ' + o.rating.toFixed(1) + ' / 5';
+  document.getElementById('mUpdated').textContent = tiempoRelativo(o.actualizado);
+
+  const tel = o.contacto.replace(/\D/g, '');
+  document.getElementById('btnLlamar').onclick = () => { window.location.href = 'tel:' + tel; };
+  document.getElementById('btnWhatsapp').onclick = () => {
+    window.open('https://wa.me/' + (tel.startsWith('53') ? tel : '53' + tel), '_blank');
+  };
+
+  // ✅ NEW: Compartir
+  document.getElementById('btnShare').onclick = async () => {
+    const url = location.origin + location.pathname + '?negocio=' + o.id;
+    const texto = `${t('shareText')} ${o.producto} — ${o.negocio} (${o.localidadNombre || o.localidad})`;
+    try {
+      if (navigator.share) {
+        await navigator.share({ title: 'Comercia', text: texto, url });
+      } else if (navigator.clipboard) {
+        await navigator.clipboard.writeText(url);
+        mostrarToast(t('shareCopied'));
+      } else {
+        // Fallback: prompt
+        window.prompt(t('share'), url);
+      }
+    } catch (e) { /* usuario canceló */ }
+  };
+
+  // ✅ NEW: Mapa
+  document.getElementById('btnMap').onclick = () => {
+    const query = encodeURIComponent(`${o.direccion}, ${o.localidad}, Cuba`);
+    window.open('https://www.google.com/maps/search/?api=1&query=' + query, '_blank');
+  };
+
+  document.getElementById('modalNegocio').classList.add('show');
+}
+function cerrarModal() { document.getElementById('modalNegocio').classList.remove('show'); }
+document.getElementById('modalNegocio').addEventListener('click', e => { if (e.target.id === 'modalNegocio') cerrarModal(); });
+
+function abrirAuth(tab) {
+  document.getElementById('modalAuth').classList.add('show');
+  cambiarAuthTab(tab);
+}
+function cerrarAuth() { document.getElementById('modalAuth').classList.remove('show'); }
+function cambiarAuthTab(tab) {
+  document.getElementById('tabLogin').classList.toggle('active', tab === 'login');
+  document.getElementById('tabRegistro').classList.toggle('active', tab === 'registro');
+  document.getElementById('formLogin').classList.toggle('active', tab === 'login');
+  document.getElementById('formRegistro').classList.toggle('active', tab === 'registro');
+}
+document.getElementById('modalAuth').addEventListener('click', e => { if (e.target.id === 'modalAuth') cerrarAuth(); });
+
+function abrirInfo(key) {
+  const data = infoContent[lang] && infoContent[lang][key];
+  if (!data) return;
+  document.getElementById('infoTitle').textContent = data.title;
+  document.getElementById('infoContent').textContent = data.body;
+  document.getElementById('modalInfo').classList.add('show');
+}
+function cerrarInfo() { document.getElementById('modalInfo').classList.remove('show'); }
+document.getElementById('modalInfo').addEventListener('click', e => { if (e.target.id === 'modalInfo') cerrarInfo(); });
+
+/* ====== BOTONES FLOTANTES DE SCROLL ====== */
+function actualizarFab() {
+  const fabTop = document.getElementById('fabTop');
+  const fabBottom = document.getElementById('fabBottom');
+  const scrollY = window.scrollY || window.pageYOffset;
+  const alturaTotal = document.documentElement.scrollHeight - window.innerHeight;
+  fabTop.classList.toggle('show', scrollY > 300);
+  fabBottom.classList.toggle('show', alturaTotal - scrollY > 200 && alturaTotal > 300);
+}
+function subirArriba() { window.scrollTo({ top: 0, behavior: 'smooth' }); }
+function bajarAbajo() { window.scrollTo({ top: document.documentElement.scrollHeight, behavior: 'smooth' }); }
+window.addEventListener('scroll', actualizarFab, { passive: true });
+window.addEventListener('resize', actualizarFab);
+
+document.getElementById('searchInput').addEventListener('input', debounceBuscar);
+document.getElementById('searchInput').addEventListener('keydown', e => { if (e.key === 'Enter') buscar(); });
+document.getElementById('searchCategory').addEventListener('change', function() { filtrarCat(this.value); });
+document.getElementById('sortSelect').addEventListener('change', buscar);
+document.getElementById('priceMin').addEventListener('input', debounceBuscar);
+document.getElementById('priceMax').addEventListener('input', debounceBuscar);
+
+document.getElementById('myZone').value = miZona;
+document.getElementById('footerYear').textContent = new Date().getFullYear();
+
+if (miZona) {
+  document.getElementById('filterLoc').value = miZona;
+  filtroLocalidad = miZona;
+  rellenarSelectLocalidad(miZona, false);
+} else {
+  rellenarSelectLocalidad('', false);
+}
+
+/* ====== ✅ NEW: Abrir negocio desde URL (?negocio=ID) ====== */
+function abrirNegocioDesdeURL() {
+  try {
+    const params = new URLSearchParams(location.search);
+    const id = parseInt(params.get('negocio'));
+    if (id && ofertas.find(o => o.id === id)) {
+      abrirNegocio(id);
+    }
+  } catch (e) {}
+}
+
+/* ====== INIT ====== */
+// ✅ FIX: aplicarIdioma ya no llama buscar; cargarFiltros o leerURL lo sustituyen
+aplicarIdioma();
+const hayURL = leerURL();
+const hayFiltrosGuardados = !hayURL && cargarFiltros();
+renderTopSearchCards();
+renderCatGrid();
+buscar(); // ✅ FIX: se ejecuta UNA sola vez
+abrirNegocioDesdeURL();
+actualizarFab();
+</script>
+
+</body>
+</html>
